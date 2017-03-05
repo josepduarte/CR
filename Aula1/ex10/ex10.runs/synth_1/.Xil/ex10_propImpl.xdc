@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/jduarte/Documents/GitHub/CR/Aula1/ex10/ex10.srcs/constrs_1/imports/new/SDR_const.xdc rfile:../../../ex10.srcs/constrs_1/imports/new/SDR_const.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/ruilopes/Documents/CR/Aula1/ex10/ex10.srcs/constrs_1/imports/new/SDR_const.xdc rfile:../../../ex10.srcs/constrs_1/imports/new/SDR_const.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 Bank = 35, Pin name = IO_L12P_T1_MRCC_35,					Sch name = CLK100MHZ
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
