@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl work  "../../../ex1.srcs/sources_1/imports/new/SevenSegmentDecoder.vhd"
+vhdl work  "../../../ex1.srcs/sources_1/imports/new/FrequencyDividerForN.vhd"
+vhdl work  "../../../ex1.srcs/sources_1/imports/new/DisplayControl.vhd"
+vhdl work  "../../../ex1.srcs/sources_1/imports/new/SevenSegmentsDEMO.vhd"
+vhdl work  "../../../ex1.srcs/sources_1/imports/new/BinaryToBCD16.vhd"
+vhdl work  "../../../ex1.srcs/sim_1/new/testbenchA.vhd"
+
+# Do not sort compile order
+nosort

@@ -41,6 +41,6 @@ begin
         end if;
     end process;
     
-    decoder :	entity work.SevenSegmentDecoder(BehavioralCaseWhen)		-- segment decoder (see below)
+    decoder :	entity work.SevenSegmentDecoder(BehavioralIfElse)		-- segment decoder (see below)
             port map (convert_me, segments);
 end Behavioral;
