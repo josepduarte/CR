@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1488733810">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1488795265">
   <File Type="RDS-PROPCONSTRS" Name="SevenSegmentsDEMO_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="SevenSegmentsDEMO.tcl"/>
   <File Type="RDS-RDS" Name="SevenSegmentsDEMO.vds"/>

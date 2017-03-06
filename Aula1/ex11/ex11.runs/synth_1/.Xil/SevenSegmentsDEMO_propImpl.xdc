@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ruilopes/Documents/CR/Aula1/ex11/ex11.srcs/constrs_1/imports/Desktop/Nexys4_Master.xdc rfile:../../../ex11.srcs/constrs_1/imports/Desktop/Nexys4_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/jduarte/Documents/GitHub/CR/Aula1/ex11/ex11.srcs/constrs_1/imports/Desktop/Nexys4_Master.xdc rfile:../../../ex11.srcs/constrs_1/imports/Desktop/Nexys4_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]

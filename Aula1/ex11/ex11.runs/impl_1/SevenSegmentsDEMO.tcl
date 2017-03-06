@@ -49,15 +49,14 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/ruilopes/Documents/CR/Aula1/ex11/ex11.cache/wt [current_project]
-  set_property parent.project_path C:/Users/ruilopes/Documents/CR/Aula1/ex11/ex11.xpr [current_project]
-  set_property ip_output_repo C:/Users/ruilopes/Documents/CR/Aula1/ex11/ex11.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/jduarte/Documents/GitHub/CR/Aula1/ex11/ex11.cache/wt [current_project]
+  set_property parent.project_path C:/Users/jduarte/Documents/GitHub/CR/Aula1/ex11/ex11.xpr [current_project]
+  set_property ip_output_repo C:/Users/jduarte/Documents/GitHub/CR/Aula1/ex11/ex11.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/ruilopes/Documents/CR/Aula1/ex11/ex11.runs/synth_1/SevenSegmentsDEMO.dcp
-  read_xdc C:/Users/ruilopes/Documents/CR/Aula1/ex11/ex11.srcs/constrs_1/imports/Desktop/Nexys4_Master.xdc
+  add_files -quiet C:/Users/jduarte/Documents/GitHub/CR/Aula1/ex11/ex11.runs/synth_1/SevenSegmentsDEMO.dcp
+  read_xdc C:/Users/jduarte/Documents/GitHub/CR/Aula1/ex11/ex11.srcs/constrs_1/imports/Desktop/Nexys4_Master.xdc
   link_design -top SevenSegmentsDEMO -part xc7a100tcsg324-3
   write_hwdef -file SevenSegmentsDEMO.hwdef
   close_msg_db -file init_design.pb

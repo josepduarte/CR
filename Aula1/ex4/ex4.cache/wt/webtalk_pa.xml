@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Mar 02 10:41:47 2017">
+<application name="pa" timeStamp="Mon Mar 06 10:20:15 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="1d44177be56a4445a04672c6844155d3" type="ProjectID"/>
 <property name="ProjectIteration" value="9" type="ProjectIteration"/>
@@ -43,7 +43,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ConstraintsChooserPanel_ADD_FILES" value="2" type="GuiResourceData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="5" type="GuiResourceData"/>
 <property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="34" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="44" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="48" type="GuiResourceData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="19" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
@@ -84,9 +84,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="TaskBanner_CLOSE" value="2" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="8" type="GuiMode"/>
+<property name="GuiMode" value="14" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="6" type="TclMode"/>
+<property name="TclMode" value="10" type="TclMode"/>
 </item>
 </section>
 </application>

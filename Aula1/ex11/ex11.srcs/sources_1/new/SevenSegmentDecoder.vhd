@@ -40,7 +40,7 @@ architecture BehavioralConstant of SevenSegmentDecoder is
     type DISPLAY_ROM is array (0 to 15) of std_logic_vector(6 downto 0);
     constant decoderSegments : DISPLAY_ROM := ("1000000", "1111001", "0100100", "0110000", "0011001", 
                                                "0010010", "0000010", "1111000", "0000000", "0001000", 
-                                               "0000011", "1000110", "0100001", "0000110", "0001110");
+                                               "0001000", "0000011", "1000110", "0100001", "0000110", "0001110");
 begin
     segments <= decoderSegments(to_integer(unsigned(amount)));
 end BehavioralConstant;

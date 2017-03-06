@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/ruilopes/Documents/CR/Aula1/ex11/ex11.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/jduarte/Documents/GitHub/CR/Aula1/ex11/ex11.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="96b5c44bc8b94d8b89ddb02aef4ec8c6"/>
