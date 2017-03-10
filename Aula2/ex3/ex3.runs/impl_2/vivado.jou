@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 10 10:43:16 2017
+# Process ID: 9344
+# Current directory: C:/Users/ruilopes/Documents/CR/Aula2/ex3/ex3.runs/impl_2
+# Command line: vivado.exe -log ShiftRegisterDemo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ShiftRegisterDemo.tcl -notrace
+# Log file: C:/Users/ruilopes/Documents/CR/Aula2/ex3/ex3.runs/impl_2/ShiftRegisterDemo.vdi
+# Journal file: C:/Users/ruilopes/Documents/CR/Aula2/ex3/ex3.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source ShiftRegisterDemo.tcl -notrace
