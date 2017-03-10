@@ -5,6 +5,10 @@ vhdl work  "../../../ex1.srcs/sources_1/imports/new/DisplayControl.vhd"
 vhdl work  "../../../ex1.srcs/sources_1/imports/new/SevenSegmentsDEMO.vhd"
 vhdl work  "../../../ex1.srcs/sources_1/imports/new/BinaryToBCD16.vhd"
 vhdl work  "../../../ex1.srcs/sim_1/new/testbenchA.vhd"
+vhdl work  "../../../ex1.srcs/sim_1/new/testbenchB.vhd"
+vhdl work  "../../../ex1.srcs/sim_1/new/testBenchC.vhd"
+vhdl work  "../../../ex1.srcs/sim_1/new/testBenchD.vhd"
+vhdl work  "../../../ex1.srcs/sim_1/new/testBendE.vhd"
 
 # Do not sort compile order
 nosort

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1488798969">
-  <File Type="RDS-PROPCONSTRS" Name="SevenSegmentsDEMO_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="SevenSegmentsDEMO.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SevenSegmentsDEMO_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="SevenSegmentsDEMO.vds"/>
   <File Type="RDS-UTIL" Name="SevenSegmentsDEMO_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SevenSegmentsDEMO_utilization_synth.pb"/>
@@ -72,9 +72,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
