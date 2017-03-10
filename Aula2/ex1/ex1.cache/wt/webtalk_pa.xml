@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Mar 06 12:03:27 2017">
+<application name="pa" timeStamp="Thu Mar 09 11:20:47 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="dce4d1069f044b6b859dc3ef2682e779" type="ProjectID"/>
 <property name="ProjectIteration" value="6" type="ProjectIteration"/>
@@ -23,6 +23,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="LaunchProgramFpga" value="1" type="JavaHandler"/>
 <property name="NewProject" value="3" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="6" type="JavaHandler"/>
 <property name="RunBitgen" value="2" type="JavaHandler"/>
 <property name="RunImplementation" value="4" type="JavaHandler"/>
@@ -44,14 +45,16 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="1" type="GuiResourceData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="1" type="GuiResourceData"/>
 <property name="FileSetPanel_0_CRITICAL_WARNING" value="1" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="129" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="131" type="GuiResourceData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="21" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="2" type="GuiResourceData"/>
+<property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_FIT" value="3" type="GuiResourceData"/>
 <property name="HardwareTreePanel_HARDWARE_TREE_TABLE" value="2" type="GuiResourceData"/>
 <property name="MainMenuMgr_EDIT" value="2" type="GuiResourceData"/>
-<property name="MainMenuMgr_FILE" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="6" type="GuiResourceData"/>
 <property name="MainMenuMgr_FLOW" value="12" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
 <property name="MainMenuMgr_TOOLS" value="6" type="GuiResourceData"/>
 <property name="MainMenuMgr_WINDOW" value="2" type="GuiResourceData"/>
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="20" type="GuiResourceData"/>
@@ -62,6 +65,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_GOTO_PROJECT_MANAGER" value="3" type="GuiResourceData"/>
 <property name="PACommandNames_NEW_PROJECT" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_OPEN_HARDWARE_MANAGER" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_OPEN_PROJECT" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_RUN_BITGEN" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_RUN_IMPLEMENTATION" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_SIMULATION_RUN" value="2" type="GuiResourceData"/>
@@ -89,9 +93,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformView_GOTO_CURSOR" value="2" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="13" type="GuiMode"/>
+<property name="GuiMode" value="18" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="11" type="TclMode"/>
+<property name="TclMode" value="15" type="TclMode"/>
 </item>
 </section>
 </application>

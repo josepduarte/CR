@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1488846509">
-  <File Type="PWROPT-DRC" Name="SevenSegmentsDEMO_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="SevenSegmentsDEMO_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="SevenSegmentsDEMO_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="SevenSegmentsDEMO_power_routed.rpx"/>
   <File Type="PA-TCL" Name="SevenSegmentsDEMO.tcl"/>
-  <File Type="OPT-HWDEF" Name="SevenSegmentsDEMO.hwdef"/>
+  <File Type="INIT-TIMING" Name="SevenSegmentsDEMO_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SevenSegmentsDEMO_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="SevenSegmentsDEMO_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="SevenSegmentsDEMO.vdi"/>
   <File Type="OPT-DCP" Name="SevenSegmentsDEMO_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="SevenSegmentsDEMO.hwdef"/>
   <File Type="OPT-DRC" Name="SevenSegmentsDEMO_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="SevenSegmentsDEMO_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="SevenSegmentsDEMO_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="SevenSegmentsDEMO_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="SevenSegmentsDEMO_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="SevenSegmentsDEMO_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="SevenSegmentsDEMO.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="SevenSegmentsDEMO_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="SevenSegmentsDEMO.drc"/>
+  <File Type="BG-BIN" Name="SevenSegmentsDEMO.bin"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="SevenSegmentsDEMO_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="SevenSegmentsDEMO.msk"/>
+  <File Type="BG-DRC" Name="SevenSegmentsDEMO.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SevenSegmentsDEMO_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="SevenSegmentsDEMO.bgn"/>
+  <File Type="BITSTR-MSK" Name="SevenSegmentsDEMO.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SevenSegmentsDEMO_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="SevenSegmentsDEMO.bgn"/>
   <File Type="ROUTE-PWR" Name="SevenSegmentsDEMO_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="SevenSegmentsDEMO_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="SevenSegmentsDEMO_route_status.rpt"/>
@@ -149,9 +149,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
