@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1489705196">
+  <File Type="RDS-PROPCONSTRS" Name="ex4_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="ex4_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="ex4_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="ex4_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ex4_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ex4_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ex4_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ex4_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/ex4/ex4.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ex4/hdl/ex4_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/cr_aula3/vector1024.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ex4_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/CR/Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1489658204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ex4_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex4_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex4_xlconstant_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex4_number_of_ones_0_0"/>
+</GenRun>

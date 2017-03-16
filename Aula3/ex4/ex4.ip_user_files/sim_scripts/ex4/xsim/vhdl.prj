@@ -1,0 +1,8 @@
+vhdl xil_defaultlib "../../../../ex4.srcs/sources_1/bd/ex4/hdl/ex4.vhd" 
+vhdl xil_defaultlib "../../../../ex4.srcs/sources_1/bd/ex4/ipshared/e147/xlconstant.vhd" 
+vhdl xil_defaultlib "../../../../ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconstant_0_0/sim/ex4_xlconstant_0_0.vhd" 
+vhdl xil_defaultlib "../../../../ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconstant_1_0/sim/ex4_xlconstant_1_0.vhd" 
+vhdl xil_defaultlib "../../../../ex4.srcs/sources_1/bd/ex4/ipshared/9976/sources_1/new/number_of_ones.vhd" 
+vhdl xil_defaultlib "../../../../ex4.srcs/sources_1/bd/ex4/ip/ex4_number_of_ones_0_0/sim/ex4_number_of_ones_0_0.vhd" 
+
+nosort
