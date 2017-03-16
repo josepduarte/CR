@@ -1,0 +1,299 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 13 11:27:05 2017
+# Process ID: 5788
+# Current directory: C:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.runs/design_1_ConsecutiveOnesFSM_0_0_synth_1
+# Command line: vivado.exe -log design_1_ConsecutiveOnesFSM_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ConsecutiveOnesFSM_0_0.tcl
+# Log file: C:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.runs/design_1_ConsecutiveOnesFSM_0_0_synth_1/design_1_ConsecutiveOnesFSM_0_0.vds
+# Journal file: C:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.runs/design_1_ConsecutiveOnesFSM_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_ConsecutiveOnesFSM_0_0.tcl -notrace
+Command: synth_design -top design_1_ConsecutiveOnesFSM_0_0 -part xc7a100tcsg324-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1084 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 289.953 ; gain = 80.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_ConsecutiveOnesFSM_0_0' [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ip/design_1_ConsecutiveOnesFSM_0_0/synth/design_1_ConsecutiveOnesFSM_0_0.vhd:65]
+	Parameter times bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'ConsecutiveOnesFSM' declared at 'c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ipshared/19eb/sources_1/new/ConsecutiveOnesFSM.vhd:34' bound to instance 'U0' of component 'ConsecutiveOnesFSM' [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ip/design_1_ConsecutiveOnesFSM_0_0/synth/design_1_ConsecutiveOnesFSM_0_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'ConsecutiveOnesFSM' [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ipshared/19eb/sources_1/new/ConsecutiveOnesFSM.vhd:42]
+	Parameter times bound to: 16 - type: integer 
+WARNING: [Synth 8-614] signal 'maximum' is read in the process but is not in the sensitivity list [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ipshared/19eb/sources_1/new/ConsecutiveOnesFSM.vhd:66]
+WARNING: [Synth 8-3848] Net count in module/entity ConsecutiveOnesFSM does not have driver. [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ipshared/19eb/sources_1/new/ConsecutiveOnesFSM.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ConsecutiveOnesFSM' (1#1) [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ipshared/19eb/sources_1/new/ConsecutiveOnesFSM.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ConsecutiveOnesFSM_0_0' (2#1) [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ip/design_1_ConsecutiveOnesFSM_0_0/synth/design_1_ConsecutiveOnesFSM_0_0.vhd:65]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port count[3]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port count[2]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port count[1]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port count[0]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port clock
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port reset
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[15]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[14]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[13]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[12]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[11]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[10]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[9]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[8]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[7]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[6]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[5]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[4]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[3]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[2]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[1]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 326.461 ; gain = 117.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 326.461 ; gain = 117.273
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+WARNING: [Designutils 20-1758] instance U0 wraps a black box. Constraint reading is skipped for elaborated designs in this case. Skipping constraint file 'c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ip/design_1_ConsecutiveOnesFSM_0_0/constrs_1/imports/CR/Nexys4_Master.xdc'.
+Parsing XDC File [C:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.runs/design_1_ConsecutiveOnesFSM_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.runs/design_1_ConsecutiveOnesFSM_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 531.977 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 531.977 ; gain = 322.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 531.977 ; gain = 322.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 531.977 ; gain = 322.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 531.977 ; gain = 322.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port count[3]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port count[2]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port count[1]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port count[0]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port clock
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port reset
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[15]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[14]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[13]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[12]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[11]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[10]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[9]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[8]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[7]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[6]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[5]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[4]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[3]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[2]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[1]
+WARNING: [Synth 8-3331] design ConsecutiveOnesFSM has unconnected port sequence[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 531.977 ; gain = 322.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 566.625 ; gain = 357.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 566.625 ; gain = 357.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 576.254 ; gain = 367.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 576.254 ; gain = 367.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 576.254 ; gain = 367.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 576.254 ; gain = 367.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 576.254 ; gain = 367.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 576.254 ; gain = 367.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 576.254 ; gain = 367.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   |     0|
+|2     |  U0     |ConsecutiveOnesFSM |     0|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 576.254 ; gain = 367.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 576.254 ; gain = 155.469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 576.254 ; gain = 367.066
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ip/design_1_ConsecutiveOnesFSM_0_0/constrs_1/imports/CR/Nexys4_Master.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ip/design_1_ConsecutiveOnesFSM_0_0/constrs_1/imports/CR/Nexys4_Master.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 601.559 ; gain = 386.289
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.runs/design_1_ConsecutiveOnesFSM_0_0_synth_1/design_1_ConsecutiveOnesFSM_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.srcs/sources_1/bd/design_1/ip/design_1_ConsecutiveOnesFSM_0_0/design_1_ConsecutiveOnesFSM_0_0.xci
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ruilopes/Documents/CR/Aula3/ex1_top/ex1_top.runs/design_1_ConsecutiveOnesFSM_0_0_synth_1/design_1_ConsecutiveOnesFSM_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 601.559 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 13 11:27:47 2017...
