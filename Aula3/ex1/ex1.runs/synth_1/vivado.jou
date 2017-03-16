@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 13 11:23:25 2017
+# Process ID: 6328
+# Current directory: C:/Users/ruilopes/Documents/CR/Aula3/ex1/ex1.runs/synth_1
+# Command line: vivado.exe -log ConsecutiveOnesFSM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ConsecutiveOnesFSM.tcl
+# Log file: C:/Users/ruilopes/Documents/CR/Aula3/ex1/ex1.runs/synth_1/ConsecutiveOnesFSM.vds
+# Journal file: C:/Users/ruilopes/Documents/CR/Aula3/ex1/ex1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ConsecutiveOnesFSM.tcl -notrace
