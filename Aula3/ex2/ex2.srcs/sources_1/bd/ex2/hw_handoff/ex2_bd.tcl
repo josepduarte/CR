@@ -169,7 +169,7 @@ proc create_root_design { parentCell } {
   set EightDispControl_0 [ create_bd_cell -type ip -vlnv ua.pt:user:EightDispControl:1.0 EightDispControl_0 ]
 
   # Create instance: Greatest_common_divisor_0, and set properties
-  set Greatest_common_divisor_0 [ create_bd_cell -type ip -vlnv ua.pt:user:Greatest_common_divisor:1.0 Greatest_common_divisor_0 ]
+  set Greatest_common_divisor_0 [ create_bd_cell -type ip -vlnv ua.pt:user:Greatest_common_divisor:1.2 Greatest_common_divisor_0 ]
 
   # Create instance: xlconcat_0, and set properties
   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
@@ -187,6 +187,9 @@ CONFIG.CONST_WIDTH {4} \
 
   # Create instance: xlconstant_1, and set properties
   set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
+  set_property -dict [ list \
+CONFIG.CONST_VAL {0} \
+ ] $xlconstant_1
 
   # Create instance: xlconstant_2, and set properties
   set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
@@ -244,18 +247,18 @@ preplace netloc xlconstant_2_dout 1 1 1 NJ
 preplace netloc EightDispControl_0_segments 1 3 1 NJ
 preplace netloc BinToBCD16_0_BCD0 1 2 1 N
 preplace netloc BinToBCD16_0_BCD1 1 2 1 N
-preplace netloc btnC_1 1 0 2 NJ 340 NJ
+preplace netloc btnC_1 1 0 2 NJ 340 N
 preplace netloc BinToBCD16_0_BCD2 1 2 1 N
 preplace netloc BinToBCD16_0_BCD3 1 2 1 N
 preplace netloc BinToBCD16_0_BCD4 1 2 1 N
-preplace netloc xlconcat_0_dout 1 1 3 160 490 NJ 490 630
-preplace netloc xlconstant_0_dout 1 2 1 360
-preplace netloc clk_1 1 0 3 NJ 10 140 10 370J
-preplace netloc sw_1 1 0 2 NJ 360 NJ
+preplace netloc xlconcat_0_dout 1 1 3 160 490 NJ 490 670
+preplace netloc xlconstant_0_dout 1 2 1 390
+preplace netloc clk_1 1 0 3 NJ 10 140 10 400J
+preplace netloc sw_1 1 0 2 NJ 360 N
 preplace netloc EightDispControl_0_select_display 1 3 1 NJ
-preplace netloc Greatest_common_divisor_0_led 1 2 1 370
+preplace netloc Greatest_common_divisor_0_led 1 2 1 400
 preplace netloc xlconstant_3_dout 1 2 1 NJ
-levelinfo -pg 1 0 80 260 500 650 -top 0 -bot 500
+levelinfo -pg 1 -40 80 290 540 700 -top -10 -bot 510
 ",
 }
 

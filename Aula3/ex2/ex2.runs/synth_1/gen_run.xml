@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1489662051">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1489664277">
   <File Type="RDS-PROPCONSTRS" Name="ex2_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="ex2_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="ex2_wrapper.vds"/>
@@ -50,8 +50,7 @@
   <BlockFileSet Type="BlockSrcs" Name="ex2_BinToBCD16_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex2_xlconcat_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex2_xlconstant_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ex2_Greatest_common_divisor_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ex2_xlconstant_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex2_EightDispControl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex2_xlconstant_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex2_Greatest_common_divisor_0_1"/>
 </GenRun>

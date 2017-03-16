@@ -15,20 +15,23 @@ preplace inst xlconstant_3 -pg 1 -lvl 2 -y 440 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 3 -y 430 -defaultsOSRD
 preplace inst BinToBCD16_0 -pg 1 -lvl 2 -y 190 -defaultsOSRD
 preplace inst Greatest_common_divisor_0 -pg 1 -lvl 2 -y 340 -defaultsOSRD
-preplace netloc xlconstant_1_dout 1 1 1 140J
+preplace netloc xlconstant_1_dout 1 1 1 150J
 preplace netloc xlconstant_2_dout 1 1 1 NJ
 preplace netloc EightDispControl_0_segments 1 3 1 NJ
 preplace netloc BinToBCD16_0_BCD0 1 2 1 N
 preplace netloc BinToBCD16_0_BCD1 1 2 1 N
+preplace netloc btnC_1 1 0 2 NJ 340 N
 preplace netloc BinToBCD16_0_BCD2 1 2 1 N
 preplace netloc BinToBCD16_0_BCD3 1 2 1 N
 preplace netloc BinToBCD16_0_BCD4 1 2 1 N
-preplace netloc xlconcat_0_dout 1 1 3 150 490 NJ 490 660
+preplace netloc xlconcat_0_dout 1 1 3 160 490 NJ 490 670
 preplace netloc xlconstant_0_dout 1 2 1 390
-preplace netloc clk_1 1 0 3 NJ 10 150 10 400J
+preplace netloc clk_1 1 0 3 NJ 10 140 10 400J
+preplace netloc sw_1 1 0 2 NJ 360 N
 preplace netloc EightDispControl_0_select_display 1 3 1 NJ
+preplace netloc Greatest_common_divisor_0_led 1 2 1 400
 preplace netloc xlconstant_3_dout 1 2 1 NJ
-levelinfo -pg 1 -40 80 290 530 680 -top -10 -bot 510
+levelinfo -pg 1 -40 80 290 540 700 -top -10 -bot 510
 ",
 }
 0

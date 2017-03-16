@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Thu Mar 16 11:02:39 2017
+| Date         : Thu Mar 16 11:39:47 2017
 | Host         : Inator running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ex2_wrapper_methodology_drc_routed.rpt -rpx ex2_wrapper_methodology_drc_routed.rpx
 | Design       : ex2_wrapper
@@ -35,42 +35,42 @@ Table of Contents
 -----------------
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.247 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.266 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -1.368 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.284 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -1.415 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.518 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -1.584 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.550 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -1.608 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.586 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -1.613 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.633 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -1.728 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.650 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -1.738 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.751 ns between ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/C (clocked by sys_clk_pin) and ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

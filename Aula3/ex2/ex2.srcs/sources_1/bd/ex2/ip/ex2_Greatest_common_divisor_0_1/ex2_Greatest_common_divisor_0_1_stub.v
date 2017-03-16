@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-// Date        : Thu Mar 16 11:00:04 2017
+// Date        : Thu Mar 16 11:30:10 2017
 // Host        : Inator running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1_stub.v
+//               C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1_stub.v
 // Design      : ex2_Greatest_common_divisor_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-3

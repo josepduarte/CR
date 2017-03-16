@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-// Date        : Thu Mar 16 11:00:04 2017
+// Date        : Thu Mar 16 11:30:10 2017
 // Host        : Inator running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1_sim_netlist.v
+//               C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1_sim_netlist.v
 // Design      : ex2_Greatest_common_divisor_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -121,9 +121,8 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
 
   wire [0:0]CO;
   wire C_S;
-  wire C_S_i_1_n_0;
   wire [7:0]FSM_A;
-  wire FSM_A_0;
+  wire \FSM_A[7]_i_1_n_0 ;
   wire [7:0]FSM_A_next;
   wire [7:0]FSM_B;
   wire \FSM_B[0]_i_2_n_0 ;
@@ -387,18 +386,10 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
   wire [3:2]\NLW_FSM_B_reg[7]_i_8_CO_UNCONNECTED ;
   wire [3:1]\NLW_FSM_B_reg[7]_i_8_O_UNCONNECTED ;
 
-  LUT4 #(
-    .INIT(16'h8BCC)) 
-    C_S_i_1
-       (.I0(\Res[7]_i_4_n_0 ),
-        .I1(C_S),
-        .I2(\Res[7]_i_3_n_0 ),
-        .I3(btnC),
-        .O(C_S_i_1_n_0));
   FDRE C_S_reg
        (.C(clk),
         .CE(1'b1),
-        .D(C_S_i_1_n_0),
+        .D(\FSM_A[7]_i_1_n_0 ),
         .Q(C_S),
         .R(1'b0));
   (* SOFT_HLUTNM = "soft_lutpair7" *) 
@@ -458,13 +449,13 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .I2(sw[14]),
         .O(FSM_A_next[6]));
   LUT4 #(
-    .INIT(16'h8B00)) 
+    .INIT(16'h00D1)) 
     \FSM_A[7]_i_1 
-       (.I0(\Res[7]_i_4_n_0 ),
+       (.I0(\Res[7]_i_3_n_0 ),
         .I1(C_S),
-        .I2(\Res[7]_i_3_n_0 ),
+        .I2(\Res[7]_i_4_n_0 ),
         .I3(btnC),
-        .O(FSM_A_0));
+        .O(\FSM_A[7]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'hB8)) 
@@ -475,49 +466,49 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .O(FSM_A_next[7]));
   FDRE \FSM_A_reg[0] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_A_next[0]),
         .Q(FSM_A[0]),
         .R(1'b0));
   FDRE \FSM_A_reg[1] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_A_next[1]),
         .Q(FSM_A[1]),
         .R(1'b0));
   FDRE \FSM_A_reg[2] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_A_next[2]),
         .Q(FSM_A[2]),
         .R(1'b0));
   FDRE \FSM_A_reg[3] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_A_next[3]),
         .Q(FSM_A[3]),
         .R(1'b0));
   FDRE \FSM_A_reg[4] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_A_next[4]),
         .Q(FSM_A[4]),
         .R(1'b0));
   FDRE \FSM_A_reg[5] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_A_next[5]),
         .Q(FSM_A[5]),
         .R(1'b0));
   FDRE \FSM_A_reg[6] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_A_next[6]),
         .Q(FSM_A[6]),
         .R(1'b0));
   FDRE \FSM_A_reg[7] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_A_next[7]),
         .Q(FSM_A[7]),
         .R(1'b0));
@@ -548,7 +539,7 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .I3(C_S),
         .I4(FSM_B_next1),
         .O(FSM_B_next[1]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
     .INIT(32'hEBBB1444)) 
     \FSM_B[1]_i_2 
@@ -619,7 +610,7 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .I4(\FSM_B_reg[2]_i_3_n_4 ),
         .I5(FSM_B[3]),
         .O(\FSM_B[3]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
     .INIT(16'hF888)) 
     \FSM_B[3]_i_3 
@@ -1120,7 +1111,7 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .I2(FSM_B[5]),
         .I3(FSM_B[7]),
         .O(FSM_B_next0__7_carry_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h0045)) 
     FSM_B_next0__7_carry_i_10
@@ -1266,7 +1257,7 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .I4(FSM_B[2]),
         .I5(FSM_B[4]),
         .O(FSM_B_next0__7_carry_i_9_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'h00000051)) 
     FSM_B_next0__7_carry_i_9__0
@@ -1349,19 +1340,19 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .O(FSM_B_next1_carry_i_8_n_0));
   FDRE \FSM_B_reg[0] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_B_next[0]),
         .Q(FSM_B[0]),
         .R(1'b0));
   FDRE \FSM_B_reg[1] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_B_next[1]),
         .Q(FSM_B[1]),
         .R(1'b0));
   FDRE \FSM_B_reg[2] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_B_next[2]),
         .Q(FSM_B[2]),
         .R(1'b0));
@@ -1374,25 +1365,25 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .S({\FSM_B[2]_i_4_n_0 ,\FSM_B[2]_i_5_n_0 ,\FSM_B[2]_i_6_n_0 ,1'b1}));
   FDRE \FSM_B_reg[3] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_B_next[3]),
         .Q(FSM_B[3]),
         .R(1'b0));
   FDRE \FSM_B_reg[4] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_B_next[4]),
         .Q(FSM_B[4]),
         .R(1'b0));
   FDRE \FSM_B_reg[5] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_B_next[5]),
         .Q(FSM_B[5]),
         .R(1'b0));
   FDRE \FSM_B_reg[6] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_B_next[6]),
         .Q(FSM_B[6]),
         .R(1'b0));
@@ -1412,7 +1403,7 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .S({\FSM_B[6]_i_10_n_0 ,\FSM_B[6]_i_11_n_0 ,\FSM_B[6]_i_12_n_0 ,1'b1}));
   FDRE \FSM_B_reg[7] 
        (.C(clk),
-        .CE(FSM_A_0),
+        .CE(\FSM_A[7]_i_1_n_0 ),
         .D(FSM_B_next[7]),
         .Q(FSM_B[7]),
         .R(1'b0));
@@ -1522,14 +1513,14 @@ module ex2_Greatest_common_divisor_0_1_Greatest_common_divisor
         .O({\FSM_B_reg[7]_i_9_n_4 ,\FSM_B_reg[7]_i_9_n_5 ,\FSM_B_reg[7]_i_9_n_6 ,\FSM_B_reg[7]_i_9_n_7 }),
         .S({\FSM_B[7]_i_18_n_0 ,\FSM_B[7]_i_19_n_0 ,\FSM_B[7]_i_20_n_0 ,\FSM_B[7]_i_21_n_0 }));
   LUT3 #(
-    .INIT(8'h40)) 
+    .INIT(8'h10)) 
     \Res[7]_i_1 
        (.I0(C_S),
         .I1(btnC),
         .I2(\Res[7]_i_3_n_0 ),
         .O(\Res[7]_i_1_n_0 ));
   LUT3 #(
-    .INIT(8'h08)) 
+    .INIT(8'h04)) 
     \Res[7]_i_2 
        (.I0(btnC),
         .I1(C_S),

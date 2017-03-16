@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: ua.pt:user:Greatest_common_divisor:1.0
--- IP Revision: 3
+-- IP VLNV: ua.pt:user:Greatest_common_divisor:1.2
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
