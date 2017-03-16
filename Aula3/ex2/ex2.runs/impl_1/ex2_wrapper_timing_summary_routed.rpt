@@ -1,0 +1,1940 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Thu Mar 16 11:02:39 2017
+| Host         : Inator running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file ex2_wrapper_timing_summary_routed.rpt -rpx ex2_wrapper_timing_summary_routed.rpx
+| Design       : ex2_wrapper
+| Device       : 7a100t-csg324
+| Speed File   : -3  PRODUCTION 1.16 2016-11-09
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 17 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 16 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -1.738      -12.299                      8                   74        0.235        0.000                      0                   74        4.500        0.000                       0                    43  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin        -1.738      -12.299                      8                   74        0.235        0.000                      0                   74        4.500        0.000                       0                    43  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            8  Failing Endpoints,  Worst Slack       -1.738ns,  Total Violation      -12.299ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.235ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -1.738ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        11.748ns  (logic 6.632ns (56.450%)  route 5.116ns (43.550%))
+  Logic Levels:           30  (CARRY4=18 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.994ns = ( 13.994 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.251ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.320     4.251    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.393     4.644 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.625     5.269    ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]
+    SLICE_X89Y65         LUT6 (Prop_lut6_I1_O)        0.097     5.366 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9/O
+                         net (fo=5, routed)           0.319     5.685    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9_n_0
+    SLICE_X85Y64         LUT4 (Prop_lut4_I1_O)        0.097     5.782 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1/O
+                         net (fo=12, routed)          0.632     6.413    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1_n_0
+    SLICE_X83Y64         LUT2 (Prop_lut2_I1_O)        0.102     6.515 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     6.515    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1_n_0
+    SLICE_X83Y64         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.257     6.772 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.772    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0_n_0
+    SLICE_X83Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.187     6.959 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1/CO[0]
+                         net (fo=11, routed)          0.459     7.418    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1_n_3
+    SLICE_X87Y64         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.614     8.032 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.032    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50_n_0
+    SLICE_X87Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.121 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000     8.121    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X87Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     8.241 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_46/CO[1]
+                         net (fo=11, routed)          0.380     8.621    ex2_i/Greatest_common_divisor_0/U0/CO[0]
+    SLICE_X86Y64         LUT3 (Prop_lut3_I0_O)        0.249     8.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57/O
+                         net (fo=1, routed)           0.000     8.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57_n_0
+    SLICE_X86Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     9.282 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     9.282    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38_n_0
+    SLICE_X86Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     9.371 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     9.371    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X86Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     9.491 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_34/CO[1]
+                         net (fo=11, routed)          0.548    10.039    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_0[0]
+    SLICE_X82Y63         LUT3 (Prop_lut3_I0_O)        0.249    10.288 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45/O
+                         net (fo=1, routed)           0.000    10.288    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45_n_0
+    SLICE_X82Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    10.700 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    10.700    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X82Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    10.789 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.789    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X82Y65         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    10.909 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.335    11.244    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_2[0]
+    SLICE_X85Y66         LUT3 (Prop_lut3_I0_O)        0.249    11.493 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33/O
+                         net (fo=1, routed)           0.000    11.493    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33_n_0
+    SLICE_X85Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    11.905 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    11.905    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17_n_0
+    SLICE_X85Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    11.994 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14/CO[3]
+                         net (fo=1, routed)           0.000    11.994    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14_n_0
+    SLICE_X85Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    12.114 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_13/CO[1]
+                         net (fo=11, routed)          0.381    12.495    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_1[0]
+    SLICE_X84Y66         LUT3 (Prop_lut3_I0_O)        0.249    12.744 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    12.744    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X84Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.402    13.146 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    13.146    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X84Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092    13.238 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000    13.238    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9_n_0
+    SLICE_X84Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.119    13.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8/CO[1]
+                         net (fo=11, routed)          0.385    13.742    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8_n_2
+    SLICE_X86Y67         LUT3 (Prop_lut3_I0_O)        0.251    13.993 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    13.993    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X86Y67         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.432    14.425 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.334    14.759    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X87Y68         LUT4 (Prop_lut4_I3_O)        0.230    14.989 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_12/O
+                         net (fo=1, routed)           0.174    15.163    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_12_n_0
+    SLICE_X87Y68         LUT5 (Prop_lut5_I0_O)        0.097    15.260 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_6/O
+                         net (fo=4, routed)           0.443    15.704    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_6_n_0
+    SLICE_X88Y69         LUT6 (Prop_lut6_I4_O)        0.097    15.801 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_3/O
+                         net (fo=1, routed)           0.101    15.902    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_3_n_0
+    SLICE_X88Y69         LUT6 (Prop_lut6_I1_O)        0.097    15.999 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_1/O
+                         net (fo=1, routed)           0.000    15.999    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[7]
+    SLICE_X88Y69         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.216    13.994    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y69         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]/C
+                         clock pessimism              0.231    14.225    
+                         clock uncertainty           -0.035    14.189    
+    SLICE_X88Y69         FDRE (Setup_fdre_C_D)        0.072    14.261    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]
+  -------------------------------------------------------------------
+                         required time                         14.261    
+                         arrival time                         -15.999    
+  -------------------------------------------------------------------
+                         slack                                 -1.738    
+
+Slack (VIOLATED) :        -1.728ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        11.698ns  (logic 6.632ns (56.693%)  route 5.066ns (43.307%))
+  Logic Levels:           30  (CARRY4=18 LUT2=1 LUT3=5 LUT4=2 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.994ns = ( 13.994 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.251ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.320     4.251    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.393     4.644 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.625     5.269    ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]
+    SLICE_X89Y65         LUT6 (Prop_lut6_I1_O)        0.097     5.366 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9/O
+                         net (fo=5, routed)           0.319     5.685    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9_n_0
+    SLICE_X85Y64         LUT4 (Prop_lut4_I1_O)        0.097     5.782 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1/O
+                         net (fo=12, routed)          0.632     6.413    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1_n_0
+    SLICE_X83Y64         LUT2 (Prop_lut2_I1_O)        0.102     6.515 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     6.515    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1_n_0
+    SLICE_X83Y64         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.257     6.772 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.772    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0_n_0
+    SLICE_X83Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.187     6.959 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1/CO[0]
+                         net (fo=11, routed)          0.459     7.418    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1_n_3
+    SLICE_X87Y64         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.614     8.032 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.032    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50_n_0
+    SLICE_X87Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.121 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000     8.121    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X87Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     8.241 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_46/CO[1]
+                         net (fo=11, routed)          0.380     8.621    ex2_i/Greatest_common_divisor_0/U0/CO[0]
+    SLICE_X86Y64         LUT3 (Prop_lut3_I0_O)        0.249     8.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57/O
+                         net (fo=1, routed)           0.000     8.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57_n_0
+    SLICE_X86Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     9.282 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     9.282    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38_n_0
+    SLICE_X86Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     9.371 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     9.371    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X86Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     9.491 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_34/CO[1]
+                         net (fo=11, routed)          0.548    10.039    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_0[0]
+    SLICE_X82Y63         LUT3 (Prop_lut3_I0_O)        0.249    10.288 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45/O
+                         net (fo=1, routed)           0.000    10.288    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45_n_0
+    SLICE_X82Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    10.700 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    10.700    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X82Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    10.789 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.789    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X82Y65         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    10.909 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.335    11.244    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_2[0]
+    SLICE_X85Y66         LUT3 (Prop_lut3_I0_O)        0.249    11.493 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33/O
+                         net (fo=1, routed)           0.000    11.493    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33_n_0
+    SLICE_X85Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    11.905 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    11.905    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17_n_0
+    SLICE_X85Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    11.994 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14/CO[3]
+                         net (fo=1, routed)           0.000    11.994    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14_n_0
+    SLICE_X85Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    12.114 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_13/CO[1]
+                         net (fo=11, routed)          0.381    12.495    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_1[0]
+    SLICE_X84Y66         LUT3 (Prop_lut3_I0_O)        0.249    12.744 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    12.744    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X84Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.402    13.146 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    13.146    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X84Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092    13.238 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000    13.238    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9_n_0
+    SLICE_X84Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.119    13.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8/CO[1]
+                         net (fo=11, routed)          0.385    13.742    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8_n_2
+    SLICE_X86Y67         LUT3 (Prop_lut3_I0_O)        0.251    13.993 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    13.993    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X86Y67         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.432    14.425 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.334    14.759    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X87Y68         LUT4 (Prop_lut4_I3_O)        0.230    14.989 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_12/O
+                         net (fo=1, routed)           0.174    15.163    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_12_n_0
+    SLICE_X87Y68         LUT5 (Prop_lut5_I0_O)        0.097    15.260 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_6/O
+                         net (fo=4, routed)           0.299    15.559    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_6_n_0
+    SLICE_X89Y68         LUT6 (Prop_lut6_I3_O)        0.097    15.656 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[5]_i_2/O
+                         net (fo=1, routed)           0.195    15.852    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0[5]
+    SLICE_X87Y69         LUT5 (Prop_lut5_I2_O)        0.097    15.949 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[5]_i_1/O
+                         net (fo=1, routed)           0.000    15.949    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[5]
+    SLICE_X87Y69         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.216    13.994    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X87Y69         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[5]/C
+                         clock pessimism              0.231    14.225    
+                         clock uncertainty           -0.035    14.189    
+    SLICE_X87Y69         FDRE (Setup_fdre_C_D)        0.032    14.221    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[5]
+  -------------------------------------------------------------------
+                         required time                         14.221    
+                         arrival time                         -15.949    
+  -------------------------------------------------------------------
+                         slack                                 -1.728    
+
+Slack (VIOLATED) :        -1.613ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        11.622ns  (logic 6.632ns (57.062%)  route 4.990ns (42.938%))
+  Logic Levels:           30  (CARRY4=18 LUT2=1 LUT3=5 LUT4=2 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.995ns = ( 13.995 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.251ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.320     4.251    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.393     4.644 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.625     5.269    ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]
+    SLICE_X89Y65         LUT6 (Prop_lut6_I1_O)        0.097     5.366 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9/O
+                         net (fo=5, routed)           0.319     5.685    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9_n_0
+    SLICE_X85Y64         LUT4 (Prop_lut4_I1_O)        0.097     5.782 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1/O
+                         net (fo=12, routed)          0.632     6.413    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1_n_0
+    SLICE_X83Y64         LUT2 (Prop_lut2_I1_O)        0.102     6.515 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     6.515    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1_n_0
+    SLICE_X83Y64         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.257     6.772 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.772    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0_n_0
+    SLICE_X83Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.187     6.959 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1/CO[0]
+                         net (fo=11, routed)          0.459     7.418    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1_n_3
+    SLICE_X87Y64         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.614     8.032 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.032    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50_n_0
+    SLICE_X87Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.121 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000     8.121    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X87Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     8.241 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_46/CO[1]
+                         net (fo=11, routed)          0.380     8.621    ex2_i/Greatest_common_divisor_0/U0/CO[0]
+    SLICE_X86Y64         LUT3 (Prop_lut3_I0_O)        0.249     8.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57/O
+                         net (fo=1, routed)           0.000     8.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57_n_0
+    SLICE_X86Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     9.282 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     9.282    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38_n_0
+    SLICE_X86Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     9.371 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     9.371    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X86Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     9.491 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_34/CO[1]
+                         net (fo=11, routed)          0.548    10.039    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_0[0]
+    SLICE_X82Y63         LUT3 (Prop_lut3_I0_O)        0.249    10.288 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45/O
+                         net (fo=1, routed)           0.000    10.288    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45_n_0
+    SLICE_X82Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    10.700 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    10.700    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X82Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    10.789 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.789    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X82Y65         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    10.909 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.335    11.244    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_2[0]
+    SLICE_X85Y66         LUT3 (Prop_lut3_I0_O)        0.249    11.493 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33/O
+                         net (fo=1, routed)           0.000    11.493    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33_n_0
+    SLICE_X85Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    11.905 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    11.905    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17_n_0
+    SLICE_X85Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    11.994 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14/CO[3]
+                         net (fo=1, routed)           0.000    11.994    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14_n_0
+    SLICE_X85Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    12.114 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_13/CO[1]
+                         net (fo=11, routed)          0.381    12.495    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_1[0]
+    SLICE_X84Y66         LUT3 (Prop_lut3_I0_O)        0.249    12.744 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    12.744    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X84Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.402    13.146 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    13.146    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X84Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092    13.238 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000    13.238    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9_n_0
+    SLICE_X84Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.119    13.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8/CO[1]
+                         net (fo=11, routed)          0.385    13.742    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8_n_2
+    SLICE_X86Y67         LUT3 (Prop_lut3_I0_O)        0.251    13.993 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    13.993    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X86Y67         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.432    14.425 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.334    14.759    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X87Y68         LUT4 (Prop_lut4_I3_O)        0.230    14.989 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_12/O
+                         net (fo=1, routed)           0.174    15.163    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_12_n_0
+    SLICE_X87Y68         LUT5 (Prop_lut5_I0_O)        0.097    15.260 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_6/O
+                         net (fo=4, routed)           0.125    15.385    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_6_n_0
+    SLICE_X87Y68         LUT6 (Prop_lut6_I5_O)        0.097    15.482 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_3/O
+                         net (fo=1, routed)           0.294    15.776    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_3_n_0
+    SLICE_X88Y68         LUT6 (Prop_lut6_I1_O)        0.097    15.873 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_1/O
+                         net (fo=1, routed)           0.000    15.873    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[6]
+    SLICE_X88Y68         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.217    13.995    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y68         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]/C
+                         clock pessimism              0.231    14.226    
+                         clock uncertainty           -0.035    14.190    
+    SLICE_X88Y68         FDRE (Setup_fdre_C_D)        0.070    14.260    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]
+  -------------------------------------------------------------------
+                         required time                         14.260    
+                         arrival time                         -15.873    
+  -------------------------------------------------------------------
+                         slack                                 -1.613    
+
+Slack (VIOLATED) :        -1.608ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        11.619ns  (logic 6.632ns (57.078%)  route 4.987ns (42.922%))
+  Logic Levels:           30  (CARRY4=18 LUT2=1 LUT3=5 LUT4=2 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.995ns = ( 13.995 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.251ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.320     4.251    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.393     4.644 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.625     5.269    ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]
+    SLICE_X89Y65         LUT6 (Prop_lut6_I1_O)        0.097     5.366 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9/O
+                         net (fo=5, routed)           0.319     5.685    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9_n_0
+    SLICE_X85Y64         LUT4 (Prop_lut4_I1_O)        0.097     5.782 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1/O
+                         net (fo=12, routed)          0.632     6.413    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1_n_0
+    SLICE_X83Y64         LUT2 (Prop_lut2_I1_O)        0.102     6.515 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     6.515    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1_n_0
+    SLICE_X83Y64         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.257     6.772 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.772    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0_n_0
+    SLICE_X83Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.187     6.959 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1/CO[0]
+                         net (fo=11, routed)          0.459     7.418    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1_n_3
+    SLICE_X87Y64         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.614     8.032 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.032    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50_n_0
+    SLICE_X87Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.121 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000     8.121    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X87Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     8.241 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_46/CO[1]
+                         net (fo=11, routed)          0.380     8.621    ex2_i/Greatest_common_divisor_0/U0/CO[0]
+    SLICE_X86Y64         LUT3 (Prop_lut3_I0_O)        0.249     8.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57/O
+                         net (fo=1, routed)           0.000     8.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57_n_0
+    SLICE_X86Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     9.282 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     9.282    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38_n_0
+    SLICE_X86Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     9.371 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     9.371    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X86Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     9.491 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_34/CO[1]
+                         net (fo=11, routed)          0.548    10.039    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_0[0]
+    SLICE_X82Y63         LUT3 (Prop_lut3_I0_O)        0.249    10.288 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45/O
+                         net (fo=1, routed)           0.000    10.288    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45_n_0
+    SLICE_X82Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    10.700 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    10.700    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X82Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    10.789 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.789    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X82Y65         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    10.909 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.335    11.244    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_2[0]
+    SLICE_X85Y66         LUT3 (Prop_lut3_I0_O)        0.249    11.493 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33/O
+                         net (fo=1, routed)           0.000    11.493    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33_n_0
+    SLICE_X85Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    11.905 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    11.905    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17_n_0
+    SLICE_X85Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    11.994 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14/CO[3]
+                         net (fo=1, routed)           0.000    11.994    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14_n_0
+    SLICE_X85Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    12.114 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_13/CO[1]
+                         net (fo=11, routed)          0.381    12.495    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_1[0]
+    SLICE_X84Y66         LUT3 (Prop_lut3_I0_O)        0.249    12.744 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    12.744    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X84Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.402    13.146 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    13.146    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X84Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092    13.238 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000    13.238    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9_n_0
+    SLICE_X84Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.119    13.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8/CO[1]
+                         net (fo=11, routed)          0.385    13.742    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8_n_2
+    SLICE_X86Y67         LUT3 (Prop_lut3_I0_O)        0.251    13.993 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    13.993    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X86Y67         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.432    14.425 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.334    14.759    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X87Y68         LUT4 (Prop_lut4_I3_O)        0.230    14.989 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_12/O
+                         net (fo=1, routed)           0.174    15.163    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_12_n_0
+    SLICE_X87Y68         LUT5 (Prop_lut5_I0_O)        0.097    15.260 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_6/O
+                         net (fo=4, routed)           0.314    15.574    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_6_n_0
+    SLICE_X88Y68         LUT6 (Prop_lut6_I3_O)        0.097    15.671 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[4]_i_2/O
+                         net (fo=1, routed)           0.101    15.773    ex2_i/Greatest_common_divisor_0/U0/FSM_B[4]_i_2_n_0
+    SLICE_X88Y68         LUT5 (Prop_lut5_I4_O)        0.097    15.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[4]_i_1/O
+                         net (fo=1, routed)           0.000    15.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[4]
+    SLICE_X88Y68         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.217    13.995    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y68         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[4]/C
+                         clock pessimism              0.231    14.226    
+                         clock uncertainty           -0.035    14.190    
+    SLICE_X88Y68         FDRE (Setup_fdre_C_D)        0.072    14.262    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[4]
+  -------------------------------------------------------------------
+                         required time                         14.262    
+                         arrival time                         -15.870    
+  -------------------------------------------------------------------
+                         slack                                 -1.608    
+
+Slack (VIOLATED) :        -1.584ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        11.596ns  (logic 6.535ns (56.358%)  route 5.061ns (43.642%))
+  Logic Levels:           29  (CARRY4=18 LUT2=2 LUT3=5 LUT4=1 LUT6=3)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.997ns = ( 13.997 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.251ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.320     4.251    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.393     4.644 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.625     5.269    ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]
+    SLICE_X89Y65         LUT6 (Prop_lut6_I1_O)        0.097     5.366 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9/O
+                         net (fo=5, routed)           0.319     5.685    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9_n_0
+    SLICE_X85Y64         LUT4 (Prop_lut4_I1_O)        0.097     5.782 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1/O
+                         net (fo=12, routed)          0.632     6.413    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1_n_0
+    SLICE_X83Y64         LUT2 (Prop_lut2_I1_O)        0.102     6.515 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     6.515    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1_n_0
+    SLICE_X83Y64         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.257     6.772 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.772    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0_n_0
+    SLICE_X83Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.187     6.959 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1/CO[0]
+                         net (fo=11, routed)          0.459     7.418    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1_n_3
+    SLICE_X87Y64         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.614     8.032 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.032    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50_n_0
+    SLICE_X87Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.121 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000     8.121    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X87Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     8.241 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_46/CO[1]
+                         net (fo=11, routed)          0.380     8.621    ex2_i/Greatest_common_divisor_0/U0/CO[0]
+    SLICE_X86Y64         LUT3 (Prop_lut3_I0_O)        0.249     8.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57/O
+                         net (fo=1, routed)           0.000     8.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57_n_0
+    SLICE_X86Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     9.282 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     9.282    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38_n_0
+    SLICE_X86Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     9.371 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     9.371    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X86Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     9.491 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_34/CO[1]
+                         net (fo=11, routed)          0.548    10.039    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_0[0]
+    SLICE_X82Y63         LUT3 (Prop_lut3_I0_O)        0.249    10.288 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45/O
+                         net (fo=1, routed)           0.000    10.288    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45_n_0
+    SLICE_X82Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    10.700 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    10.700    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X82Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    10.789 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.789    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X82Y65         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    10.909 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.335    11.244    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_2[0]
+    SLICE_X85Y66         LUT3 (Prop_lut3_I0_O)        0.249    11.493 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33/O
+                         net (fo=1, routed)           0.000    11.493    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33_n_0
+    SLICE_X85Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    11.905 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    11.905    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17_n_0
+    SLICE_X85Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    11.994 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14/CO[3]
+                         net (fo=1, routed)           0.000    11.994    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14_n_0
+    SLICE_X85Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    12.114 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_13/CO[1]
+                         net (fo=11, routed)          0.381    12.495    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_1[0]
+    SLICE_X84Y66         LUT3 (Prop_lut3_I0_O)        0.249    12.744 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    12.744    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X84Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.402    13.146 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    13.146    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X84Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092    13.238 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000    13.238    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9_n_0
+    SLICE_X84Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.119    13.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8/CO[1]
+                         net (fo=11, routed)          0.385    13.742    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8_n_2
+    SLICE_X86Y67         LUT3 (Prop_lut3_I0_O)        0.251    13.993 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    13.993    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X86Y67         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.432    14.425 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.315    14.740    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X89Y68         LUT2 (Prop_lut2_I0_O)        0.230    14.970 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[3]_i_4/O
+                         net (fo=1, routed)           0.291    15.260    ex2_i/Greatest_common_divisor_0/U0/FSM_B[3]_i_4_n_0
+    SLICE_X87Y67         LUT6 (Prop_lut6_I2_O)        0.097    15.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[3]_i_2/O
+                         net (fo=1, routed)           0.392    15.749    ex2_i/Greatest_common_divisor_0/U0/FSM_B[3]_i_2_n_0
+    SLICE_X88Y65         LUT6 (Prop_lut6_I2_O)        0.097    15.846 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[3]_i_1/O
+                         net (fo=1, routed)           0.000    15.846    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[3]
+    SLICE_X88Y65         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.219    13.997    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y65         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]/C
+                         clock pessimism              0.231    14.228    
+                         clock uncertainty           -0.035    14.192    
+    SLICE_X88Y65         FDRE (Setup_fdre_C_D)        0.070    14.262    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[3]
+  -------------------------------------------------------------------
+                         required time                         14.262    
+                         arrival time                         -15.846    
+  -------------------------------------------------------------------
+                         slack                                 -1.584    
+
+Slack (VIOLATED) :        -1.415ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        11.451ns  (logic 6.646ns (58.037%)  route 4.805ns (41.963%))
+  Logic Levels:           30  (CARRY4=20 LUT2=1 LUT3=5 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.997ns = ( 13.997 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.251ns
+    Clock Pessimism Removal (CPR):    0.254ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.320     4.251    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.393     4.644 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.625     5.269    ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]
+    SLICE_X89Y65         LUT6 (Prop_lut6_I1_O)        0.097     5.366 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9/O
+                         net (fo=5, routed)           0.319     5.685    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9_n_0
+    SLICE_X85Y64         LUT4 (Prop_lut4_I1_O)        0.097     5.782 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1/O
+                         net (fo=12, routed)          0.632     6.413    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1_n_0
+    SLICE_X83Y64         LUT2 (Prop_lut2_I1_O)        0.102     6.515 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     6.515    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1_n_0
+    SLICE_X83Y64         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.257     6.772 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.772    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0_n_0
+    SLICE_X83Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.187     6.959 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1/CO[0]
+                         net (fo=11, routed)          0.459     7.418    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1_n_3
+    SLICE_X87Y64         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.614     8.032 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.032    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50_n_0
+    SLICE_X87Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.121 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000     8.121    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X87Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     8.241 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_46/CO[1]
+                         net (fo=11, routed)          0.380     8.621    ex2_i/Greatest_common_divisor_0/U0/CO[0]
+    SLICE_X86Y64         LUT3 (Prop_lut3_I0_O)        0.249     8.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57/O
+                         net (fo=1, routed)           0.000     8.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57_n_0
+    SLICE_X86Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     9.282 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     9.282    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38_n_0
+    SLICE_X86Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     9.371 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     9.371    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X86Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     9.491 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_34/CO[1]
+                         net (fo=11, routed)          0.548    10.039    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_0[0]
+    SLICE_X82Y63         LUT3 (Prop_lut3_I0_O)        0.249    10.288 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45/O
+                         net (fo=1, routed)           0.000    10.288    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45_n_0
+    SLICE_X82Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    10.700 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    10.700    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X82Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    10.789 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.789    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X82Y65         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    10.909 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.335    11.244    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_2[0]
+    SLICE_X85Y66         LUT3 (Prop_lut3_I0_O)        0.249    11.493 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33/O
+                         net (fo=1, routed)           0.000    11.493    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33_n_0
+    SLICE_X85Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    11.905 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    11.905    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17_n_0
+    SLICE_X85Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    11.994 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14/CO[3]
+                         net (fo=1, routed)           0.000    11.994    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14_n_0
+    SLICE_X85Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    12.114 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_13/CO[1]
+                         net (fo=11, routed)          0.381    12.495    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_1[0]
+    SLICE_X84Y66         LUT3 (Prop_lut3_I0_O)        0.249    12.744 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    12.744    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X84Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.402    13.146 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    13.146    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X84Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092    13.238 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000    13.238    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9_n_0
+    SLICE_X84Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.119    13.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8/CO[1]
+                         net (fo=11, routed)          0.385    13.742    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8_n_2
+    SLICE_X86Y67         LUT3 (Prop_lut3_I0_O)        0.251    13.993 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    13.993    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X86Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    14.405 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    14.405    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3_n_0
+    SLICE_X86Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    14.494 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_4/CO[3]
+                         net (fo=1, routed)           0.000    14.494    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_4_n_0
+    SLICE_X86Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    14.614 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_4/CO[1]
+                         net (fo=8, routed)           0.437    15.051    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_4_n_2
+    SLICE_X89Y69         LUT5 (Prop_lut5_I0_O)        0.249    15.300 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]_i_2/O
+                         net (fo=1, routed)           0.304    15.605    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0[1]
+    SLICE_X88Y66         LUT5 (Prop_lut5_I2_O)        0.097    15.702 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]_i_1/O
+                         net (fo=1, routed)           0.000    15.702    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[1]
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.219    13.997    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                         clock pessimism              0.254    14.251    
+                         clock uncertainty           -0.035    14.215    
+    SLICE_X88Y66         FDRE (Setup_fdre_C_D)        0.072    14.287    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]
+  -------------------------------------------------------------------
+                         required time                         14.287    
+                         arrival time                         -15.702    
+  -------------------------------------------------------------------
+                         slack                                 -1.415    
+
+Slack (VIOLATED) :        -1.368ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        11.378ns  (logic 6.646ns (58.409%)  route 4.732ns (41.591%))
+  Logic Levels:           30  (CARRY4=20 LUT2=1 LUT3=5 LUT4=1 LUT6=3)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.997ns = ( 13.997 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.251ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.320     4.251    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.393     4.644 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.625     5.269    ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]
+    SLICE_X89Y65         LUT6 (Prop_lut6_I1_O)        0.097     5.366 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9/O
+                         net (fo=5, routed)           0.319     5.685    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9_n_0
+    SLICE_X85Y64         LUT4 (Prop_lut4_I1_O)        0.097     5.782 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1/O
+                         net (fo=12, routed)          0.632     6.413    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1_n_0
+    SLICE_X83Y64         LUT2 (Prop_lut2_I1_O)        0.102     6.515 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     6.515    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1_n_0
+    SLICE_X83Y64         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.257     6.772 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.772    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0_n_0
+    SLICE_X83Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.187     6.959 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1/CO[0]
+                         net (fo=11, routed)          0.459     7.418    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1_n_3
+    SLICE_X87Y64         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.614     8.032 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.032    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50_n_0
+    SLICE_X87Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.121 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000     8.121    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X87Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     8.241 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_46/CO[1]
+                         net (fo=11, routed)          0.380     8.621    ex2_i/Greatest_common_divisor_0/U0/CO[0]
+    SLICE_X86Y64         LUT3 (Prop_lut3_I0_O)        0.249     8.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57/O
+                         net (fo=1, routed)           0.000     8.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57_n_0
+    SLICE_X86Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     9.282 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     9.282    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38_n_0
+    SLICE_X86Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     9.371 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     9.371    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X86Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     9.491 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_34/CO[1]
+                         net (fo=11, routed)          0.548    10.039    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_0[0]
+    SLICE_X82Y63         LUT3 (Prop_lut3_I0_O)        0.249    10.288 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45/O
+                         net (fo=1, routed)           0.000    10.288    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45_n_0
+    SLICE_X82Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    10.700 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    10.700    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X82Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    10.789 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.789    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X82Y65         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    10.909 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.335    11.244    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_2[0]
+    SLICE_X85Y66         LUT3 (Prop_lut3_I0_O)        0.249    11.493 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33/O
+                         net (fo=1, routed)           0.000    11.493    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33_n_0
+    SLICE_X85Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    11.905 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    11.905    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17_n_0
+    SLICE_X85Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    11.994 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14/CO[3]
+                         net (fo=1, routed)           0.000    11.994    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14_n_0
+    SLICE_X85Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    12.114 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_13/CO[1]
+                         net (fo=11, routed)          0.381    12.495    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_1[0]
+    SLICE_X84Y66         LUT3 (Prop_lut3_I0_O)        0.249    12.744 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    12.744    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X84Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.402    13.146 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    13.146    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X84Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092    13.238 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000    13.238    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9_n_0
+    SLICE_X84Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.119    13.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8/CO[1]
+                         net (fo=11, routed)          0.385    13.742    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8_n_2
+    SLICE_X86Y67         LUT3 (Prop_lut3_I0_O)        0.251    13.993 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    13.993    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X86Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    14.405 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    14.405    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3_n_0
+    SLICE_X86Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    14.494 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_4/CO[3]
+                         net (fo=1, routed)           0.000    14.494    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_4_n_0
+    SLICE_X86Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    14.614 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_4/CO[1]
+                         net (fo=8, routed)           0.360    14.974    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_4_n_2
+    SLICE_X87Y67         LUT6 (Prop_lut6_I0_O)        0.249    15.223 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_2/O
+                         net (fo=1, routed)           0.309    15.532    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_2_n_0
+    SLICE_X88Y65         LUT6 (Prop_lut6_I2_O)        0.097    15.629 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_1/O
+                         net (fo=1, routed)           0.000    15.629    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[2]
+    SLICE_X88Y65         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.219    13.997    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y65         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/C
+                         clock pessimism              0.231    14.228    
+                         clock uncertainty           -0.035    14.192    
+    SLICE_X88Y65         FDRE (Setup_fdre_C_D)        0.069    14.261    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]
+  -------------------------------------------------------------------
+                         required time                         14.261    
+                         arrival time                         -15.629    
+  -------------------------------------------------------------------
+                         slack                                 -1.368    
+
+Slack (VIOLATED) :        -1.247ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        11.261ns  (logic 6.646ns (59.020%)  route 4.615ns (40.980%))
+  Logic Levels:           30  (CARRY4=20 LUT2=1 LUT3=5 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.997ns = ( 13.997 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.251ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.320     4.251    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.393     4.644 f  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.625     5.269    ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]
+    SLICE_X89Y65         LUT6 (Prop_lut6_I1_O)        0.097     5.366 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9/O
+                         net (fo=5, routed)           0.319     5.685    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_9_n_0
+    SLICE_X85Y64         LUT4 (Prop_lut4_I1_O)        0.097     5.782 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1/O
+                         net (fo=12, routed)          0.632     6.413    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1_n_0
+    SLICE_X83Y64         LUT2 (Prop_lut2_I1_O)        0.102     6.515 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1/O
+                         net (fo=1, routed)           0.000     6.515    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry_i_1__1_n_0
+    SLICE_X83Y64         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.257     6.772 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.772    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__0_n_0
+    SLICE_X83Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.187     6.959 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1/CO[0]
+                         net (fo=11, routed)          0.459     7.418    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next0__7_carry__1_n_3
+    SLICE_X87Y64         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.614     8.032 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.032    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_50_n_0
+    SLICE_X87Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.121 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000     8.121    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X87Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     8.241 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_46/CO[1]
+                         net (fo=11, routed)          0.380     8.621    ex2_i/Greatest_common_divisor_0/U0/CO[0]
+    SLICE_X86Y64         LUT3 (Prop_lut3_I0_O)        0.249     8.870 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57/O
+                         net (fo=1, routed)           0.000     8.870    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_57_n_0
+    SLICE_X86Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412     9.282 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     9.282    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_38_n_0
+    SLICE_X86Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     9.371 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     9.371    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X86Y66         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120     9.491 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_34/CO[1]
+                         net (fo=11, routed)          0.548    10.039    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_0[0]
+    SLICE_X82Y63         LUT3 (Prop_lut3_I0_O)        0.249    10.288 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45/O
+                         net (fo=1, routed)           0.000    10.288    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_45_n_0
+    SLICE_X82Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    10.700 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    10.700    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X82Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    10.789 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.789    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X82Y65         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    10.909 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.335    11.244    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_2[0]
+    SLICE_X85Y66         LUT3 (Prop_lut3_I0_O)        0.249    11.493 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33/O
+                         net (fo=1, routed)           0.000    11.493    ex2_i/Greatest_common_divisor_0/U0/FSM_B[7]_i_33_n_0
+    SLICE_X85Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    11.905 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17/CO[3]
+                         net (fo=1, routed)           0.000    11.905    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_17_n_0
+    SLICE_X85Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    11.994 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14/CO[3]
+                         net (fo=1, routed)           0.000    11.994    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_14_n_0
+    SLICE_X85Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    12.114 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_13/CO[1]
+                         net (fo=11, routed)          0.381    12.495    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_1[0]
+    SLICE_X84Y66         LUT3 (Prop_lut3_I0_O)        0.249    12.744 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    12.744    ex2_i/Greatest_common_divisor_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X84Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.402    13.146 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    13.146    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X84Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092    13.238 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000    13.238    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_9_n_0
+    SLICE_X84Y68         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.119    13.357 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8/CO[1]
+                         net (fo=11, routed)          0.385    13.742    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_8_n_2
+    SLICE_X86Y67         LUT3 (Prop_lut3_I0_O)        0.251    13.993 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    13.993    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X86Y67         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.412    14.405 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    14.405    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]_i_3_n_0
+    SLICE_X86Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089    14.494 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_4/CO[3]
+                         net (fo=1, routed)           0.000    14.494    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]_i_4_n_0
+    SLICE_X86Y69         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.120    14.614 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_4/CO[1]
+                         net (fo=8, routed)           0.234    14.848    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]_i_4_n_2
+    SLICE_X89Y69         LUT5 (Prop_lut5_I3_O)        0.249    15.097 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[0]_i_2/O
+                         net (fo=1, routed)           0.317    15.414    ex2_i/Greatest_common_divisor_0/U0/FSM_B[0]_i_2_n_0
+    SLICE_X88Y65         LUT5 (Prop_lut5_I4_O)        0.097    15.511 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[0]_i_1/O
+                         net (fo=1, routed)           0.000    15.511    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[0]
+    SLICE_X88Y65         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.219    13.997    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y65         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[0]/C
+                         clock pessimism              0.231    14.228    
+                         clock uncertainty           -0.035    14.192    
+    SLICE_X88Y65         FDRE (Setup_fdre_C_D)        0.072    14.264    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[0]
+  -------------------------------------------------------------------
+                         required time                         14.264    
+                         arrival time                         -15.511    
+  -------------------------------------------------------------------
+                         slack                                 -1.247    
+
+Slack (MET) :             5.492ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[3]/CE
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.312ns  (logic 0.684ns (15.863%)  route 3.628ns (84.137%))
+  Logic Levels:           3  (LUT4=2 LUT5=1)
+  Clock Path Skew:        -0.042ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.996ns = ( 13.996 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.252ns
+    Clock Pessimism Removal (CPR):    0.214ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.321     4.252    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y65         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y65         FDRE (Prop_fdre_C_Q)         0.393     4.645 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/Q
+                         net (fo=19, routed)          1.276     5.921    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]
+    SLICE_X87Y67         LUT4 (Prop_lut4_I3_O)        0.097     6.018 r  ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_7/O
+                         net (fo=1, routed)           0.581     6.599    ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_7_n_0
+    SLICE_X87Y68         LUT5 (Prop_lut5_I4_O)        0.097     6.696 r  ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_4/O
+                         net (fo=3, routed)           0.719     7.414    ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_4_n_0
+    SLICE_X84Y69         LUT4 (Prop_lut4_I0_O)        0.097     7.511 r  ex2_i/Greatest_common_divisor_0/U0/FSM_A[7]_i_1/O
+                         net (fo=16, routed)          1.052     8.563    ex2_i/Greatest_common_divisor_0/U0/FSM_A_0
+    SLICE_X84Y63         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.218    13.996    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X84Y63         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[3]/C
+                         clock pessimism              0.214    14.210    
+                         clock uncertainty           -0.035    14.174    
+    SLICE_X84Y63         FDRE (Setup_fdre_C_CE)      -0.119    14.055    ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[3]
+  -------------------------------------------------------------------
+                         required time                         14.055    
+                         arrival time                          -8.563    
+  -------------------------------------------------------------------
+                         slack                                  5.492    
+
+Slack (MET) :             5.492ns  (required time - arrival time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[6]/CE
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.312ns  (logic 0.684ns (15.863%)  route 3.628ns (84.137%))
+  Logic Levels:           3  (LUT4=2 LUT5=1)
+  Clock Path Skew:        -0.042ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.996ns = ( 13.996 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.252ns
+    Clock Pessimism Removal (CPR):    0.214ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.330     1.330 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.525     2.855    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.076     2.931 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.321     4.252    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y65         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y65         FDRE (Prop_fdre_C_Q)         0.393     4.645 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[2]/Q
+                         net (fo=19, routed)          1.276     5.921    ex2_i/Greatest_common_divisor_0/U0/FSM_B[2]
+    SLICE_X87Y67         LUT4 (Prop_lut4_I3_O)        0.097     6.018 r  ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_7/O
+                         net (fo=1, routed)           0.581     6.599    ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_7_n_0
+    SLICE_X87Y68         LUT5 (Prop_lut5_I4_O)        0.097     6.696 r  ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_4/O
+                         net (fo=3, routed)           0.719     7.414    ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_4_n_0
+    SLICE_X84Y69         LUT4 (Prop_lut4_I0_O)        0.097     7.511 r  ex2_i/Greatest_common_divisor_0/U0/FSM_A[7]_i_1/O
+                         net (fo=16, routed)          1.052     8.563    ex2_i/Greatest_common_divisor_0/U0/FSM_A_0
+    SLICE_X84Y63         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[6]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.263    11.263 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.443    12.706    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    12.778 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          1.218    13.996    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X84Y63         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[6]/C
+                         clock pessimism              0.214    14.210    
+                         clock uncertainty           -0.035    14.174    
+    SLICE_X84Y63         FDRE (Setup_fdre_C_CE)      -0.119    14.055    ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[6]
+  -------------------------------------------------------------------
+                         required time                         14.055    
+                         arrival time                          -8.563    
+  -------------------------------------------------------------------
+                         slack                                  5.492    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.235ns  (arrival time - required time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/Res_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.340ns  (logic 0.164ns (48.189%)  route 0.176ns (51.811%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.039ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.040ns
+    Source Clock Delay      (SCD):    1.521ns
+    Clock Pessimism Removal (CPR):    0.479ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.602     1.521    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X84Y63         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y63         FDRE (Prop_fdre_C_Q)         0.164     1.685 r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[3]/Q
+                         net (fo=6, routed)           0.176     1.862    ex2_i/Greatest_common_divisor_0/U0/FSM_A[3]
+    SLICE_X89Y62         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/Res_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.875     2.040    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X89Y62         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/Res_reg[3]/C
+                         clock pessimism             -0.479     1.560    
+    SLICE_X89Y62         FDRE (Hold_fdre_C_D)         0.066     1.626    ex2_i/Greatest_common_divisor_0/U0/Res_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.626    
+                         arrival time                           1.862    
+  -------------------------------------------------------------------
+                         slack                                  0.235    
+
+Slack (MET) :             0.250ns  (arrival time - required time)
+  Source:                 ex2_i/EightDispControl_0/U0/div_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/EightDispControl_0/U0/div_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.384ns  (logic 0.274ns (71.266%)  route 0.110ns (28.734%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.029ns
+    Source Clock Delay      (SCD):    1.514ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.595     1.514    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y76         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y76         FDRE (Prop_fdre_C_Q)         0.164     1.678 r  ex2_i/EightDispControl_0/U0/div_reg[10]/Q
+                         net (fo=1, routed)           0.110     1.789    ex2_i/EightDispControl_0/U0/div_reg_n_0_[10]
+    SLICE_X88Y76         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.899 r  ex2_i/EightDispControl_0/U0/div_reg[8]_i_1/O[2]
+                         net (fo=1, routed)           0.000     1.899    ex2_i/EightDispControl_0/U0/div_reg[8]_i_1_n_5
+    SLICE_X88Y76         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.864     2.029    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y76         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[10]/C
+                         clock pessimism             -0.514     1.514    
+    SLICE_X88Y76         FDRE (Hold_fdre_C_D)         0.134     1.648    ex2_i/EightDispControl_0/U0/div_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -1.648    
+                         arrival time                           1.899    
+  -------------------------------------------------------------------
+                         slack                                  0.250    
+
+Slack (MET) :             0.250ns  (arrival time - required time)
+  Source:                 ex2_i/EightDispControl_0/U0/div_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/EightDispControl_0/U0/div_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.384ns  (logic 0.274ns (71.266%)  route 0.110ns (28.734%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.028ns
+    Source Clock Delay      (SCD):    1.513ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.594     1.513    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y75         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y75         FDRE (Prop_fdre_C_Q)         0.164     1.677 r  ex2_i/EightDispControl_0/U0/div_reg[6]/Q
+                         net (fo=1, routed)           0.110     1.788    ex2_i/EightDispControl_0/U0/div_reg_n_0_[6]
+    SLICE_X88Y75         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.898 r  ex2_i/EightDispControl_0/U0/div_reg[4]_i_1/O[2]
+                         net (fo=1, routed)           0.000     1.898    ex2_i/EightDispControl_0/U0/div_reg[4]_i_1_n_5
+    SLICE_X88Y75         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.863     2.028    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y75         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[6]/C
+                         clock pessimism             -0.514     1.513    
+    SLICE_X88Y75         FDRE (Hold_fdre_C_D)         0.134     1.647    ex2_i/EightDispControl_0/U0/div_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.647    
+                         arrival time                           1.898    
+  -------------------------------------------------------------------
+                         slack                                  0.250    
+
+Slack (MET) :             0.262ns  (arrival time - required time)
+  Source:                 ex2_i/EightDispControl_0/U0/div_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/EightDispControl_0/U0/div_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.396ns  (logic 0.274ns (69.247%)  route 0.122ns (30.753%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.031ns
+    Source Clock Delay      (SCD):    1.516ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.597     1.516    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y77         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y77         FDRE (Prop_fdre_C_Q)         0.164     1.680 r  ex2_i/EightDispControl_0/U0/div_reg[14]/Q
+                         net (fo=9, routed)           0.122     1.802    ex2_i/EightDispControl_0/U0/sel0[0]
+    SLICE_X88Y77         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.912 r  ex2_i/EightDispControl_0/U0/div_reg[12]_i_1/O[2]
+                         net (fo=1, routed)           0.000     1.912    ex2_i/EightDispControl_0/U0/div_reg[12]_i_1_n_5
+    SLICE_X88Y77         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.866     2.031    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y77         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[14]/C
+                         clock pessimism             -0.514     1.516    
+    SLICE_X88Y77         FDRE (Hold_fdre_C_D)         0.134     1.650    ex2_i/EightDispControl_0/U0/div_reg[14]
+  -------------------------------------------------------------------
+                         required time                         -1.650    
+                         arrival time                           1.912    
+  -------------------------------------------------------------------
+                         slack                                  0.262    
+
+Slack (MET) :             0.274ns  (arrival time - required time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/Res_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.330ns  (logic 0.148ns (44.880%)  route 0.182ns (55.120%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.039ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.040ns
+    Source Clock Delay      (SCD):    1.521ns
+    Clock Pessimism Removal (CPR):    0.479ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.602     1.521    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X84Y63         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y63         FDRE (Prop_fdre_C_Q)         0.148     1.669 r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[6]/Q
+                         net (fo=6, routed)           0.182     1.851    ex2_i/Greatest_common_divisor_0/U0/FSM_A[6]
+    SLICE_X89Y62         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/Res_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.875     2.040    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X89Y62         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/Res_reg[6]/C
+                         clock pessimism             -0.479     1.560    
+    SLICE_X89Y62         FDRE (Hold_fdre_C_D)         0.017     1.577    ex2_i/Greatest_common_divisor_0/U0/Res_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.577    
+                         arrival time                           1.851    
+  -------------------------------------------------------------------
+                         slack                                  0.274    
+
+Slack (MET) :             0.274ns  (arrival time - required time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/C_S_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.397ns  (logic 0.189ns (47.601%)  route 0.208ns (52.399%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.036ns
+    Source Clock Delay      (SCD):    1.518ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.599     1.518    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X89Y69         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/C_S_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y69         FDRE (Prop_fdre_C_Q)         0.141     1.659 r  ex2_i/Greatest_common_divisor_0/U0/C_S_reg/Q
+                         net (fo=24, routed)          0.208     1.867    ex2_i/Greatest_common_divisor_0/U0/C_S
+    SLICE_X89Y67         LUT3 (Prop_lut3_I1_O)        0.048     1.915 r  ex2_i/Greatest_common_divisor_0/U0/FSM_A[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.915    ex2_i/Greatest_common_divisor_0/U0/FSM_A_next[2]
+    SLICE_X89Y67         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.871     2.036    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X89Y67         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[2]/C
+                         clock pessimism             -0.501     1.534    
+    SLICE_X89Y67         FDRE (Hold_fdre_C_D)         0.107     1.641    ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.641    
+                         arrival time                           1.915    
+  -------------------------------------------------------------------
+                         slack                                  0.274    
+
+Slack (MET) :             0.280ns  (arrival time - required time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/Res_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.367ns  (logic 0.164ns (44.629%)  route 0.203ns (55.371%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.017ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.040ns
+    Source Clock Delay      (SCD):    1.521ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.602     1.521    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.164     1.685 r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[1]/Q
+                         net (fo=6, routed)           0.203     1.889    ex2_i/Greatest_common_divisor_0/U0/FSM_A[1]
+    SLICE_X89Y62         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/Res_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.875     2.040    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X89Y62         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/Res_reg[1]/C
+                         clock pessimism             -0.501     1.538    
+    SLICE_X89Y62         FDRE (Hold_fdre_C_D)         0.070     1.608    ex2_i/Greatest_common_divisor_0/U0/Res_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.608    
+                         arrival time                           1.889    
+  -------------------------------------------------------------------
+                         slack                                  0.280    
+
+Slack (MET) :             0.283ns  (arrival time - required time)
+  Source:                 ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.404ns  (logic 0.209ns (51.781%)  route 0.195ns (48.219%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.037ns
+    Source Clock Delay      (SCD):    1.521ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.602     1.521    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y66         FDRE (Prop_fdre_C_Q)         0.164     1.685 r  ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[1]/Q
+                         net (fo=6, routed)           0.195     1.880    ex2_i/Greatest_common_divisor_0/U0/FSM_A[1]
+    SLICE_X88Y66         LUT5 (Prop_lut5_I1_O)        0.045     1.925 r  ex2_i/Greatest_common_divisor_0/U0/FSM_B[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.925    ex2_i/Greatest_common_divisor_0/U0/FSM_B_next[1]
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.872     2.037    ex2_i/Greatest_common_divisor_0/U0/clk
+    SLICE_X88Y66         FDRE                                         r  ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]/C
+                         clock pessimism             -0.515     1.521    
+    SLICE_X88Y66         FDRE (Hold_fdre_C_D)         0.121     1.642    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.642    
+                         arrival time                           1.925    
+  -------------------------------------------------------------------
+                         slack                                  0.283    
+
+Slack (MET) :             0.286ns  (arrival time - required time)
+  Source:                 ex2_i/EightDispControl_0/U0/div_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/EightDispControl_0/U0/div_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.420ns  (logic 0.310ns (73.726%)  route 0.110ns (26.274%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.029ns
+    Source Clock Delay      (SCD):    1.514ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.595     1.514    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y76         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y76         FDRE (Prop_fdre_C_Q)         0.164     1.678 r  ex2_i/EightDispControl_0/U0/div_reg[10]/Q
+                         net (fo=1, routed)           0.110     1.789    ex2_i/EightDispControl_0/U0/div_reg_n_0_[10]
+    SLICE_X88Y76         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.146     1.935 r  ex2_i/EightDispControl_0/U0/div_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.935    ex2_i/EightDispControl_0/U0/div_reg[8]_i_1_n_4
+    SLICE_X88Y76         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.864     2.029    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y76         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[11]/C
+                         clock pessimism             -0.514     1.514    
+    SLICE_X88Y76         FDRE (Hold_fdre_C_D)         0.134     1.648    ex2_i/EightDispControl_0/U0/div_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -1.648    
+                         arrival time                           1.935    
+  -------------------------------------------------------------------
+                         slack                                  0.286    
+
+Slack (MET) :             0.286ns  (arrival time - required time)
+  Source:                 ex2_i/EightDispControl_0/U0/div_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ex2_i/EightDispControl_0/U0/div_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.420ns  (logic 0.310ns (73.726%)  route 0.110ns (26.274%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.028ns
+    Source Clock Delay      (SCD):    1.513ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.594     1.513    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y75         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y75         FDRE (Prop_fdre_C_Q)         0.164     1.677 r  ex2_i/EightDispControl_0/U0/div_reg[6]/Q
+                         net (fo=1, routed)           0.110     1.788    ex2_i/EightDispControl_0/U0/div_reg_n_0_[6]
+    SLICE_X88Y75         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.146     1.934 r  ex2_i/EightDispControl_0/U0/div_reg[4]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.934    ex2_i/EightDispControl_0/U0/div_reg[4]_i_1_n_4
+    SLICE_X88Y75         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=42, routed)          0.863     2.028    ex2_i/EightDispControl_0/U0/clk
+    SLICE_X88Y75         FDRE                                         r  ex2_i/EightDispControl_0/U0/div_reg[7]/C
+                         clock pessimism             -0.514     1.513    
+    SLICE_X88Y75         FDRE (Hold_fdre_C_D)         0.134     1.647    ex2_i/EightDispControl_0/U0/div_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -1.647    
+                         arrival time                           1.934    
+  -------------------------------------------------------------------
+                         slack                                  0.286    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            1.592         10.000      8.408      BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y74    ex2_i/EightDispControl_0/U0/div_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y76    ex2_i/EightDispControl_0/U0/div_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y76    ex2_i/EightDispControl_0/U0/div_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y77    ex2_i/EightDispControl_0/U0/div_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y77    ex2_i/EightDispControl_0/U0/div_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y77    ex2_i/EightDispControl_0/U0/div_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y77    ex2_i/EightDispControl_0/U0/div_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y78    ex2_i/EightDispControl_0/U0/div_reg[16]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y74    ex2_i/EightDispControl_0/U0/div_reg[1]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y77    ex2_i/EightDispControl_0/U0/div_reg[12]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y77    ex2_i/EightDispControl_0/U0/div_reg[13]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y77    ex2_i/EightDispControl_0/U0/div_reg[14]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y77    ex2_i/EightDispControl_0/U0/div_reg[15]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y78    ex2_i/EightDispControl_0/U0/div_reg[16]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X89Y67    ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X89Y67    ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y74    ex2_i/EightDispControl_0/U0/div_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y74    ex2_i/EightDispControl_0/U0/div_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y76    ex2_i/EightDispControl_0/U0/div_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X89Y69    ex2_i/Greatest_common_divisor_0/U0/C_S_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X89Y67    ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X89Y67    ex2_i/Greatest_common_divisor_0/U0/FSM_A_reg[2]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y68    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[4]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X87Y69    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[5]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y68    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[6]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y69    ex2_i/Greatest_common_divisor_0/U0/FSM_B_reg[7]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X89Y68    ex2_i/Greatest_common_divisor_0/U0/Res_reg[4]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X89Y68    ex2_i/Greatest_common_divisor_0/U0/Res_reg[5]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y74    ex2_i/EightDispControl_0/U0/div_reg[0]/C
+
+
+

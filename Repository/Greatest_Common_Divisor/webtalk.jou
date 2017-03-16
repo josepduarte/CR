@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Mar 16 11:09:16 2017
+# Process ID: 6796
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Repository/Greatest_Common_Divisor
+# Command line: wbtcv.exe -mode batch -source C:/Users/jduarte/Documents/GitHub/CR/Repository/Greatest_Common_Divisor/Greatest_Common_Divisor.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Repository/Greatest_Common_Divisor/webtalk.log
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Repository/Greatest_Common_Divisor\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/jduarte/Documents/GitHub/CR/Repository/Greatest_Common_Divisor/Greatest_Common_Divisor.hw/webtalk/labtool_webtalk.tcl -notrace

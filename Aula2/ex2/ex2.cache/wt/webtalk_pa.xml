@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Mar 10 15:03:42 2017">
+<application name="pa" timeStamp="Thu Mar 16 09:37:09 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="fefabfea74f840c5b5bce66a2ada8180" type="ProjectID"/>
 <property name="ProjectIteration" value="6" type="ProjectIteration"/>
@@ -24,7 +24,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="LaunchProgramFpga" value="1" type="JavaHandler"/>
 <property name="NewProject" value="3" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="1" type="JavaHandler"/>
-<property name="OpenProject" value="6" type="JavaHandler"/>
+<property name="OpenProject" value="7" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="1" type="JavaHandler"/>
 <property name="RunBitgen" value="6" type="JavaHandler"/>
 <property name="RunImplementation" value="3" type="JavaHandler"/>
@@ -38,16 +38,17 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ConstraintsChooserPanel_ADD_FILES" value="2" type="GuiResourceData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="2" type="GuiResourceData"/>
 <property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="171" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="107" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="111" type="GuiResourceData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="13" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="3" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="2" type="GuiResourceData"/>
 <property name="HInputHandler_TOGGLE_LINE_COMMENTS" value="1" type="GuiResourceData"/>
 <property name="MainMenuMgr_EDIT" value="4" type="GuiResourceData"/>
 <property name="MainMenuMgr_FILE" value="12" type="GuiResourceData"/>
+<property name="MainToolbarMgr_OPEN" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_AUTO_CONNECT_TARGET" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="2" type="GuiResourceData"/>
-<property name="PACommandNames_OPEN_PROJECT" value="4" type="GuiResourceData"/>
+<property name="PACommandNames_OPEN_PROJECT" value="5" type="GuiResourceData"/>
 <property name="PACommandNames_RUN_BITGEN" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_RUN_IMPLEMENTATION" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_SET_AS_TOP" value="3" type="GuiResourceData"/>
@@ -65,9 +66,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_IP_HIERARCHY" value="2" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="20" type="GuiMode"/>
+<property name="GuiMode" value="24" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="17" type="TclMode"/>
+<property name="TclMode" value="19" type="TclMode"/>
 </item>
 </section>
 </application>

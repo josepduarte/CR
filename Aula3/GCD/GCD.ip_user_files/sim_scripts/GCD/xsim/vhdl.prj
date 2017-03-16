@@ -1,0 +1,4 @@
+vhdl xil_defaultlib "../../../../GCD.srcs/sources_1/bd/GCD/hdl/GCD.vhd" 
+vhdl xil_defaultlib "../../../../GCD.srcs/sources_1/bd/GCD/ip/GCD_Greatest_common_divisor_0_0/sim/GCD_Greatest_common_divisor_0_0.vhd" 
+
+nosort

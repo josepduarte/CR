@@ -1,0 +1,568 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Mar 16 11:01:29 2017
+# Process ID: 10392
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1
+# Command line: vivado.exe -log ex2_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ex2_wrapper.tcl -notrace
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/ex2_wrapper.vdi
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ex2_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_BinToBCD16_0_0_1/ex2_BinToBCD16_0_0.dcp' for cell 'ex2_i/BinToBCD16_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_EightDispControl_0_0/ex2_EightDispControl_0_0.dcp' for cell 'ex2_i/EightDispControl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1.dcp' for cell 'ex2_i/Greatest_common_divisor_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconcat_0_0/ex2_xlconcat_0_0.dcp' for cell 'ex2_i/xlconcat_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconstant_0_0/ex2_xlconstant_0_0.dcp' for cell 'ex2_i/xlconstant_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconstant_1_0/ex2_xlconstant_1_0.dcp' for cell 'ex2_i/xlconstant_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconstant_2_0/ex2_xlconstant_2_0.dcp' for cell 'ex2_i/xlconstant_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconstant_3_0/ex2_xlconstant_3_0.dcp' for cell 'ex2_i/xlconstant_3'
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 486.180 ; gain = 276.145
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.454 . Memory (MB): peak = 496.902 ; gain = 10.723
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 2bd40673e
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 23abde890
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1003.813 ; gain = 0.004
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 136 cells.
+Phase 2 Constant propagation | Checksum: 1b3354ac9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1003.813 ; gain = 0.004
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 176 unconnected nets.
+INFO: [Opt 31-11] Eliminated 60 unconnected cells.
+Phase 3 Sweep | Checksum: 19ae50c04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 1003.813 ; gain = 0.004
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG clk_IBUF_BUFG_inst to drive 42 load(s) on clock net clk_IBUF_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 243256441
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.223 . Memory (MB): peak = 1003.813 ; gain = 0.004
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1003.813 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 243256441
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.226 . Memory (MB): peak = 1003.813 ; gain = 0.004
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 243256441
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1003.813 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+32 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1003.813 ; gain = 517.633
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1003.813 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/ex2_wrapper_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/ex2_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1003.813 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1003.813 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: dfa9d8c5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 14534087c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 14534087c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1027.902 ; gain = 24.090
+Phase 1 Placer Initialization | Checksum: 14534087c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 199eaec63
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 199eaec63
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a7842295
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 264056339
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 264056339
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1b00e576e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 20fb5b04c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 21be969bc
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 24d4f83c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 24d4f83c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 21f81d783
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+Phase 3 Detail Placement | Checksum: 21f81d783
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.724. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 13236cb61
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.902 ; gain = 24.090
+Phase 4.1 Post Commit Optimization | Checksum: 13236cb61
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 13236cb61
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 13236cb61
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.902 ; gain = 24.090
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 15441cfe5
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.902 ; gain = 24.090
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 15441cfe5
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.902 ; gain = 24.090
+Ending Placer Task | Checksum: 12b1bd321
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.902 ; gain = 24.090
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1027.902 ; gain = 24.090
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1027.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/ex2_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1027.902 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1027.902 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1027.902 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: c44bd34d ConstDB: 0 ShapeSum: 66cfffd4 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 10435be8a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 10435be8a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 10435be8a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 10435be8a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1178.109 ; gain = 150.207
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 14556387d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1178.109 ; gain = 150.207
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.385 | TNS=-9.528 | WHS=-0.132 | THS=-2.043 |
+
+Phase 2 Router Initialization | Checksum: 1c3413540
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 17739fc93
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: ae1ec964
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.860 | TNS=-13.294| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 21b27e61a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 27fed7d20
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+Phase 4.1.2 GlobIterForTiming | Checksum: 2182c9c03
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+Phase 4.1 Global Iteration 0 | Checksum: 2182c9c03
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 11a1ccf8b
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.958 | TNS=-14.126| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: b1067380
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+Phase 4 Rip-up And Reroute | Checksum: b1067380
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1713de42a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.783 | TNS=-12.678| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: bb5343d4
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: bb5343d4
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+Phase 5 Delay and Skew Optimization | Checksum: bb5343d4
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 6ad2a184
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.746 | TNS=-12.382| WHS=0.234  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 6ad2a184
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+Phase 6 Post Hold Fix | Checksum: 6ad2a184
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0393872 %
+  Global Horizontal Routing Utilization  = 0.0328929 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 24.3243%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 18.9189%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 22.0588%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 20.5882%, No Congested Regions.
+Phase 7 Route finalize | Checksum: d1614698
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: d1614698
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16cd70e6a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.746 | TNS=-12.382| WHS=0.234  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 16cd70e6a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1178.109 ; gain = 150.207
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+62 Infos, 11 Warnings, 10 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:34 . Memory (MB): peak = 1178.109 ; gain = 150.207
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1178.109 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/ex2_wrapper_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/ex2_wrapper_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/ex2_wrapper_methodology_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Command: report_power -file ex2_wrapper_power_routed.rpt -pb ex2_wrapper_power_summary_routed.pb -rpx ex2_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+72 Infos, 11 Warnings, 11 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 16 11:02:40 2017...
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Mar 16 11:02:57 2017
+# Process ID: 1828
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1
+# Command line: vivado.exe -log ex2_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ex2_wrapper.tcl -notrace
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/ex2_wrapper.vdi
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ex2_wrapper.tcl -notrace
+Command: open_checkpoint ex2_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 209.391 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/.Xil/Vivado-1828-Inator/dcp/ex2_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/impl_1/.Xil/Vivado-1828-Inator/dcp/ex2_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 473.301 ; gain = 0.008
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 473.305 ; gain = 0.012
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1756540
+open_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 473.305 ; gain = 263.914
+Command: write_bitstream -force -no_partial_bitfile ex2_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./ex2_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 860.387 ; gain = 387.078
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 16 11:03:22 2017...
