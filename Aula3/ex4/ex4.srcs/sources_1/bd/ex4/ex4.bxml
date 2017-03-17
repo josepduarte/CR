@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="ex4" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1489705070"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1489705070"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1489705070"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1489745871"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1489745871"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1489745871"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\ex4_blk_mem_gen_0_0\ex4_blk_mem_gen_0_0.xci" Type="IP">
         <Instance HierarchyPath="blk_mem_gen_0"/>
@@ -38,6 +38,30 @@
       </File>
       <File Name="ip\ex4_number_of_ones_0_0\ex4_number_of_ones_0_0.xci" Type="IP">
         <Instance HierarchyPath="number_of_ones_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\ex4_xlconcat_0_0\ex4_xlconcat_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconcat_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\ex4_xlconstant_2_0\ex4_xlconstant_2_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconstant_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\ex4_FirstBlock_wrapper_0_0\ex4_FirstBlock_wrapper_0_0.xci" Type="IP">
+        <Instance HierarchyPath="FirstBlock_wrapper_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

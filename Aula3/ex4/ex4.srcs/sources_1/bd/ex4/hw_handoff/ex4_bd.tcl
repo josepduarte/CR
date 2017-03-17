@@ -155,8 +155,14 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
+  set an [ create_bd_port -dir O -from 7 -to 0 an ]
+  set btnC [ create_bd_port -dir I btnC ]
   set clk [ create_bd_port -dir I clk ]
   set led [ create_bd_port -dir O -from 9 -to 0 led ]
+  set seg [ create_bd_port -dir O -from 6 -to 0 seg ]
+
+  # Create instance: FirstBlock_wrapper_0, and set properties
+  set FirstBlock_wrapper_0 [ create_bd_cell -type ip -vlnv ua.pt:user:FirstBlock_wrapper:1.0 FirstBlock_wrapper_0 ]
 
   # Create instance: blk_mem_gen_0, and set properties
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0 ]
@@ -186,6 +192,13 @@ CONFIG.number_of_bits_input {1024} \
 CONFIG.number_of_bits_output {10} \
  ] $number_of_ones_0
 
+  # Create instance: xlconcat_0, and set properties
+  set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
+  set_property -dict [ list \
+CONFIG.IN0_WIDTH {10} \
+CONFIG.IN1_WIDTH {6} \
+ ] $xlconcat_0
+
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
   set_property -dict [ list \
@@ -195,12 +208,24 @@ CONFIG.CONST_VAL {0} \
   # Create instance: xlconstant_1, and set properties
   set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
 
+  # Create instance: xlconstant_2, and set properties
+  set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
+  set_property -dict [ list \
+CONFIG.CONST_VAL {0} \
+CONFIG.CONST_WIDTH {6} \
+ ] $xlconstant_2
+
   # Create port connections
+  connect_bd_net -net FirstBlock_wrapper_0_an [get_bd_ports an] [get_bd_pins FirstBlock_wrapper_0/an]
+  connect_bd_net -net FirstBlock_wrapper_0_seg [get_bd_ports seg] [get_bd_pins FirstBlock_wrapper_0/seg]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins number_of_ones_0/datain]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins number_of_ones_0/clk]
-  connect_bd_net -net number_of_ones_0_result [get_bd_ports led] [get_bd_pins number_of_ones_0/result]
+  connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins FirstBlock_wrapper_0/btnC]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins FirstBlock_wrapper_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins number_of_ones_0/clk]
+  connect_bd_net -net number_of_ones_0_result [get_bd_ports led] [get_bd_pins number_of_ones_0/result] [get_bd_pins xlconcat_0/In0]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins FirstBlock_wrapper_0/sw] [get_bd_pins xlconcat_0/dout]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins xlconstant_0/dout]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins number_of_ones_0/reset] [get_bd_pins xlconstant_1/dout]
+  connect_bd_net -net xlconstant_2_dout [get_bd_pins xlconcat_0/In1] [get_bd_pins xlconstant_2/dout]
 
   # Create address segments
 
@@ -208,18 +233,29 @@ CONFIG.CONST_VAL {0} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port clk -pg 1 -y 140 -defaultsOSRD
-preplace portBus led -pg 1 -y 330 -defaultsOSRD
-preplace inst number_of_ones_0 -pg 1 -lvl 2 -y 330 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 1 -y 90 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 1 -y 330 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 130 -defaultsOSRD -resize 145 238
-preplace netloc xlconstant_1_dout 1 1 1 N
-preplace netloc clk_1 1 0 2 NJ 140 140
-preplace netloc xlconstant_0_dout 1 1 1 NJ
-preplace netloc blk_mem_gen_0_douta 1 1 1 150
-preplace netloc number_of_ones_0_result 1 2 1 N
-levelinfo -pg 1 -40 80 280 410 -top -70 -bot 400
+preplace port btnC -pg 1 -y 440 -defaultsOSRD
+preplace port clk -pg 1 -y 40 -defaultsOSRD
+preplace portBus an -pg 1 -y 450 -defaultsOSRD
+preplace portBus led -pg 1 -y 390 -defaultsOSRD
+preplace portBus seg -pg 1 -y 470 -defaultsOSRD
+preplace inst number_of_ones_0 -pg 1 -lvl 3 -y 320 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -y 320 -defaultsOSRD
+preplace inst FirstBlock_wrapper_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 1 -y 500 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -y 490 -defaultsOSRD -resize 130 70
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 130 -defaultsOSRD -resize 145 238
+preplace netloc xlconstant_1_dout 1 2 1 NJ
+preplace netloc xlconstant_2_dout 1 1 1 NJ
+preplace netloc btnC_1 1 0 3 NJ 440 NJ 440 NJ
+preplace netloc FirstBlock_wrapper_0_an 1 3 1 NJ
+preplace netloc xlconcat_0_dout 1 2 1 330
+preplace netloc FirstBlock_wrapper_0_seg 1 3 1 NJ
+preplace netloc clk_1 1 0 3 NJ 40 NJ 40 320
+preplace netloc xlconstant_0_dout 1 2 1 NJ
+preplace netloc blk_mem_gen_0_douta 1 2 1 330
+preplace netloc number_of_ones_0_result 1 1 3 140 390 NJ 390 550
+levelinfo -pg 1 0 80 230 440 570 -top 0 -bot 550
 ",
 }
 

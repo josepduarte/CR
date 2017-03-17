@@ -4,7 +4,6 @@
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-3
 
 set_param project.singleFileAddWarning.threshold 0
@@ -19,11 +18,13 @@ set_property target_language VHDL [current_project]
 set_property ip_repo_paths c:/Users/jduarte/Documents/GitHub/CR/Repository [current_project]
 set_property ip_output_repo c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/cr_aula3/vector1024.coe
+add_files C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/cr_aula3/vector1024.coe
 read_vhdl -library xil_defaultlib C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/hdl/ex4_wrapper.vhd
 add_files C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd
 set_property used_in_implementation false [get_files -all c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_blk_mem_gen_0_0/ex4_blk_mem_gen_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_number_of_ones_0_0/constrs_1/imports/CR/Nexys4_Master.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_FirstBlock_wrapper_0_0/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/FirstBlock_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ex4_ooc.xdc]
 set_property is_locked true [get_files C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
 

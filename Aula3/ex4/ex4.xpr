@@ -37,13 +37,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="1"/>
-    <Option Name="WTModelSimExportSim" Val="1"/>
-    <Option Name="WTQuestaExportSim" Val="1"/>
-    <Option Name="WTIesExportSim" Val="1"/>
-    <Option Name="WTVcsExportSim" Val="1"/>
-    <Option Name="WTRivieraExportSim" Val="1"/>
-    <Option Name="WTActivehdlExportSim" Val="1"/>
+    <Option Name="WTXSimExportSim" Val="4"/>
+    <Option Name="WTModelSimExportSim" Val="4"/>
+    <Option Name="WTQuestaExportSim" Val="4"/>
+    <Option Name="WTIesExportSim" Val="4"/>
+    <Option Name="WTVcsExportSim" Val="4"/>
+    <Option Name="WTRivieraExportSim" Val="4"/>
+    <Option Name="WTActivehdlExportSim" Val="4"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -59,8 +59,8 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_blk_mem_gen_0_0/ex4_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="ex4_blk_mem_gen_0_0"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconstant_1_0/ex4_xlconstant_1_0.xci">
+          <Proxy FileSetName="ex4_xlconstant_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hdl/ex4.vhd"/>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_number_of_ones_0_0/ex4_number_of_ones_0_0.xci">
@@ -69,10 +69,19 @@
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconstant_0_0/ex4_xlconstant_0_0.xci">
           <Proxy FileSetName="ex4_xlconstant_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconstant_1_0/ex4_xlconstant_1_0.xci">
-          <Proxy FileSetName="ex4_xlconstant_1_0"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_blk_mem_gen_0_0/ex4_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="ex4_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconcat_0_0/ex4_xlconcat_0_0.xci">
+          <Proxy FileSetName="ex4_xlconcat_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ex4_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_xlconstant_2_0/ex4_xlconstant_2_0.xci">
+          <Proxy FileSetName="ex4_xlconstant_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="ip/ex4_FirstBlock_wrapper_0_0/ex4_FirstBlock_wrapper_0_0.xci">
+          <Proxy FileSetName="ex4_FirstBlock_wrapper_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hdl/ex4.hwdef"/>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hw_handoff/ex4_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="ex4.bd" FileRelPathName="hw_handoff/ex4.hwh"/>
@@ -145,6 +154,24 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="ex4_xlconcat_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex4_xlconcat_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ex4_xlconcat_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ex4_xlconstant_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex4_xlconstant_2_0">
+      <Config>
+        <Option Name="TopModule" Val="ex4_xlconstant_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ex4_FirstBlock_wrapper_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex4_FirstBlock_wrapper_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ex4_FirstBlock_wrapper_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -175,9 +202,7 @@
     </Run>
     <Run Id="ex4_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex4_blk_mem_gen_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex4_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex4_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -185,15 +210,29 @@
     </Run>
     <Run Id="ex4_xlconstant_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex4_xlconstant_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex4_xlconstant_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex4_xlconstant_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="ex4_xlconstant_1_0_synth_1" Type="Ft3:Synth" SrcSet="ex4_xlconstant_1_0" Part="xc7a100tcsg324-3" ConstrsSet="ex4_xlconstant_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex4_xlconstant_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex4_number_of_ones_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex4_number_of_ones_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex4_number_of_ones_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex4_number_of_ones_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex4_xlconcat_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex4_xlconcat_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex4_xlconcat_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex4_xlconcat_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -203,7 +242,17 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex4_number_of_ones_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex4_number_of_ones_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex4_number_of_ones_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex4_number_of_ones_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="ex4_xlconstant_2_0_synth_1" Type="Ft3:Synth" SrcSet="ex4_xlconstant_2_0" Part="xc7a100tcsg324-3" ConstrsSet="ex4_xlconstant_2_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex4_xlconstant_2_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex4_FirstBlock_wrapper_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex4_FirstBlock_wrapper_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex4_FirstBlock_wrapper_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex4_FirstBlock_wrapper_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -231,9 +280,7 @@
     </Run>
     <Run Id="ex4_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex4_blk_mem_gen_0_0" Description="Default settings for Implementation." SynthRun="ex4_blk_mem_gen_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -248,9 +295,7 @@
     </Run>
     <Run Id="ex4_xlconstant_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex4_xlconstant_0_0" Description="Default settings for Implementation." SynthRun="ex4_xlconstant_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -264,6 +309,36 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="ex4_xlconstant_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex4_xlconstant_1_0" Description="Default settings for Implementation." SynthRun="ex4_xlconstant_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex4_number_of_ones_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex4_number_of_ones_0_0" Description="Default settings for Implementation." SynthRun="ex4_number_of_ones_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex4_xlconcat_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex4_xlconcat_0_0" Description="Default settings for Implementation." SynthRun="ex4_xlconcat_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>
@@ -280,7 +355,24 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex4_number_of_ones_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex4_number_of_ones_0_0" Description="Default settings for Implementation." SynthRun="ex4_number_of_ones_0_0_synth_1" IncludeInArchive="false">
+    <Run Id="ex4_xlconstant_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex4_xlconstant_2_0" Description="Default settings for Implementation." SynthRun="ex4_xlconstant_2_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex4_FirstBlock_wrapper_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex4_FirstBlock_wrapper_0_0" Description="Default settings for Implementation." SynthRun="ex4_FirstBlock_wrapper_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>

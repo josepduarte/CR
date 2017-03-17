@@ -18,4 +18,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex4_xlconstant_
 # IP: bd/ex4/ip/ex4_number_of_ones_0_0/ex4_number_of_ones_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex4_number_of_ones_0_0 || ORIG_REF_NAME==ex4_number_of_ones_0_0}]
 
+# IP: bd/ex4/ip/ex4_xlconcat_0_0/ex4_xlconcat_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex4_xlconcat_0_0 || ORIG_REF_NAME==ex4_xlconcat_0_0}]
+
+# IP: bd/ex4/ip/ex4_xlconstant_2_0/ex4_xlconstant_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex4_xlconstant_2_0 || ORIG_REF_NAME==ex4_xlconstant_2_0}]
+
+# IP: bd/ex4/ip/ex4_FirstBlock_wrapper_0_0/ex4_FirstBlock_wrapper_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex4_FirstBlock_wrapper_0_0 || ORIG_REF_NAME==ex4_FirstBlock_wrapper_0_0}]
+
 # XDC: bd/ex4/ex4_ooc.xdc

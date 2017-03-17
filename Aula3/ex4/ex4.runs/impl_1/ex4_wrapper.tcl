@@ -44,7 +44,6 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -67,8 +66,16 @@ set rc [catch {
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconstant_1_0/ex4_xlconstant_1_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_number_of_ones_0_0/ex4_number_of_ones_0_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_number_of_ones_0_0/ex4_number_of_ones_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconcat_0_0/ex4_xlconcat_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconcat_0_0/ex4_xlconcat_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconstant_2_0/ex4_xlconstant_2_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconstant_2_0/ex4_xlconstant_2_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_FirstBlock_wrapper_0_0/ex4_FirstBlock_wrapper_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_FirstBlock_wrapper_0_0/ex4_FirstBlock_wrapper_0_0.dcp]
   read_xdc -ref ex4_number_of_ones_0_0 -cells U0 c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_number_of_ones_0_0/constrs_1/imports/CR/Nexys4_Master.xdc
   set_property processing_order EARLY [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_number_of_ones_0_0/constrs_1/imports/CR/Nexys4_Master.xdc]
+  read_xdc -ref ex4_FirstBlock_wrapper_0_0 -cells U0 c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_FirstBlock_wrapper_0_0/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_FirstBlock_wrapper_0_0/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc]
   read_xdc C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex4/ex4.srcs/constrs_1/imports/CR/Nexys4_Master.xdc
   link_design -top ex4_wrapper -part xc7a100tcsg324-3
   write_hwdef -file ex4_wrapper.hwdef

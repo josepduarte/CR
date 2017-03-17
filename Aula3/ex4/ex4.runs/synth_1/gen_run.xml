@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1489705196">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1489746169">
   <File Type="RDS-PROPCONSTRS" Name="ex4_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="ex4_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="ex4_wrapper.vds"/>
@@ -54,7 +54,10 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="ex4_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex4_xlconcat_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex4_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex4_FirstBlock_wrapper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex4_xlconstant_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex4_number_of_ones_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex4_xlconstant_2_0"/>
 </GenRun>
