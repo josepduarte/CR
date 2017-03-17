@@ -81,7 +81,7 @@ begin
                 next_index      <= index + 1;
                 Next_State      <= initial_state;
                 next_nr_of_ones <= nr_of_ones + conv_integer(datain(index));
-                if(index = 15) then
+                if(index = number_of_bits_input -1) then
                     Next_State <= final_state;
                 end if;
             when final_state => 

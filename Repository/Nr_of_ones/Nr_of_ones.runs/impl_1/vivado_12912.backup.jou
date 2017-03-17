@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Mar 17 00:42:49 2017
-# Process ID: 10772
+# Start of session at: Fri Mar 17 00:05:46 2017
+# Process ID: 12912
 # Current directory: C:/Users/jduarte/Documents/GitHub/CR/Repository/Nr_of_ones/Nr_of_ones.runs/impl_1
 # Command line: vivado.exe -log top_exp.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_exp.tcl -notrace
 # Log file: C:/Users/jduarte/Documents/GitHub/CR/Repository/Nr_of_ones/Nr_of_ones.runs/impl_1/top_exp.vdi

@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1489703469">
-  <File Type="RDS-PROPCONSTRS" Name="number_of_ones_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="number_of_ones.tcl"/>
-  <File Type="RDS-RDS" Name="number_of_ones.vds"/>
-  <File Type="RDS-UTIL" Name="number_of_ones_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="number_of_ones_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="number_of_ones.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="number_of_ones_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="number_of_ones_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1489711242">
+  <File Type="RDS-PROPCONSTRS" Name="top_exp_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="top_exp.tcl"/>
+  <File Type="RDS-RDS" Name="top_exp.vds"/>
+  <File Type="RDS-UTIL" Name="top_exp_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_exp_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_exp.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_exp_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_exp_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/number_of_ones.vhd">
       <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_exp.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -21,7 +29,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="number_of_ones"/>
+      <Option Name="TopModule" Val="top_exp"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -40,9 +48,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
