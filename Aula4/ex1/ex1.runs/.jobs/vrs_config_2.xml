@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ex1_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_counter_generic_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_counter_generic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlconstant_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_EightDispControl_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_EightDispControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlslice_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlslice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlslice_0_1_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlslice_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlslice_0_2_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlslice_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlslice_2_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlslice_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlslice_2_1_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlslice_2_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlslice_4_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlslice_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlslice_5_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlslice_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlslice_6_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/ex1_xlslice_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ex1_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="ex1_counter_generic_0_0_synth_1"/>
+		<Parent Id="ex1_xlconstant_0_0_synth_1"/>
+		<Parent Id="ex1_EightDispControl_0_0_synth_1"/>
+		<Parent Id="ex1_xlslice_0_0_synth_1"/>
+		<Parent Id="ex1_xlslice_0_1_synth_1"/>
+		<Parent Id="ex1_xlslice_0_2_synth_1"/>
+		<Parent Id="ex1_xlslice_2_0_synth_1"/>
+		<Parent Id="ex1_xlslice_2_1_synth_1"/>
+		<Parent Id="ex1_xlslice_4_0_synth_1"/>
+		<Parent Id="ex1_xlslice_5_0_synth_1"/>
+		<Parent Id="ex1_xlslice_6_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula4/ex1/ex1.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="ex1_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="ex1_counter_generic_0_0_synth_1"/>
+		<Parent Id="ex1_xlconstant_0_0_synth_1"/>
+		<Parent Id="ex1_EightDispControl_0_0_synth_1"/>
+		<Parent Id="ex1_xlslice_0_0_synth_1"/>
+		<Parent Id="ex1_xlslice_0_1_synth_1"/>
+		<Parent Id="ex1_xlslice_0_2_synth_1"/>
+		<Parent Id="ex1_xlslice_2_0_synth_1"/>
+		<Parent Id="ex1_xlslice_2_1_synth_1"/>
+		<Parent Id="ex1_xlslice_4_0_synth_1"/>
+		<Parent Id="ex1_xlslice_5_0_synth_1"/>
+		<Parent Id="ex1_xlslice_6_0_synth_1"/>
+	</Run>
+</Runs>
+
