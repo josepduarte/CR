@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Thu Mar 16 11:39:47 2017
+| Date             : Fri Mar 17 12:08:42 2017
 | Host             : Inator running 64-bit major release  (build 9200)
 | Command          : report_power -file ex2_wrapper_power_routed.rpt -pb ex2_wrapper_power_summary_routed.pb -rpx ex2_wrapper_power_routed.rpx
 | Design           : ex2_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.104 |
-| Dynamic (W)              | 0.007 |
+| Total On-Chip Power (W)  | 0.109 |
+| Dynamic (W)              | 0.012 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 99.5  |
@@ -49,16 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      207 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      116 |     63400 |            0.18 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      355 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      168 |     63400 |            0.26 |
 |   CARRY4       |    <0.001 |       27 |     15850 |            0.17 |
-|   Register     |    <0.001 |       42 |    126800 |            0.03 |
-|   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |     0.001 |      181 |       --- |             --- |
-| I/O            |     0.004 |       49 |       210 |           23.33 |
+|   Register     |    <0.001 |      113 |    126800 |            0.09 |
+|   F7/F8 Muxes  |    <0.001 |        4 |     63400 |           <0.01 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |     0.001 |      300 |       --- |             --- |
+| I/O            |     0.009 |       49 |       210 |           23.33 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.104 |          |           |                 |
+| Total          |     0.109 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
+| Vccint    |       1.000 |     0.019 |       0.004 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
+| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,13 +138,16 @@ Table of Contents
 +-------------------------------+-----------+
 | Name                          | Power (W) |
 +-------------------------------+-----------+
-| ex2_wrapper                   |     0.007 |
+| ex2_wrapper                   |     0.012 |
 |   ex2_i                       |     0.003 |
+|     BinToBCD16_0              |    <0.001 |
+|       U0                      |    <0.001 |
 |     EightDispControl_0        |    <0.001 |
 |       U0                      |    <0.001 |
 |     Greatest_common_divisor_0 |     0.002 |
 |       U0                      |     0.002 |
 |     xlconcat_0                |     0.000 |
+|     xlconstant_2              |     0.000 |
 |     xlconstant_3              |     0.000 |
 +-------------------------------+-----------+
 

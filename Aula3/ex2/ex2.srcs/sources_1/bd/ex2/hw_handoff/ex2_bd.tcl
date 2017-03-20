@@ -188,13 +188,13 @@ CONFIG.CONST_WIDTH {4} \
   # Create instance: xlconstant_1, and set properties
   set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
   set_property -dict [ list \
-CONFIG.CONST_VAL {0} \
+CONFIG.CONST_VAL {1} \
  ] $xlconstant_1
 
   # Create instance: xlconstant_2, and set properties
   set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
   set_property -dict [ list \
-CONFIG.CONST_VAL {1} \
+CONFIG.CONST_VAL {0} \
  ] $xlconstant_2
 
   # Create instance: xlconstant_3, and set properties

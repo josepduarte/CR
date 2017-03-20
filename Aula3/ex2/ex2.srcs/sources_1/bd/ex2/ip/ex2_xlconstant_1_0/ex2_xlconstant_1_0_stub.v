@@ -4,8 +4,8 @@
 // Date        : Thu Mar 16 09:54:43 2017
 // Host        : Inator running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top ex2_xlconstant_1_0 -prefix
-//               ex2_xlconstant_1_0_ ex2_xlconstant_0_0_stub.v
-// Design      : ex2_xlconstant_0_0
+//               ex2_xlconstant_1_0_ ex2_xlconstant_1_0_stub.v
+// Design      : ex2_xlconstant_1_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-3
 // --------------------------------------------------------------------------------

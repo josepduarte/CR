@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Thu Mar 16 11:39:09 2017
+| Date         : Fri Mar 17 12:07:48 2017
 | Host         : Inator running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file ex2_wrapper_control_sets_placed.rpt
 | Design       : ex2_wrapper
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     3 |
-| Unused register locations in slices containing registers |     6 |
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |     7 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              18 |            6 |
+| No           | No                    | No                     |              45 |           14 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              16 |            8 |
+| Yes          | No                    | No                     |              52 |           16 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               8 |            5 |
+| Yes          | Yes                   | No                     |              16 |            8 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,17 +48,18 @@ Table of Contents
 +----------------+-----------------------------------------------------+---------------------------------------------------+------------------+----------------+
 |  Clock Signal  |                    Enable Signal                    |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
 +----------------+-----------------------------------------------------+---------------------------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG | ex2_i/Greatest_common_divisor_0/U0/Res              | ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_1_n_0 |                5 |              8 |
-|  clk_IBUF_BUFG | ex2_i/Greatest_common_divisor_0/U0/FSM_A[7]_i_1_n_0 |                                                   |                8 |             16 |
-|  clk_IBUF_BUFG |                                                     |                                                   |                6 |             18 |
+|  clk_IBUF_BUFG | ex2_i/Greatest_common_divisor_0/U0/Res              | ex2_i/Greatest_common_divisor_0/U0/Res[7]_i_1_n_0 |                8 |             16 |
+|  clk_IBUF_BUFG | ex2_i/BinToBCD16_0/U0/int_rg_c[15]_i_1_n_0          |                                                   |                2 |             16 |
+|  clk_IBUF_BUFG | ex2_i/Greatest_common_divisor_0/U0/FSM_A[7]_i_1_n_0 |                                                   |                9 |             16 |
+|  clk_IBUF_BUFG | ex2_i/BinToBCD16_0/U0/get_outputs                   |                                                   |                5 |             20 |
+|  clk_IBUF_BUFG |                                                     |                                                   |               14 |             45 |
 +----------------+-----------------------------------------------------+---------------------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 8      |                     1 |
-| 16+    |                     2 |
+| 16+    |                     5 |
 +--------+-----------------------+
 
 

@@ -49,12 +49,14 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.cache/wt [current_project]
   set_property parent.project_path C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.xpr [current_project]
-  set_property ip_repo_paths C:/Users/jduarte/Documents/GitHub/CR/Repository [current_project]
+  set_property ip_repo_paths {
+  c:/users/jduarte/documents/github/cr/aula3/ex2/ex2.srcs
+  c:/Users/jduarte/Documents/GitHub/CR/Repository
+} [current_project]
   set_property ip_output_repo C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.runs/synth_1/ex2_wrapper.dcp
@@ -72,8 +74,8 @@ set rc [catch {
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconcat_0_0/ex2_xlconcat_0_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconstant_3_0/ex2_xlconstant_3_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconstant_3_0/ex2_xlconstant_3_0.dcp]
-  add_files -quiet C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1.dcp
-  set_property netlist_only true [get_files C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/sources_1/bd/ex2/ip/ex2_Greatest_common_divisor_0_1/ex2_Greatest_common_divisor_0_1.dcp]
   read_xdc C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex2/ex2.srcs/constrs_1/imports/CR/Nexys4_Master.xdc
   link_design -top ex2_wrapper -part xc7a100tcsg324-3
   write_hwdef -file ex2_wrapper.hwdef

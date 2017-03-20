@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 17 11:13:58 2017
+# Process ID: 12460
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2284 C:\Users\jduarte\Documents\GitHub\CR\Aula3\ex1\ex1.xpr
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex1/vivado.log
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jduarte/Documents/GitHub/CR/Aula3/ex1/ex1.xpr

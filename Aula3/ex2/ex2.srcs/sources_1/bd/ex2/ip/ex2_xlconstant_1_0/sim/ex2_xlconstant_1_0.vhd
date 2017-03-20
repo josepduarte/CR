@@ -48,7 +48,7 @@ ARCHITECTURE ex2_xlconstant_1_0_arch OF ex2_xlconstant_1_0 IS
 BEGIN
   U0 : xlconstant
     GENERIC MAP (
-      CONST_VAL => "0",
+      CONST_VAL => "1",
       CONST_WIDTH => 1
     )
     PORT MAP (

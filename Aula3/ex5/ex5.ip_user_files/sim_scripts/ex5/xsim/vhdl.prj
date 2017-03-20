@@ -1,0 +1,7 @@
+vhdl xil_defaultlib "../../../../ex5.srcs/sources_1/bd/ex5/ipshared/29c6/Mux4_1.vhd" 
+vhdl xil_defaultlib "../../../../ex5.srcs/sources_1/bd/ex5/ip/ex5_Mux4_1_0_0/sim/ex5_Mux4_1_0_0.vhd" 
+vhdl xil_defaultlib "../../../../ex5.srcs/sources_1/bd/ex5/ipshared/2e37/xlconcat.vhd" 
+vhdl xil_defaultlib "../../../../ex5.srcs/sources_1/bd/ex5/ip/ex5_xlconcat_0_0/sim/ex5_xlconcat_0_0.vhd" 
+vhdl xil_defaultlib "../../../../ex5.srcs/sources_1/bd/ex5/hdl/ex5.vhd" 
+
+nosort

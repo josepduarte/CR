@@ -4,8 +4,8 @@
 // Date        : Thu Mar 16 09:54:43 2017
 // Host        : Inator running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top ex2_xlconstant_2_0 -prefix
-//               ex2_xlconstant_2_0_ ex2_xlconstant_1_0_sim_netlist.v
-// Design      : ex2_xlconstant_1_0
+//               ex2_xlconstant_2_0_ ex2_xlconstant_0_0_sim_netlist.v
+// Design      : ex2_xlconstant_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7a100tcsg324-3
@@ -18,11 +18,11 @@ module ex2_xlconstant_2_0
    (dout);
   output [0:0]dout;
 
-  wire \<const1> ;
+  wire \<const0> ;
 
-  assign dout[0] = \<const1> ;
-  VCC VCC
-       (.P(\<const1> ));
+  assign dout[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
 endmodule
 `ifndef GLBL
 `define GLBL
