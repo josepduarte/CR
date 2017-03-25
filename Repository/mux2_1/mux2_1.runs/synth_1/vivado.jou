@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 24 09:38:32 2017
+# Process ID: 844
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Repository/mux2_1/mux2_1.runs/synth_1
+# Command line: vivado.exe -log Mux2_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mux2_1.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Repository/mux2_1/mux2_1.runs/synth_1/Mux2_1.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Repository/mux2_1/mux2_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Mux2_1.tcl -notrace
