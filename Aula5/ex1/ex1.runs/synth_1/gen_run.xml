@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1490739898">
+  <File Type="RDS-PROPCONSTRS" Name="ex1_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="ex1_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="ex1_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="ex1_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ex1_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ex1_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ex1_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ex1_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/ex1/ex1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ex1/hdl/ex1_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/vector128_16bits_random.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ex1_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/CR/Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Aula4/ex5/ex5.srcs/constrs_1/imports/CR/Nexys4_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1489751916"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_Mux4_1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_dist_mem_gen_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_dist_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlslice_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_counter_generic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconstant_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconcat_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconcat_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlslice_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlslice_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconcat_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_EightDispControl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconcat_3_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconstant_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_BinToBCD16_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_BinToBCD16_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconstant_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_util_vector_logic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_xlconcat_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_Mux2_1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex1_util_reduced_logic_0_0"/>
+</GenRun>

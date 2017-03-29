@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 29 21:26:06 2017
+# Process ID: 3660
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex3/ex3.runs/ex3_top_blk_mem_gen_0_1_synth_1
+# Command line: vivado.exe -log ex3_top_blk_mem_gen_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex3_top_blk_mem_gen_0_1.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex3/ex3.runs/ex3_top_blk_mem_gen_0_1_synth_1/ex3_top_blk_mem_gen_0_1.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex3/ex3.runs/ex3_top_blk_mem_gen_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ex3_top_blk_mem_gen_0_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 292.801 ; gain = 82.793
+INFO: [Synth 8-638] synthesizing module 'ex3_top_blk_mem_gen_0_1' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex3/ex3.srcs/sources_1/bd/ex3_top/ip/ex3_top_blk_mem_gen_0_1/synth/ex3_top_blk_mem_gen_0_1.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'ex3_top_blk_mem_gen_0_1' (9#1) [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex3/ex3.srcs/sources_1/bd/ex3_top/ip/ex3_top_blk_mem_gen_0_1/synth/ex3_top_blk_mem_gen_0_1.vhd:67]
+Finished RTL Elaboration : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 492.328 ; gain = 282.320
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 492.328 ; gain = 282.320
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 560.629 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 560.629 ; gain = 350.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 560.629 ; gain = 350.621
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 560.629 ; gain = 350.621
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:14 ; elapsed = 00:01:18 . Memory (MB): peak = 560.629 ; gain = 350.621
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 560.629 ; gain = 350.621
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 580.707 ; gain = 370.699
+Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 580.707 ; gain = 370.699
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 590.293 ; gain = 380.285
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 590.293 ; gain = 380.285
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 590.293 ; gain = 380.285
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 590.293 ; gain = 380.285
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 590.293 ; gain = 380.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 590.293 ; gain = 380.285
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 590.293 ; gain = 380.285
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAMB18E1 |     1|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 590.293 ; gain = 380.285
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 622.074 ; gain = 406.809

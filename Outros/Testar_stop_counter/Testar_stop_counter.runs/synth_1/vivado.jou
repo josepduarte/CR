@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Mar 28 22:15:37 2017
+# Process ID: 9832
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Outros/Testar_stop_counter/Testar_stop_counter.runs/synth_1
+# Command line: vivado.exe -log top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_wrapper.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Outros/Testar_stop_counter/Testar_stop_counter.runs/synth_1/top_wrapper.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Outros/Testar_stop_counter/Testar_stop_counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_wrapper.tcl -notrace

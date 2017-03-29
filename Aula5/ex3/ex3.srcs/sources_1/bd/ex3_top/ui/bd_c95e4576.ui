@@ -1,0 +1,38 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port clk -pg 1 -y -260 -defaultsOSRD
+preplace portBus an -pg 1 -y -190 -defaultsOSRD
+preplace portBus led -pg 1 -y -20 -defaultsOSRD
+preplace portBus seg -pg 1 -y -170 -defaultsOSRD
+preplace inst number_of_ones_0 -pg 1 -lvl 4 -y -180 -defaultsOSRD
+preplace inst EightDispControl_0 -pg 1 -lvl 8 -y -180 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y -210 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -y -130 -defaultsOSRD
+preplace inst counter_generic_0 -pg 1 -lvl 2 -y -240 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 3 -y -320 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 5 -y -90 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -y -190 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 7 -y -390 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y -160 -defaultsOSRD
+preplace inst BinToBCD16_0 -pg 1 -lvl 7 -y -190 -defaultsOSRD
+preplace netloc xlconstant_1_dout 1 1 6 20 -60 NJ -60 NJ -60 630J -140 770J -120 1000
+preplace netloc EightDispControl_0_segments 1 8 1 N
+preplace netloc BinToBCD16_0_BCD0 1 7 1 1200
+preplace netloc xlconstant_2_dout 1 3 4 410 -320 NJ -320 NJ -320 990
+preplace netloc BinToBCD16_0_BCD1 1 7 1 1210
+preplace netloc BinToBCD16_0_BCD2 1 7 1 1220
+preplace netloc BinToBCD16_0_BCD3 1 7 1 1230
+preplace netloc BinToBCD16_0_BCD4 1 7 1 1240
+preplace netloc xlconcat_0_dout 1 6 1 980
+preplace netloc xlconstant_0_dout 1 1 1 0
+preplace netloc clk_1 1 0 8 NJ -260 10 -70 180J -70 400 -70 620J -170 780 -130 970 -290 1240
+preplace netloc xlconstant_4_dout 1 7 1 1250
+preplace netloc blk_mem_gen_0_douta 1 2 7 190 -40 410J -40 NJ -40 NJ -40 NJ -40 NJ -40 1510
+preplace netloc counter_generic_0_led 1 2 1 180
+preplace netloc EightDispControl_0_select_display 1 8 1 N
+preplace netloc xlconstant_3_dout 1 5 1 790
+preplace netloc number_of_ones_0_result 1 4 2 NJ -180 770
+levelinfo -pg 1 -400 -60 100 300 520 700 880 1100 1380 1530 -top -600 -bot 130
+",
+}

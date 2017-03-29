@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ex1_xlconcat_3_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex1/ex1.runs/ex1_xlconcat_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_util_vector_logic_1_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex1/ex1.runs/ex1_util_vector_logic_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlconstant_6_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex1/ex1.runs/ex1_xlconstant_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_Mux2_1_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex1/ex1.runs/ex1_Mux2_1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_util_reduced_logic_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex1/ex1.runs/ex1_util_reduced_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex1_xlconcat_4_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex1/ex1.runs/ex1_xlconcat_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

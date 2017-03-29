@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="top_counter_generic_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Outros/Testar_stop_counter/Testar_stop_counter.runs/top_counter_generic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_xlconstant_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Outros/Testar_stop_counter/Testar_stop_counter.runs/top_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_xlconstant_1_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Outros/Testar_stop_counter/Testar_stop_counter.runs/top_xlconstant_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_Mux2_1_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Outros/Testar_stop_counter/Testar_stop_counter.runs/top_Mux2_1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_util_reduced_logic_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Outros/Testar_stop_counter/Testar_stop_counter.runs/top_util_reduced_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
