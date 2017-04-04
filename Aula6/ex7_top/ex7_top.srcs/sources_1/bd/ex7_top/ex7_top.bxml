@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="ex7_top" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1491346749"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1491346749"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1491346749"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1491349069"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1491349069"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1491349069"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\ex7_top_BubbleSorter_0_0\ex7_top_BubbleSorter_0_0.xci" Type="IP">
         <Instance HierarchyPath="BubbleSorter_0"/>

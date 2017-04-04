@@ -52,7 +52,7 @@ begin
         
         for lines in 15 downto 1 loop
             for i in 0 to lines-1 loop
-                if (onSort(i) < onSort(i+1)) then
+                if (onSort(i+1) < onSort(i)) then
                     temp := onSort(i);
                     onSort(i) := onSort(i+1);
                     onSort(i+1) := temp;

@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
---Date        : Tue Apr 04 23:59:04 2017
+--Date        : Wed Apr 05 00:37:47 2017
 --Host        : Inator running 64-bit major release  (build 9200)
 --Command     : generate_target ex7_top.bd
 --Design      : ex7_top
@@ -24,13 +24,6 @@ entity ex7_top is
 end ex7_top;
 
 architecture STRUCTURE of ex7_top is
-  component ex7_top_BubbleSorter_0_0 is
-  port (
-    clock : in STD_LOGIC;
-    dataIn : in STD_LOGIC_VECTOR ( 127 downto 0 );
-    dataOut : out STD_LOGIC_VECTOR ( 127 downto 0 )
-  );
-  end component ex7_top_BubbleSorter_0_0;
   component ex7_top_blk_mem_gen_0_0 is
   port (
     clka : in STD_LOGIC;
@@ -126,6 +119,13 @@ architecture STRUCTURE of ex7_top is
     dataOut : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component ex7_top_SliceMemory_0_0;
+  component ex7_top_BubbleSorter_0_0 is
+  port (
+    clock : in STD_LOGIC;
+    dataIn : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    dataOut : out STD_LOGIC_VECTOR ( 127 downto 0 )
+  );
+  end component ex7_top_BubbleSorter_0_0;
   signal BinToBCD16_0_BCD0 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal BinToBCD16_0_BCD1 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal BinToBCD16_0_BCD2 : STD_LOGIC_VECTOR ( 3 downto 0 );

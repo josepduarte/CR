@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ex7_top_BubbleSorter_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.runs/ex7_top_BubbleSorter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1491346968">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1491349311">
   <File Type="RDS-PROPCONSTRS" Name="ex7_top_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="ex7_top_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="ex7_top_wrapper.vds"/>
@@ -53,17 +53,17 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ex7_top_blk_mem_gen_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ex7_top_BubbleSorter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_BinToBCD16_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_blk_mem_gen_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_ClkDividerN_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_concat_memory_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconcat_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_blk_mem_gen_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_EightDispControl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_3_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ex7_top_SliceMemory_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_BubbleSorter_0_0"/>
 </GenRun>

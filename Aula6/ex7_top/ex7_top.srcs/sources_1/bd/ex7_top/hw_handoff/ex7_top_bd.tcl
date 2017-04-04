@@ -290,8 +290,8 @@ preplace inst xlconstant_2 -pg 1 -lvl 3 -y 280 -defaultsOSRD
 preplace inst SliceMemory_0 -pg 1 -lvl 3 -y 170 -defaultsOSRD
 preplace inst xlconstant_3 -pg 1 -lvl 5 -y 240 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 4 -y 270 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 320 -defaultsOSRD
 preplace inst BubbleSorter_0 -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 320 -defaultsOSRD
 preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -y 90 -defaultsOSRD
 preplace inst BinToBCD16_0 -pg 1 -lvl 5 -y 370 -defaultsOSRD
 preplace inst ClkDividerN_0 -pg 1 -lvl 2 -y 470 -defaultsOSRD

@@ -58,13 +58,6 @@
     <spirit:version>1.00.a</spirit:version>
     <spirit:componentInstances>
       <spirit:componentInstance>
-        <spirit:instanceName>BubbleSorter_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="BubbleSorter" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex7_top_BubbleSorter_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>blk_mem_gen_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="blk_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.3"/>
         <spirit:configurableElementValues>
@@ -177,6 +170,13 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex7_top_SliceMemory_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>BubbleSorter_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="BubbleSorter" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex7_top_BubbleSorter_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
@@ -209,12 +209,12 @@
       <spirit:adHocConnection>
         <spirit:name>clk_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="BubbleSorter_0" spirit:portRef="clock"/>
         <spirit:internalPortReference spirit:componentRef="concat_memory_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clka"/>
         <spirit:internalPortReference spirit:componentRef="ClkDividerN_0" spirit:portRef="clkIn"/>
         <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="BubbleSorter_0" spirit:portRef="clock"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>concat_memory_0_address</spirit:name>

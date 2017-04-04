@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Wed Apr 05 00:04:48 2017
+| Date             : Wed Apr 05 00:43:54 2017
 | Host             : Inator running 64-bit major release  (build 9200)
 | Command          : report_power -file ex7_top_wrapper_power_routed.rpt -pb ex7_top_wrapper_power_summary_routed.pb -rpx ex7_top_wrapper_power_routed.rpx
 | Design           : ex7_top_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.199  |
+| Total On-Chip Power (W)  | 0.198  |
 | Dynamic (W)              | 0.101  |
 | Device Static (W)        | 0.097  |
 | Effective TJA (C/W)      | 4.6    |
@@ -50,17 +50,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.049 |     3251 |       --- |             --- |
+| Slice Logic    |     0.050 |     3251 |       --- |             --- |
 |   LUT as Logic |     0.049 |     1838 |     63400 |            2.90 |
 |   CARRY4       |    <0.001 |      133 |     15850 |            0.84 |
 |   F7/F8 Muxes  |    <0.001 |       28 |     63400 |            0.04 |
 |   Register     |    <0.001 |      256 |    126800 |            0.20 |
 |   Others       |     0.000 |       15 |       --- |             --- |
-| Signals        |     0.039 |     2466 |       --- |             --- |
+| Signals        |     0.039 |     2465 |       --- |             --- |
 | Block RAM      |     0.002 |      0.5 |       135 |            0.37 |
 | I/O            |     0.009 |       16 |       210 |            7.62 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.199 |          |           |                 |
+| Total          |     0.198 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.108 |       0.093 |      0.015 |
+| Vccint    |       1.000 |     0.108 |       0.092 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,7 +140,7 @@ Table of Contents
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
 | ex7_top_wrapper                                |     0.101 |
-|   ex7_top_i                                    |     0.093 |
+|   ex7_top_i                                    |     0.092 |
 |     BinToBCD16_0                               |    <0.001 |
 |       U0                                       |    <0.001 |
 |     BubbleSorter_0                             |     0.085 |
