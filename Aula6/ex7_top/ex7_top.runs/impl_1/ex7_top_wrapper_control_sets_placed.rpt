@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Tue Apr 04 23:26:29 2017
+| Date         : Wed Apr 05 00:04:04 2017
 | Host         : Inator running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file ex7_top_wrapper_control_sets_placed.rpt
 | Design       : ex7_top_wrapper
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    19 |
-| Unused register locations in slices containing registers |     4 |
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |     8 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              48 |           18 |
+| No           | No                    | No                     |              92 |           35 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             164 |           58 |
+| Yes          | No                    | No                     |             164 |           51 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -45,35 +45,37 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+------------------------------------------------------+------------------+------------------+----------------+
-|  Clock Signal  |                     Enable Signal                    | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+------------------------------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[12][7]_i_1_n_0 |                  |                2 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[13][7]_i_1_n_0 |                  |                2 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[0][7]_i_1_n_0  |                  |                3 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[1][7]_i_1_n_0  |                  |                3 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[2][7]_i_1_n_0  |                  |                2 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[15][7]_i_1_n_0 |                  |                2 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[11][7]_i_1_n_0 |                  |                4 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s_reg[6]__0_n_0  |                  |                3 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s_reg[5]__0_n_0  |                  |                3 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s_reg[14]__0_n_0 |                  |                3 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s_reg[10]__0_n_0 |                  |                2 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[9][7]_i_1_n_0  |                  |                2 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[8][7]_i_1_n_0  |                  |                4 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[7][7]_i_1_n_0  |                  |                2 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[4][7]_i_1_n_0  |                  |                4 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/concat_memory_0/U0/vector_s[3][7]_i_1_n_0  |                  |                3 |              8 |
-|  clk_IBUF_BUFG | ex7_top_i/BinToBCD16_0/U0/int_rg_c[15]_i_1_n_0       |                  |                7 |             16 |
-|  clk_IBUF_BUFG | ex7_top_i/BinToBCD16_0/U0/get_outputs                |                  |                7 |             20 |
-|  clk_IBUF_BUFG |                                                      |                  |               18 |             48 |
-+----------------+------------------------------------------------------+------------------+------------------+----------------+
++------------------------------------+------------------------------------------------------+------------------+------------------+----------------+
+|            Clock Signal            |                     Enable Signal                    | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------------------+------------------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[0][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[11][7]_i_1_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[12][7]_i_1_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[13][7]_i_1_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[2][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[15][7]_i_1_n_0 |                  |                4 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[3][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[1][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[4][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s_reg[6]__0_n_0  |                  |                4 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s_reg[5]__0_n_0  |                  |                3 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s_reg[14]__0_n_0 |                  |                3 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s_reg[10]__0_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[9][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[8][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_IBUF_BUFG                     | ex7_top_i/concat_memory_0/U0/vector_s[7][7]_i_1_n_0  |                  |                4 |              8 |
+|  ex7_top_i/ClkDividerN_0/U0/clkOut |                                                      |                  |                9 |             12 |
+|  clk_IBUF_BUFG                     | ex7_top_i/BinToBCD16_0/U0/int_rg_c[15]_i_1_n_0       |                  |                3 |             16 |
+|  clk_IBUF_BUFG                     | ex7_top_i/BinToBCD16_0/U0/get_outputs                |                  |                4 |             20 |
+|  clk_IBUF_BUFG                     |                                                      |                  |               26 |             80 |
++------------------------------------+------------------------------------------------------+------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 8      |                    16 |
+| 12     |                     1 |
 | 16+    |                     3 |
 +--------+-----------------------+
 

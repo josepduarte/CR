@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
---Date        : Tue Apr 04 23:16:41 2017
+--Date        : Tue Apr 04 23:59:04 2017
 --Host        : Inator running 64-bit major release  (build 9200)
 --Command     : generate_target ex7_top.bd
 --Design      : ex7_top
@@ -58,14 +58,6 @@ architecture STRUCTURE of ex7_top is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component ex7_top_xlconstant_0_0;
-  component ex7_top_SliceMemory_0_0 is
-  port (
-    clock : in STD_LOGIC;
-    dataIn : in STD_LOGIC_VECTOR ( 127 downto 0 );
-    address : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    dataOut : out STD_LOGIC_VECTOR ( 7 downto 0 )
-  );
-  end component ex7_top_SliceMemory_0_0;
   component ex7_top_blk_mem_gen_1_0 is
   port (
     clka : in STD_LOGIC;
@@ -126,6 +118,14 @@ architecture STRUCTURE of ex7_top is
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component ex7_top_xlconstant_3_0;
+  component ex7_top_SliceMemory_0_0 is
+  port (
+    clock : in STD_LOGIC;
+    dataIn : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    address : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    dataOut : out STD_LOGIC_VECTOR ( 7 downto 0 )
+  );
+  end component ex7_top_SliceMemory_0_0;
   signal BinToBCD16_0_BCD0 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal BinToBCD16_0_BCD1 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal BinToBCD16_0_BCD2 : STD_LOGIC_VECTOR ( 3 downto 0 );

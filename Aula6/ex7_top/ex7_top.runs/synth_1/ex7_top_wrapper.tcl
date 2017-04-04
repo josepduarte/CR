@@ -22,7 +22,7 @@ set_property ip_repo_paths {
 } [current_project]
 set_property ip_output_repo c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex1/vector16_8bits_random.coe
+add_files C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex1/vector16_8bits_random.coe
 read_vhdl -library xil_defaultlib C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/hdl/ex7_top_wrapper.vhd
 add_files C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ex7_top.bd
 set_property used_in_implementation false [get_files -all c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ip/ex7_top_blk_mem_gen_0_0/ex7_top_blk_mem_gen_0_0_ooc.xdc]

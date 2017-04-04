@@ -19,15 +19,8 @@ begin
     begin
         if (rising_edge(clock)) then
             address_s <= std_logic_vector(unsigned(address_s) + 1); 
+            dataOut <= dataIn((to_integer(unsigned(address_s))+1)*bits-1 downto to_integer(unsigned(address_s))*bits);
         end if;
     end process;
-    
-    process
-    begin
-        for i in 0 to words-1 loop
-            dataOut <= dataIn((i+1)*bits-1 downto i*bits);
-        end loop;
-    end process;
-    
     address <= address_s;
 end Behavioral;

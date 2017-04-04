@@ -108,13 +108,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>SliceMemory_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="SliceMemory" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex7_top_SliceMemory_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>blk_mem_gen_1</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="blk_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.3"/>
         <spirit:configurableElementValues>
@@ -177,6 +170,13 @@
           <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>SliceMemory_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="SliceMemory" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex7_top_SliceMemory_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
@@ -203,8 +203,8 @@
       <spirit:adHocConnection>
         <spirit:name>ClkDividerN_0_clkOut</spirit:name>
         <spirit:internalPortReference spirit:componentRef="ClkDividerN_0" spirit:portRef="clkOut"/>
-        <spirit:internalPortReference spirit:componentRef="SliceMemory_0" spirit:portRef="clock"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clka"/>
+        <spirit:internalPortReference spirit:componentRef="SliceMemory_0" spirit:portRef="clock"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_1</spirit:name>

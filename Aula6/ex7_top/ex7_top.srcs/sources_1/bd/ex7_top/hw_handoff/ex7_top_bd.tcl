@@ -287,9 +287,9 @@ preplace inst xlconstant_0 -pg 1 -lvl 1 -y 410 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 4 -y 360 -defaultsOSRD
 preplace inst concat_memory_0 -pg 1 -lvl 1 -y 270 -defaultsOSRD
 preplace inst xlconstant_2 -pg 1 -lvl 3 -y 280 -defaultsOSRD
+preplace inst SliceMemory_0 -pg 1 -lvl 3 -y 170 -defaultsOSRD
 preplace inst xlconstant_3 -pg 1 -lvl 5 -y 240 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 4 -y 270 -defaultsOSRD
-preplace inst SliceMemory_0 -pg 1 -lvl 3 -y 170 -defaultsOSRD
 preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 320 -defaultsOSRD
 preplace inst BubbleSorter_0 -pg 1 -lvl 2 -y 170 -defaultsOSRD
 preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -y 90 -defaultsOSRD
@@ -315,7 +315,7 @@ preplace netloc EightDispControl_0_select_display 1 6 1 NJ
 preplace netloc xlconstant_3_dout 1 5 1 1200
 preplace netloc SliceMemory_0_dataOut 1 3 2 760 180 970J
 preplace netloc concat_memory_0_address 1 1 1 270
-levelinfo -pg 1 0 150 410 650 870 1100 1340 1490 -top 0 -bot 530
+levelinfo -pg 1 0 150 410 650 870 1100 1350 1510 -top 0 -bot 530
 ",
 }
 

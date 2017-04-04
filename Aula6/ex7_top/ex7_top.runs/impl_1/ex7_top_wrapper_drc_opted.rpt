@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Tue Apr 04 23:26:17 2017
+| Date         : Wed Apr 05 00:03:56 2017
 | Host         : Inator running 64-bit major release  (build 9200)
 | Command      : report_drc -file ex7_top_wrapper_drc_opted.rpt
 | Design       : ex7_top_wrapper
