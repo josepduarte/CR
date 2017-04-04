@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1491344711">
+  <File Type="RDS-PROPCONSTRS" Name="ex7_top_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="ex7_top_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="ex7_top_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="ex7_top_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ex7_top_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ex7_top_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ex7_top_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ex7_top_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/ex7_top/ex7_top.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ex7_top/hdl/ex7_top_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ex1/vector16_8bits_random.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ex7_top_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/CR/Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ex1/ex1.srcs/constrs_1/imports/CR/Nexys4_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1489751916"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_blk_mem_gen_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_BubbleSorter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_BinToBCD16_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_ClkDividerN_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_concat_memory_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_SliceMemory_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_EightDispControl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ex7_top_xlconstant_3_0"/>
+</GenRun>

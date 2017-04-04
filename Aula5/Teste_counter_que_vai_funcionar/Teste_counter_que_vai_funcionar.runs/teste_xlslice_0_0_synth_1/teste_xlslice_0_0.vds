@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 18:23:10 2017
+# Process ID: 12508
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.runs/teste_xlslice_0_0_synth_1
+# Command line: vivado.exe -log teste_xlslice_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source teste_xlslice_0_0.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.runs/teste_xlslice_0_0_synth_1/teste_xlslice_0_0.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.runs/teste_xlslice_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source teste_xlslice_0_0.tcl -notrace
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 290.684 ; gain = 80.504
+INFO: [Synth 8-638] synthesizing module 'teste_xlslice_0_0' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.srcs/sources_1/bd/teste/ip/teste_xlslice_0_0/synth/teste_xlslice_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'xlslice' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.srcs/sources_1/bd/teste/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'xlslice' (1#1) [c:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.srcs/sources_1/bd/teste/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'teste_xlslice_0_0' (2#1) [c:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.srcs/sources_1/bd/teste/ip/teste_xlslice_0_0/synth/teste_xlslice_0_0.vhd:66]
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 328.070 ; gain = 117.891
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 328.070 ; gain = 117.891
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 328.070 ; gain = 117.891
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 328.070 ; gain = 117.891
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 445.344 ; gain = 235.164
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 445.344 ; gain = 235.164
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 447.352 ; gain = 237.172
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 447.352 ; gain = 237.172
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 447.352 ; gain = 237.172
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 447.352 ; gain = 237.172
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 447.352 ; gain = 237.172
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 447.352 ; gain = 237.172
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 447.352 ; gain = 237.172
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 447.352 ; gain = 237.172
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 525.246 ; gain = 309.848
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 909.176 ; gain = 383.930

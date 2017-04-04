@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="test_concat_concat_memory_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/test_concat_concat_memory_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="test_concat_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/test_concat_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="test_concat_number_of_ones_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/test_concat_number_of_ones_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="test_concat_xlconstant_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/test_concat_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="test_concat_BinToBCD16_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/test_concat_BinToBCD16_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="test_concat_xlconstant_1_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/test_concat_xlconstant_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="test_concat_EightDispControl_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/test_concat_EightDispControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="test_concat_xlconstant_2_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/test_concat_xlconstant_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="test_concat_concat_memory_0_0_synth_1"/>
+		<Parent Id="test_concat_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="test_concat_number_of_ones_0_0_synth_1"/>
+		<Parent Id="test_concat_xlconstant_0_0_synth_1"/>
+		<Parent Id="test_concat_BinToBCD16_0_0_synth_1"/>
+		<Parent Id="test_concat_xlconstant_1_0_synth_1"/>
+		<Parent Id="test_concat_EightDispControl_0_0_synth_1"/>
+		<Parent Id="test_concat_xlconstant_2_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/testes/concat_memory/concat_memory.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="test_concat_concat_memory_0_0_synth_1"/>
+		<Parent Id="test_concat_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="test_concat_number_of_ones_0_0_synth_1"/>
+		<Parent Id="test_concat_xlconstant_0_0_synth_1"/>
+		<Parent Id="test_concat_BinToBCD16_0_0_synth_1"/>
+		<Parent Id="test_concat_xlconstant_1_0_synth_1"/>
+		<Parent Id="test_concat_EightDispControl_0_0_synth_1"/>
+		<Parent Id="test_concat_xlconstant_2_0_synth_1"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../generic_concat_all_memory.srcs/sources_1/new/concat_memory.vhd"
+
+# Do not sort compile order
+nosort

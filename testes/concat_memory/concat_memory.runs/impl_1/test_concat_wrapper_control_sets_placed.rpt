@@ -1,0 +1,210 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Mon Apr 03 15:57:51 2017
+| Host         : Inator running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file test_concat_wrapper_control_sets_placed.rpt
+| Design       : test_concat_wrapper
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   149 |
+| Unused register locations in slices containing registers |    16 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              86 |           35 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              35 |           10 |
+| Yes          | No                    | No                     |            2095 |          593 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            2048 |          520 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                        Enable Signal                        |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | test_concat_i/number_of_ones_0/U0/Current_State             |                                                 |                2 |             11 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[10]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[84]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[85]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[86]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[87]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[88]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[89]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[8]__0         |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[90]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[91]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/BinToBCD16_0/U0/int_rg_c[15]_i_1_n_0          |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[92]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[93]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[94]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[95]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[96]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[97]__0        |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[98]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[32]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[99]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[123]__0       |                                                 |                7 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[122]__0       |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[121]__0       |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[120]__0       |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[11]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[119]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[118]__0       |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[117]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[116]__0       |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[115]__0       |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[114]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[113]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[112]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[111]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[110]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[9]__0         |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[109]__0       |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[108]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[107]__0       |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[106]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[105]__0       |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[104]__0       |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[103]__0       |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[102]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[101]__0       |                                                 |                7 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[100]__0       |                                                 |                7 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[0]__0         |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[124]__0       |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[125]__0       |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[126]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[127]__0       |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[12]__0        |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[13]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[14]__0        |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[15]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[16]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[17]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[18]__0        |                                                 |                9 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[19]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[1]__0         |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[20]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[21]__0        |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[22]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[23]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[24]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[25]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[26]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[27]__0        |                                                 |                9 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[28]__0        |                                                 |                8 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[29]__0        |                                                 |               11 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[2]__0         |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[30]__0        |                                                 |                9 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[31]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[83]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[33]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[34]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[35]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[36]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[37]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[38]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[39]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[3]__0         |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[40]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[41]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[42]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[43]__0        |                                                 |                7 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[44]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[45]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[46]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[47]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[48]__0        |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[49]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[4]__0         |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[50]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[51]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[52]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[53]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[54]__0        |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[55]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[56]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[57]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[58]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[59]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[5]__0         |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[60]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[61]__0        |                                                 |                8 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[62]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[63]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[64]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[65]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[66]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[67]__0        |                                                 |                7 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[68]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[69]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[6]__0         |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[70]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[71]__0        |                                                 |                2 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[72]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[73]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[74]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[75]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[76]__0        |                                                 |                3 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[77]__0        |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[78]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[79]__0        |                                                 |                5 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[7]__0         |                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[80]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[81]__0        |                                                 |                6 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/concat_memory_0/U0/vector_s_reg[82]__0        |                                                 |                7 |             16 |
+|  clk_IBUF_BUFG | test_concat_i/BinToBCD16_0/U0/get_outputs                   |                                                 |                5 |             20 |
+|  clk_IBUF_BUFG |                                                             | test_concat_i/number_of_ones_0/U0/Current_State |               10 |             35 |
+|  clk_IBUF_BUFG |                                                             |                                                 |               35 |             86 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[0][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               17 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[10][127]_i_1_n_0 | test_concat_i/number_of_ones_0/U0/result[0]     |               37 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[8][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               34 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[12][127]_i_1_n_0 | test_concat_i/number_of_ones_0/U0/result[0]     |               36 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[15][127]_i_1_n_0 | test_concat_i/number_of_ones_0/U0/result[0]     |               18 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[13][127]_i_1_n_0 | test_concat_i/number_of_ones_0/U0/result[0]     |               34 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[14][127]_i_1_n_0 | test_concat_i/number_of_ones_0/U0/result[0]     |               33 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[11][127]_i_1_n_0 | test_concat_i/number_of_ones_0/U0/result[0]     |               37 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[7][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               33 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[6][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               34 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[9][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               34 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[5][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               34 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[4][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               34 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[3][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               36 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[1][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               34 |            128 |
+|  clk_IBUF_BUFG | test_concat_i/IterativeSorterFSM_0/U0/MyAr[2][127]_i_1_n_0  | test_concat_i/number_of_ones_0/U0/result[0]     |               35 |            128 |
++----------------+-------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 11     |                     1 |
+| 16+    |                   148 |
++--------+-----------------------+
+
+

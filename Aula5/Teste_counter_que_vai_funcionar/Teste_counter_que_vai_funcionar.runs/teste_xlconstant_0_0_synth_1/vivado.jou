@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 18:29:21 2017
+# Process ID: 8080
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.runs/teste_xlconstant_0_0_synth_1
+# Command line: vivado.exe -log teste_xlconstant_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source teste_xlconstant_0_0.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.runs/teste_xlconstant_0_0_synth_1/teste_xlconstant_0_0.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.runs/teste_xlconstant_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source teste_xlconstant_0_0.tcl -notrace

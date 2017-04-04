@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 18:48:45 2017
+# Process ID: 13280
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter_que_vai_funcionar/ex2_counter_que_vai_funcionar.runs/synth_1
+# Command line: vivado.exe -log counter_between.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_between.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter_que_vai_funcionar/ex2_counter_que_vai_funcionar.runs/synth_1/counter_between.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter_que_vai_funcionar/ex2_counter_que_vai_funcionar.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source counter_between.tcl -notrace

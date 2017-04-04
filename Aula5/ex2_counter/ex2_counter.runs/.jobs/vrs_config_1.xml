@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="teste_counter_between_x_and_y_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_counter_between_x_and_y_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="teste_ClkDividerN_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_ClkDividerN_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="teste_xlconstant_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="teste_xlslice_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_xlslice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="teste_xlslice_0_1_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_xlslice_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

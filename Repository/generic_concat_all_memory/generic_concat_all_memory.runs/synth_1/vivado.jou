@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 15:24:48 2017
+# Process ID: 10944
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Repository/generic_concat_all_memory/generic_concat_all_memory.runs/synth_1
+# Command line: vivado.exe -log concat_memory.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source concat_memory.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Repository/generic_concat_all_memory/generic_concat_all_memory.runs/synth_1/concat_memory.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Repository/generic_concat_all_memory/generic_concat_all_memory.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source concat_memory.tcl -notrace

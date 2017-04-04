@@ -1,0 +1,259 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 16:55:45 2017
+# Process ID: 2560
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_counter_between_x_and_y_1_0_synth_1
+# Command line: vivado.exe -log teste_counter_between_x_and_y_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source teste_counter_between_x_and_y_1_0.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_counter_between_x_and_y_1_0_synth_1/teste_counter_between_x_and_y_1_0.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_counter_between_x_and_y_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source teste_counter_between_x_and_y_1_0.tcl -notrace
+Command: synth_design -top teste_counter_between_x_and_y_1_0 -part xc7a100tcsg324-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8928 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 290.250 ; gain = 79.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'teste_counter_between_x_and_y_1_0' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ip/teste_counter_between_x_and_y_1_0/synth/teste_counter_between_x_and_y_1_0.vhd:65]
+INFO: [Synth 8-3491] module 'counter_between_x_and_y' declared at 'c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:34' bound to instance 'U0' of component 'counter_between_x_and_y' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ip/teste_counter_between_x_and_y_1_0/synth/teste_counter_between_x_and_y_1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'counter_between_x_and_y' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:41]
+WARNING: [Synth 8-614] signal 'x' is read in the process but is not in the sensitivity list [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'counter_between_x_and_y' (1#1) [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'teste_counter_between_x_and_y_1_0' (2#1) [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ip/teste_counter_between_x_and_y_1_0/synth/teste_counter_between_x_and_y_1_0.vhd:65]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 328.520 ; gain = 118.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 328.520 ; gain = 118.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 328.520 ; gain = 118.223
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+WARNING: [Synth 8-327] inferring latch for variable 'count_s_reg' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+WARNING: [Synth 8-327] inferring latch for variable 'flag_s_reg' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 334.977 ; gain = 124.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter_between_x_and_y 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (U0/flag_s_reg) is unused and will be removed from module teste_counter_between_x_and_y_1_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/flag_s_reg/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:57]
+INFO: [Synth 8-3332] Sequential element (U0/flag_s_reg__0) is unused and will be removed from module teste_counter_between_x_and_y_1_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[7] with 1st driver pin 'U0/count_s_reg[7]__0/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[7] with 2nd driver pin 'U0/count_s_reg[7]/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[6] with 1st driver pin 'U0/count_s_reg[6]__0/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[6] with 2nd driver pin 'U0/count_s_reg[6]/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[5] with 1st driver pin 'U0/count_s_reg[5]__0/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[5] with 2nd driver pin 'U0/count_s_reg[5]/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[4] with 1st driver pin 'U0/count_s_reg[4]__0/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[4] with 2nd driver pin 'U0/count_s_reg[4]/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[3] with 1st driver pin 'U0/count_s_reg[3]__0/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[3] with 2nd driver pin 'U0/count_s_reg[3]/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[2] with 1st driver pin 'U0/count_s_reg[2]__0/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[2] with 2nd driver pin 'U0/count_s_reg[2]/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[1] with 1st driver pin 'U0/count_s_reg[1]__0/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[1] with 2nd driver pin 'U0/count_s_reg[1]/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[0] with 1st driver pin 'U0/count_s_reg[0]__0/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:48]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net count[0] with 2nd driver pin 'U0/count_s_reg[0]/Q' [c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ipshared/6cce/new/counter_between_x_and_y.vhd:56]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        8|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     2|
+|3     |LUT3 |     2|
+|4     |LUT4 |     1|
+|5     |LUT5 |     1|
+|6     |LUT6 |     5|
+|7     |FDRE |     8|
+|8     |LD   |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+------------------------+------+
+|      |Instance |Module                  |Cells |
++------+---------+------------------------+------+
+|1     |top      |                        |    28|
+|2     |  U0     |counter_between_x_and_y |    28|
++------+---------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 479.309 ; gain = 269.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 19 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 479.309 ; gain = 263.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 479.309 ; gain = 269.012
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 3 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 549.105 ; gain = 333.531
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_counter_between_x_and_y_1_0_synth_1/teste_counter_between_x_and_y_1_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 991.000 ; gain = 441.895
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.srcs/sources_1/bd/teste/ip/teste_counter_between_x_and_y_1_0/teste_counter_between_x_and_y_1_0.xci
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jduarte/Documents/GitHub/CR/Aula5/ex2_counter/ex2_counter.runs/teste_counter_between_x_and_y_1_0_synth_1/teste_counter_between_x_and_y_1_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 998.816 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 03 16:56:17 2017...

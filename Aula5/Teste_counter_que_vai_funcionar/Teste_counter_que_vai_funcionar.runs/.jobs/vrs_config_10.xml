@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="teste_counter_between_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/Aula5/Teste_counter_que_vai_funcionar/Teste_counter_que_vai_funcionar.runs/teste_counter_between_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

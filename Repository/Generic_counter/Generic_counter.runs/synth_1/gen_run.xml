@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1490009051">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1491237791">
   <File Type="RDS-PROPCONSTRS" Name="ex6_mapping_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="ex6_mapping.tcl"/>
   <File Type="RDS-RDS" Name="ex6_mapping.vds"/>
@@ -37,6 +37,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="ex6_mapping"/>
@@ -58,9 +61,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 10:48:49 2017
+# Process ID: 9708
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Repository/Generic_counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2616 C:\Users\jduarte\Documents\GitHub\CR\Repository\Generic_counter\Generic_counter.xpr
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Repository/Generic_counter/vivado.log
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Repository/Generic_counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jduarte/Documents/GitHub/CR/Repository/Generic_counter/Generic_counter.xpr

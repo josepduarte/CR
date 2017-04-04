@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 18 12:18:35 2016
+# Process ID: 2140
+# Current directory: D:/Aulas/Dropbox/REPOSITORY/Max
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9600 D:\Aulas\Dropbox\REPOSITORY\Max\Max.xpr
+# Log file: D:/Aulas/Dropbox/REPOSITORY/Max/vivado.log
+# Journal file: D:/Aulas/Dropbox/REPOSITORY/Max\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Aulas/Dropbox/REPOSITORY/Max/Max.xpr
+close_project
+open_project D:/Aulas/Dropbox/REPOSITORY/DataDivider/DataDivider.xpr
+close_project
+open_project D:/Aulas/Dropbox/REPOSITORY/HammingFunction/HammingFunction.xpr
