@@ -1,0 +1,18 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port btnC -pg 1 -y 60 -defaultsOSRD
+preplace port clk -pg 1 -y 40 -defaultsOSRD
+preplace portBus led -pg 1 -y 50 -defaultsOSRD
+preplace portBus dout -pg 1 -y 70 -defaultsOSRD
+preplace portBus din -pg 1 -y 80 -defaultsOSRD
+preplace inst Get2DigitsN_0 -pg 1 -lvl 1 -y 60 -defaultsOSRD
+preplace netloc Get2DigitsN_0_dout 1 1 1 NJ
+preplace netloc btnC_1 1 0 1 NJ
+preplace netloc clk_1 1 0 1 NJ
+preplace netloc Get2DigitsN_0_Digits 1 1 1 NJ
+preplace netloc din_1 1 0 1 NJ
+levelinfo -pg 1 0 110 220 -top 0 -bot 130
+",
+}
+0

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Apr 02 08:31:20 2017
+# Process ID: 2216
+# Current directory: K:/Stud2April/KeyPadNexys4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent384 K:\Stud2April\KeyPadNexys4\KeyPadNexys4.xpr
+# Log file: K:/Stud2April/KeyPadNexys4/vivado.log
+# Journal file: K:/Stud2April/KeyPadNexys4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/Stud2April/KeyPadNexys4/KeyPadNexys4.xpr
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  K:/Stud2April/ZyBo2017 [current_project]
+update_ip_catalog

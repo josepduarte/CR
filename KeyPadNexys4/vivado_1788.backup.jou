@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Apr 02 07:17:20 2017
+# Process ID: 1788
+# Current directory: K:/CRExamples2017/AT8/KeyPadNexys4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3460 K:\CRExamples2017\AT8\KeyPadNexys4\KeyPadNexys4.xpr
+# Log file: K:/CRExamples2017/AT8/KeyPadNexys4/vivado.log
+# Journal file: K:/CRExamples2017/AT8/KeyPadNexys4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.xpr
+open_bd_design {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.srcs/sources_1/bd/B/B.bd}
+set_property is_enabled false [get_files  K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.srcs/constrs_1/new/ZyBo.xdc]
+open_bd_design {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.srcs/sources_1/bd/B/B.bd}
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets InterfaceKeypad_0_TwoDigits]
+regenerate_bd_layout
+create_bd_port -dir O -from 7 -to 0 led
+startgroup
+connect_bd_net [get_bd_ports led] [get_bd_pins Get2Digits_0/Digits]
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets xlslice_0_Dout] [get_bd_cells xlslice_0]
+delete_bd_objs [get_bd_nets xlslice_1_Dout] [get_bd_cells xlslice_1]
+delete_bd_objs [get_bd_nets ToDisp_0_jc_p] [get_bd_nets ToDisp_0_jc_n] [get_bd_nets ToDisp_0_jb_p] [get_bd_nets ToDisp_0_jb_n] [get_bd_cells ToDisp_0]
+delete_bd_objs [get_bd_ports jc_p]
+delete_bd_objs [get_bd_ports jc_n]
+delete_bd_objs [get_bd_ports jb_p]
+delete_bd_objs [get_bd_ports jb_n]
+regenerate_bd_layout
+regenerate_bd_layout
+open_bd_design {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.srcs/sources_1/bd/B/B.bd}
+delete_bd_objs [get_bd_nets btn_1] [get_bd_ports btn]
+create_bd_port -dir I btnC
+connect_bd_net [get_bd_ports btnC] [get_bd_pins Get2Digits_0/btn]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_2
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+open_bd_design {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.srcs/sources_1/bd/B/B.bd}
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -repo_path k:/CRExamples2017/AT8/ZyBo2017
+delete_bd_objs [get_bd_nets clk_1] [get_bd_nets Get2Digits_0_Digits] [get_bd_nets btnC_1] [get_bd_nets din_1] [get_bd_nets Get2Digits_0_dout] [get_bd_cells Get2Digits_0]
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:Get2DigitsNexys:1.0 Get2DigitsNexys_0
+endgroup
+set_property location {-19 36} [get_bd_ports clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Get2DigitsNexys_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins Get2DigitsNexys_0/btn]
+connect_bd_net [get_bd_ports din] [get_bd_pins Get2DigitsNexys_0/din]
+connect_bd_net [get_bd_ports dout] [get_bd_pins Get2DigitsNexys_0/dout]
+connect_bd_net [get_bd_ports led] [get_bd_pins Get2DigitsNexys_0/Digits]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_3 -jobs 4
+wait_on_run impl_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.runs/impl_3/B_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.runs/impl_3/B_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.runs/impl_3/B_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_2
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.runs/impl_3/B_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_3 -jobs 4
+wait_on_run impl_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+launch_runs impl_3 -jobs 4
+wait_on_run impl_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {K:/CRExamples2017/AT8/KeyPadNexys4/KeyPadNexys4.runs/impl_3/B_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

@@ -1,0 +1,474 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 23 13:02:48 2017
+# Process ID: 5684
+# Current directory: K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1
+# Command line: vivado.exe -log B_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source B_wrapper.tcl
+# Log file: K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1/B_wrapper.vds
+# Journal file: K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source B_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/CRExamples2017/AT8/ZyBo2017'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+Command: synth_design -top B_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3212 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 323.391 ; gain = 112.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'B_wrapper' [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B_wrapper.vhd:27]
+INFO: [Synth 8-3491] module 'B' declared at 'K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B.vhd:14' bound to instance 'B_i' of component 'B' [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B_wrapper.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'B' [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B.vhd:31]
+INFO: [Synth 8-3491] module 'B_InterfaceKeypad_0_0' declared at 'k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/synth/B_InterfaceKeypad_0_0.vhd:59' bound to instance 'InterfaceKeypad_0' of component 'B_InterfaceKeypad_0_0' [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'B_InterfaceKeypad_0_0' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/synth/B_InterfaceKeypad_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'InterfaceKeypad' declared at 'k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/32f0/sources_1/new/MyKeyPad.vhd:6' bound to instance 'U0' of component 'InterfaceKeypad' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/synth/B_InterfaceKeypad_0_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'InterfaceKeypad' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/32f0/sources_1/new/MyKeyPad.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'Take_Data_from_KP' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/32f0/sources_1/new/IntKeyPad.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/32f0/sources_1/imports/HammingWeightWithVGAandKypadZedBoard/Keypad_data.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (1#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/32f0/sources_1/imports/HammingWeightWithVGAandKypadZedBoard/Keypad_data.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Take_Data_from_KP' (2#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/32f0/sources_1/new/IntKeyPad.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'InterfaceKeypad' (3#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/32f0/sources_1/new/MyKeyPad.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'B_InterfaceKeypad_0_0' (4#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/synth/B_InterfaceKeypad_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'B_ToDisp_0_0' declared at 'k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/synth/B_ToDisp_0_0.vhd:56' bound to instance 'ToDisp_0' of component 'B_ToDisp_0_0' [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'B_ToDisp_0_0' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/synth/B_ToDisp_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'ToDisp' declared at 'k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/1dcf/sources_1/imports/new/ToDisp.vhd:6' bound to instance 'U0' of component 'ToDisp' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/synth/B_ToDisp_0_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'ToDisp' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/1dcf/sources_1/imports/new/ToDisp.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/1dcf/sources_1/imports/FirstTrivial/Clock_divider.vhd:12]
+	Parameter how_fast bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (5#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/1dcf/sources_1/imports/FirstTrivial/Clock_divider.vhd:12]
+INFO: [Synth 8-226] default block is never used [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/1dcf/sources_1/imports/new/ToDisp.vhd:22]
+INFO: [Synth 8-226] default block is never used [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/1dcf/sources_1/imports/new/ToDisp.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ToDisp' (6#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/1dcf/sources_1/imports/new/ToDisp.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'B_ToDisp_0_0' (7#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/synth/B_ToDisp_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'B_xlslice_0_0' declared at 'k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_xlslice_0_0/synth/B_xlslice_0_0.vhd:59' bound to instance 'xlslice_0' of component 'B_xlslice_0_0' [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'B_xlslice_0_0' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_xlslice_0_0/synth/B_xlslice_0_0.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_xlslice_0_0/synth/B_xlslice_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice' (8#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'B_xlslice_0_0' (9#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_xlslice_0_0/synth/B_xlslice_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'B_xlslice_1_0' declared at 'k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_xlslice_1_0/synth/B_xlslice_1_0.vhd:59' bound to instance 'xlslice_1' of component 'B_xlslice_1_0' [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'B_xlslice_1_0' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_xlslice_1_0/synth/B_xlslice_1_0.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_xlslice_1_0/synth/B_xlslice_1_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized1' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized1' (9#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'B_xlslice_1_0' (10#1) [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_xlslice_1_0/synth/B_xlslice_1_0.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'B' (11#1) [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'B_wrapper' (12#1) [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/hdl/B_wrapper.vhd:27]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 361.309 ; gain = 150.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 361.309 ; gain = 150.305
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc] for cell 'B_i/InterfaceKeypad_0/U0'
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc] for cell 'B_i/InterfaceKeypad_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_InterfaceKeypad_0_0/constrs_1/imports/ZyBo/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/B_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/B_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc] for cell 'B_i/ToDisp_0/U0'
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc] for cell 'B_i/ToDisp_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ip/B_ToDisp_0_0/constrs_1/imports/ZyBoDef2015/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/B_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/B_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'jb_p[0]'. [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_p[0]'. [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_p[1]'. [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_p[1]'. [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/constrs_1/imports/ZyBo/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/B_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/B_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/B_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/B_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 663.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for B_i/InterfaceKeypad_0/U0. (constraint file  K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1/dont_touch.xdc, line 22).
+Applied set_property DONT_TOUCH = true for B_i/ToDisp_0/U0. (constraint file  K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1/dont_touch.xdc, line 25).
+Applied set_property DONT_TOUCH = true for B_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for B_i/InterfaceKeypad_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for B_i/ToDisp_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for B_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for B_i/xlslice_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'DigitIn_reg[7:0]' into 'digits_reg[7:0]' [k:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.srcs/sources_1/bd/B/ipshared/32f0/sources_1/new/IntKeyPad.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  32 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	  12 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	  12 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Take_Data_from_KP 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module ToDisp 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  32 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design B_xlslice_1_0 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design B_xlslice_1_0 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design B_xlslice_1_0 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design B_xlslice_1_0 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design B_xlslice_0_0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design B_xlslice_0_0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design B_xlslice_0_0 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design B_xlslice_0_0 has unconnected port Din[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
+WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop vect_reg[4] is being inverted and renamed to vect_reg[4]_inv.
+INFO: [Synth 8-5365] Flop vect_reg[6] is being inverted and renamed to vect_reg[6]_inv.
+INFO: [Synth 8-5365] Flop vect_reg[1] is being inverted and renamed to vect_reg[1]_inv.
+INFO: [Synth 8-5365] Flop vect_reg[3] is being inverted and renamed to vect_reg[3]_inv.
+INFO: [Synth 8-5365] Flop vect_reg[0] is being inverted and renamed to vect_reg[0]_inv.
+INFO: [Synth 8-5365] Flop vect_reg[2] is being inverted and renamed to vect_reg[2]_inv.
+INFO: [Synth 8-5365] Flop vect_reg[5] is being inverted and renamed to vect_reg[5]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     9|
+|3     |LUT1   |    39|
+|4     |LUT2   |     5|
+|5     |LUT3   |     6|
+|6     |LUT4   |    28|
+|7     |LUT5   |    13|
+|8     |LUT6   |    32|
+|9     |FDRE   |    70|
+|10    |IBUF   |     6|
+|11    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+----------------------+------+
+|      |Instance              |Module                |Cells |
++------+----------------------+----------------------+------+
+|1     |top                   |                      |   221|
+|2     |  B_i                 |B                     |   202|
+|3     |    InterfaceKeypad_0 |B_InterfaceKeypad_0_0 |   142|
+|4     |      U0              |InterfaceKeypad       |   142|
+|5     |        keypad        |Take_Data_from_KP     |   142|
+|6     |          dec         |Decoder               |   128|
+|7     |    ToDisp_0          |B_ToDisp_0_0          |    60|
+|8     |      U0              |ToDisp                |    60|
+|9     |        div           |clock_divider         |    36|
+|10    |    xlslice_0         |B_xlslice_0_0         |     0|
+|11    |    xlslice_1         |B_xlslice_1_0         |     0|
++------+----------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 663.188 ; gain = 452.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 663.188 ; gain = 112.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 663.188 ; gain = 452.184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 38 Warnings, 20 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 663.188 ; gain = 418.938
+INFO: [Common 17-1381] The checkpoint 'K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1/B_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 663.188 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 23 13:03:14 2017...

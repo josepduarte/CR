@@ -1,0 +1,84 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Wed Apr 05 14:47:59 2017
+| Host         : Inator running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ex5_wrapper_control_sets_placed.rpt
+| Design       : ex5_wrapper
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |    17 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              99 |           37 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             172 |           67 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+--------------------------------------------------+------------------+------------------+----------------+
+|          Clock Signal          |                   Enable Signal                  | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------+--------------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG                 | ex5_i/getAddress_0/U0/sel                        |                  |                2 |              4 |
+|  clk_IBUF_BUFG                 | ex5_i/getAddress_1/U0/sel                        |                  |                1 |              4 |
+|  ex5_i/ClkDividerN_0/U0/clkOut |                                                  |                  |                2 |              4 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[0][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[11][7]_i_1_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[13][7]_i_1_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[12][7]_i_1_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[2][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s_reg[6]__0_n_0  |                  |                4 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s_reg[5]__0_n_0  |                  |                5 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s_reg[14]__0_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s_reg[10]__0_n_0 |                  |                3 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[9][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[8][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[7][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[4][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[3][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[1][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/concat_memory_0/U0/vector_s[15][7]_i_1_n_0 |                  |                2 |              8 |
+|  clk_IBUF_BUFG                 | ex5_i/BinToBCD16_0/U0/int_rg_c[15]_i_1_n_0       |                  |                4 |             16 |
+|  clk_IBUF_BUFG                 | ex5_i/BinToBCD16_0/U0/get_outputs                |                  |                8 |             20 |
+|  clk_IBUF_BUFG                 |                                                  |                  |               35 |             95 |
++--------------------------------+--------------------------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     3 |
+| 8      |                    16 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

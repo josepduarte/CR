@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 23 13:02:48 2017
+# Process ID: 5684
+# Current directory: K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1
+# Command line: vivado.exe -log B_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source B_wrapper.tcl
+# Log file: K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1/B_wrapper.vds
+# Journal file: K:/CRExamples2017/AT8/FromKeypadToDisplays/FromKeypadToDisplays.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source B_wrapper.tcl -notrace

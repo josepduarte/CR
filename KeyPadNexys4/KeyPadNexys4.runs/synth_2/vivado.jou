@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Apr 02 08:37:26 2017
+# Process ID: 4960
+# Current directory: K:/Stud2April/KeyPadNexys4/KeyPadNexys4.runs/synth_2
+# Command line: vivado.exe -log B_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source B_wrapper.tcl
+# Log file: K:/Stud2April/KeyPadNexys4/KeyPadNexys4.runs/synth_2/B_wrapper.vds
+# Journal file: K:/Stud2April/KeyPadNexys4/KeyPadNexys4.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source B_wrapper.tcl -notrace

@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 05 14:25:16 2017
+# Process ID: 388
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex5/ex5.runs/ex5_util_vector_logic_0_2_synth_1
+# Command line: vivado.exe -log ex5_util_vector_logic_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex5_util_vector_logic_0_2.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex5/ex5.runs/ex5_util_vector_logic_0_2_synth_1/ex5_util_vector_logic_0_2.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex5/ex5.runs/ex5_util_vector_logic_0_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ex5_util_vector_logic_0_2.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 293.617 ; gain = 84.352
+INFO: [Synth 8-638] synthesizing module 'ex5_util_vector_logic_0_2' [c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex5/ex5.srcs/sources_1/bd/ex5/ip/ex5_util_vector_logic_0_2/synth/ex5_util_vector_logic_0_2.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'util_vector_logic' [c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex5/ex5.srcs/sources_1/bd/ex5/ipshared/1d19/hdl/util_vector_logic.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'util_vector_logic' (1#1) [c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex5/ex5.srcs/sources_1/bd/ex5/ipshared/1d19/hdl/util_vector_logic.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'ex5_util_vector_logic_0_2' (2#1) [c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex5/ex5.srcs/sources_1/bd/ex5/ip/ex5_util_vector_logic_0_2/synth/ex5_util_vector_logic_0_2.vhd:66]
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 330.887 ; gain = 121.621
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 330.887 ; gain = 121.621
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 538.391 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 538.391 ; gain = 329.125
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 538.391 ; gain = 329.125
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 538.391 ; gain = 329.125
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 538.391 ; gain = 329.125
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 538.391 ; gain = 329.125
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 588.074 ; gain = 378.809
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 588.074 ; gain = 378.809
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 597.691 ; gain = 388.426
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 597.691 ; gain = 388.426
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 597.691 ; gain = 388.426
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 597.691 ; gain = 388.426
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 597.691 ; gain = 388.426
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 597.691 ; gain = 388.426
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 597.691 ; gain = 388.426
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 597.691 ; gain = 388.426
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 613.637 ; gain = 397.074
