@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="top_teste_ClkDividerN_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/TestePratico1/testeTop/testeTop.runs/top_teste_ClkDividerN_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_teste_FSM_control_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/TestePratico1/testeTop/testeTop.runs/top_teste_FSM_control_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_teste_sort_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/TestePratico1/testeTop/testeTop.runs/top_teste_sort_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_teste_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/TestePratico1/testeTop/testeTop.runs/top_teste_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_teste_EightDispControl_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/TestePratico1/testeTop/testeTop.runs/top_teste_EightDispControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_teste_xlconstant_0_0_synth_1" LaunchDir="C:/Users/jduarte/Documents/GitHub/CR/TestePratico1/testeTop/testeTop.runs/top_teste_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

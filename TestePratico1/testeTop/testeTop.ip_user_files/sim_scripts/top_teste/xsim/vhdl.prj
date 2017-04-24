@@ -1,0 +1,14 @@
+vhdl xil_defaultlib "../../../bd/top_teste/ipshared/a159/clock_divider.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ip/top_teste_ClkDividerN_0_0/sim/top_teste_ClkDividerN_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ipshared/3cee/FSM_control.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ip/top_teste_FSM_control_0_0/sim/top_teste_FSM_control_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ipshared/8adc/sort.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ip/top_teste_sort_0_0/sim/top_teste_sort_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ipshared/1eec/segment_decoder.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ipshared/1eec/disp.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ip/top_teste_EightDispControl_0_0/sim/top_teste_EightDispControl_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ipshared/e147/xlconstant.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/ip/top_teste_xlconstant_0_0/sim/top_teste_xlconstant_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/top_teste/hdl/top_teste.vhd" 
+
+nosort

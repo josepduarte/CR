@@ -1,0 +1,4 @@
+Tarefa 16:
+
+N=8 palavras, M=22
+Tipo de processamento: ordenar dados utilizando uma rede combinatória "even-odd-merge"
