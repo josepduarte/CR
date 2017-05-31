@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+// Vivado v2016.4 (64-bit)
+// Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+// Created on Monday April 24, 2017 - 09:40:09 am, from:
+//
+//     Map file     - C:\Users\jduarte\Documents\GitHub\CR\TestePratico1\MicroBlaze_Trivial\MicroBlaze_Trivial.srcs\sources_1\bd\MB_to_display_text\MB_to_display_text.bmm
+//     Data file(s) - c:/Users/jduarte/Documents/GitHub/CR/TestePratico1/MicroBlaze_Trivial/MicroBlaze_Trivial.srcs/sources_1/bd/MB_to_display_text/ip/MB_to_display_text_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'MB_to_display_text_i_microblaze_0.MB_to_display_text_i_microblaze_0_local_memory_lmb_bram_16K_1_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon May 15 11:18:48 2017
+# Process ID: 4760
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1256 C:\Users\jduarte\Documents\GitHub\CR\Projeto\MicroBlaze_Trivial\MicroBlaze_Trivial.xpr
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/vivado.log
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.xpr
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_sdk -workspace C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.sdk -hwspec C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.sdk/MB_to_display_text_wrapper.hdf
+open_bd_design {C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.srcs/sources_1/bd/MB_to_display_text/MB_to_display_text.bd}

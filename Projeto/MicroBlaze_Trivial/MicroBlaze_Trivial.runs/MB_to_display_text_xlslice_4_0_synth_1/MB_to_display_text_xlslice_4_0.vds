@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon May 22 11:37:59 2017
+# Process ID: 7620
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.runs/MB_to_display_text_xlslice_4_0_synth_1
+# Command line: vivado.exe -log MB_to_display_text_xlslice_4_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MB_to_display_text_xlslice_4_0.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.runs/MB_to_display_text_xlslice_4_0_synth_1/MB_to_display_text_xlslice_4_0.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.runs/MB_to_display_text_xlslice_4_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source MB_to_display_text_xlslice_4_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 298.613 ; gain = 88.426
+INFO: [Synth 8-638] synthesizing module 'MB_to_display_text_xlslice_4_0' [c:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.srcs/sources_1/bd/MB_to_display_text/ip/MB_to_display_text_xlslice_4_0/synth/MB_to_display_text_xlslice_4_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'xlslice' [c:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.srcs/sources_1/bd/MB_to_display_text/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'xlslice' (1#1) [c:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.srcs/sources_1/bd/MB_to_display_text/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MB_to_display_text_xlslice_4_0' (2#1) [c:/Users/jduarte/Documents/GitHub/CR/Projeto/MicroBlaze_Trivial/MicroBlaze_Trivial.srcs/sources_1/bd/MB_to_display_text/ip/MB_to_display_text_xlslice_4_0/synth/MB_to_display_text_xlslice_4_0.vhd:66]
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 336.121 ; gain = 125.934
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 336.121 ; gain = 125.934
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 541.797 ; gain = 0.004
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 541.797 ; gain = 331.609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 541.797 ; gain = 331.609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 541.797 ; gain = 331.609
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 541.797 ; gain = 331.609
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 541.797 ; gain = 331.609
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 573.484 ; gain = 363.297
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 573.484 ; gain = 363.297
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 583.145 ; gain = 372.957
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 583.145 ; gain = 372.957
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 583.145 ; gain = 372.957
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 583.145 ; gain = 372.957
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 583.145 ; gain = 372.957
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 583.145 ; gain = 372.957
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 583.145 ; gain = 372.957
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 583.145 ; gain = 372.957
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 599.367 ; gain = 378.070

@@ -1,0 +1,512 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 31 21:55:31 2017
+# Process ID: 5696
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1
+# Command line: vivado.exe -log Project_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Project_design_wrapper.tcl
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/Project_design_wrapper.vds
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Project_design_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+Command: synth_design -top Project_design_wrapper -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5444 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 344.504 ; gain = 135.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Project_design_wrapper' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:21]
+INFO: [Synth 8-3491] module 'Project_design' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2117' bound to instance 'Project_design_i' of component 'Project_design' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'Project_design' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2128]
+INFO: [Synth 8-3491] module 'Project_design_axi_gpio_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'Project_design_axi_gpio_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2504]
+INFO: [Synth 8-638] synthesizing module 'Project_design_axi_gpio_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'Project_design_clk_wiz_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'Project_design_clk_wiz_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2528]
+INFO: [Synth 8-638] synthesizing module 'Project_design_clk_wiz_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_clk_wiz_1_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Project_design_mdm_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'Project_design_mdm_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2533]
+INFO: [Synth 8-638] synthesizing module 'Project_design_mdm_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_mdm_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'Project_design_microblaze_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'Project_design_microblaze_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2566]
+INFO: [Synth 8-638] synthesizing module 'Project_design_microblaze_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_microblaze_0_0_stub.vhdl:137]
+INFO: [Synth 8-638] synthesizing module 'Project_design_microblaze_0_axi_periph_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1440]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1OYBMX4' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1OYBMX4' (1#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_P4FENJ' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_P4FENJ' (2#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:158]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7I5GOT' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:815]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7I5GOT' (3#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:815]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_16S3922' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:940]
+INFO: [Synth 8-3491] module 'Project_design_auto_pc_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Project_design_auto_pc_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1110]
+INFO: [Synth 8-638] synthesizing module 'Project_design_auto_pc_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_16S3922' (4#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:940]
+INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1HVPCC2' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1206]
+INFO: [Synth 8-3491] module 'Project_design_auto_pc_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'Project_design_auto_pc_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1288]
+INFO: [Synth 8-638] synthesizing module 'Project_design_auto_pc_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_auto_pc_1_stub.vhdl:37]
+INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1HVPCC2' (5#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1206]
+INFO: [Synth 8-3491] module 'Project_design_xbar_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Project_design_xbar_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2014]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xbar_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'Project_design_microblaze_0_axi_periph_0' (6#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1440]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1NVATA0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:242]
+INFO: [Synth 8-3491] module 'Project_design_dlmb_bram_if_cntlr_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'Project_design_dlmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'Project_design_dlmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'Project_design_dlmb_v10_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'Project_design_dlmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:506]
+INFO: [Synth 8-638] synthesizing module 'Project_design_dlmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'Project_design_ilmb_bram_if_cntlr_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'Project_design_ilmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:534]
+INFO: [Synth 8-638] synthesizing module 'Project_design_ilmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'Project_design_ilmb_v10_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'Project_design_ilmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:588]
+INFO: [Synth 8-638] synthesizing module 'Project_design_ilmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'Project_design_lmb_bram_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'Project_design_lmb_bram_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:616]
+INFO: [Synth 8-638] synthesizing module 'Project_design_lmb_bram_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_lmb_bram_0_stub.vhdl:25]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1NVATA0' (7#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:242]
+INFO: [Synth 8-3491] module 'Project_design_rst_clk_wiz_1_100M_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'Project_design_rst_clk_wiz_1_100M_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2835]
+INFO: [Synth 8-638] synthesizing module 'Project_design_rst_clk_wiz_1_100M_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/realtime/Project_design_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'Project_design' (8#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2128]
+INFO: [Synth 8-256] done synthesizing module 'Project_design_wrapper' (9#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:21]
+WARNING: [Synth 8-3331] design s02_couplers_imp_1HVPCC2 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s02_couplers_imp_1HVPCC2 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_16S3922 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_16S3922 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_7I5GOT has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_7I5GOT has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_7I5GOT has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_7I5GOT has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_P4FENJ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_P4FENJ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_P4FENJ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_P4FENJ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1OYBMX4 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1OYBMX4 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1OYBMX4 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1OYBMX4 has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 383.883 ; gain = 174.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 383.883 ; gain = 174.484
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_auto_pc_0' instantiated as 'Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1110]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_auto_pc_1' instantiated as 'Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1288]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_axi_gpio_0_0' instantiated as 'Project_design_i/axi_gpio_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2504]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_clk_wiz_1_0' instantiated as 'Project_design_i/clk_wiz_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2528]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_dlmb_bram_if_cntlr_0' instantiated as 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:452]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_dlmb_v10_0' instantiated as 'Project_design_i/microblaze_0_local_memory/dlmb_v10' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:506]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_ilmb_bram_if_cntlr_0' instantiated as 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:534]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_ilmb_v10_0' instantiated as 'Project_design_i/microblaze_0_local_memory/ilmb_v10' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:588]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_lmb_bram_0' instantiated as 'Project_design_i/microblaze_0_local_memory/lmb_bram' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:616]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_mdm_1_0' instantiated as 'Project_design_i/mdm_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2533]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_microblaze_0_0' instantiated as 'Project_design_i/microblaze_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2566]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_rst_clk_wiz_1_100M_0' instantiated as 'Project_design_i/rst_clk_wiz_1_100M' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2835]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xbar_0' instantiated as 'Project_design_i/microblaze_0_axi_periph/xbar' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2014]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp/Project_design_microblaze_0_0_in_context.xdc] for cell 'Project_design_i/microblaze_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp/Project_design_microblaze_0_0_in_context.xdc] for cell 'Project_design_i/microblaze_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_2/Project_design_dlmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_2/Project_design_dlmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_3/Project_design_ilmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_3/Project_design_ilmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_4/Project_design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_4/Project_design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_5/Project_design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_5/Project_design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_6/Project_design_lmb_bram_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_6/Project_design_lmb_bram_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_7/Project_design_mdm_1_0_in_context.xdc] for cell 'Project_design_i/mdm_1'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_7/Project_design_mdm_1_0_in_context.xdc] for cell 'Project_design_i/mdm_1'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc] for cell 'Project_design_i/clk_wiz_1'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc] for cell 'Project_design_i/clk_wiz_1'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_9/Project_design_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Project_design_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_9/Project_design_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Project_design_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_10/Project_design_axi_gpio_0_0_in_context.xdc] for cell 'Project_design_i/axi_gpio_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_10/Project_design_axi_gpio_0_0_in_context.xdc] for cell 'Project_design_i/axi_gpio_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_11/Project_design_xbar_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_11/Project_design_xbar_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_12/Project_design_auto_pc_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_12/Project_design_auto_pc_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_13/Project_design_auto_pc_1_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_13/Project_design_auto_pc_1_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:173]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:173]
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Project_design_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Project_design_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Project_design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 646.707 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Project_design_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5696-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for Project_design_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Project_design_i/mdm_1/Dbg_Clk_0' to pin 'Project_design_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Project_design_i/mdm_1/Dbg_Update_0' to pin 'Project_design_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Project_design_i/clk_wiz_1/clk_out1' to pin 'Project_design_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |Project_design_axi_gpio_0_0         |         1|
+|2     |Project_design_clk_wiz_1_0          |         1|
+|3     |Project_design_mdm_1_0              |         1|
+|4     |Project_design_microblaze_0_0       |         1|
+|5     |Project_design_xbar_0               |         1|
+|6     |Project_design_auto_pc_0            |         1|
+|7     |Project_design_auto_pc_1            |         1|
+|8     |Project_design_rst_clk_wiz_1_100M_0 |         1|
+|9     |Project_design_dlmb_bram_if_cntlr_0 |         1|
+|10    |Project_design_dlmb_v10_0           |         1|
+|11    |Project_design_ilmb_bram_if_cntlr_0 |         1|
+|12    |Project_design_ilmb_v10_0           |         1|
+|13    |Project_design_lmb_bram_0           |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------------+------+
+|      |Cell                                     |Count |
++------+-----------------------------------------+------+
+|1     |Project_design_auto_pc_0_bbox            |     1|
+|2     |Project_design_auto_pc_1_bbox            |     1|
+|3     |Project_design_axi_gpio_0_0_bbox         |     1|
+|4     |Project_design_clk_wiz_1_0_bbox          |     1|
+|5     |Project_design_dlmb_bram_if_cntlr_0_bbox |     1|
+|6     |Project_design_dlmb_v10_0_bbox           |     1|
+|7     |Project_design_ilmb_bram_if_cntlr_0_bbox |     1|
+|8     |Project_design_ilmb_v10_0_bbox           |     1|
+|9     |Project_design_lmb_bram_0_bbox           |     1|
+|10    |Project_design_mdm_1_0_bbox              |     1|
+|11    |Project_design_microblaze_0_0_bbox       |     1|
+|12    |Project_design_rst_clk_wiz_1_100M_0_bbox |     1|
+|13    |Project_design_xbar_0_bbox               |     1|
+|14    |IBUF                                     |     1|
++------+-----------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+-----------------------------------------+------+
+|      |Instance                      |Module                                   |Cells |
++------+------------------------------+-----------------------------------------+------+
+|1     |top                           |                                         |  1739|
+|2     |  Project_design_i            |Project_design                           |  1738|
+|3     |    microblaze_0_axi_periph   |Project_design_microblaze_0_axi_periph_0 |   572|
+|4     |      s01_couplers            |s01_couplers_imp_16S3922                 |   153|
+|5     |      s02_couplers            |s02_couplers_imp_1HVPCC2                 |    74|
+|6     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1NVATA0    |   494|
++------+------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 646.707 ; gain = 108.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 646.707 ; gain = 437.309
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 650.281 ; gain = 386.242
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/Project_design_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 650.281 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 31 21:56:10 2017...

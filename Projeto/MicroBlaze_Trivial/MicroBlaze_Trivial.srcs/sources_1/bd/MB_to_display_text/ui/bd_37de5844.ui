@@ -1,0 +1,75 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port btnCpuReset -pg 1 -y 600 -defaultsOSRD
+preplace port clk -pg 1 -y 550 -defaultsOSRD
+preplace portBus an -pg 1 -y 230 -defaultsOSRD
+preplace portBus seg -pg 1 -y 250 -defaultsOSRD
+preplace inst EightDispControl_0 -pg 1 -lvl 6 -y 240 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -y 1180 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y 960 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 5 -y 1100 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 4 -y 40 -defaultsOSRD
+preplace inst counter_generic_0 -pg 1 -lvl 2 -y 960 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 5 -y 1020 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 4 -y 300 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 4 -y 120 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 740 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 3 -y 280 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 3 -y 200 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 780 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -y 1130 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y 470 -defaultsOSRD
+preplace inst BinToBCD16_0 -pg 1 -lvl 5 -y 270 -defaultsOSRD
+preplace inst BinToBCD16_1 -pg 1 -lvl 5 -y 90 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y 470 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 590 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 550 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 460 -defaultsOSRD
+preplace netloc xlconstant_1_dout 1 4 1 1350
+preplace netloc microblaze_0_mdm_axi 1 2 4 560 370 NJ 370 NJ 370 1630
+preplace netloc BinToBCD16_0_BCD0 1 5 1 N
+preplace netloc xlslice_4_Dout 1 3 1 NJ
+preplace netloc xlslice_3_Dout 1 4 1 1300J
+preplace netloc xlconstant_2_dout 1 4 1 1360
+preplace netloc EightDispControl_0_segments 1 6 1 NJ
+preplace netloc xlslice_1_Dout 1 5 1 1620J
+preplace netloc BinToBCD16_0_BCD1 1 5 1 N
+preplace netloc btnCpuReset_1 1 0 2 NJ 600 190
+preplace netloc BinToBCD16_0_BCD2 1 5 1 N
+preplace netloc microblaze_0_Clk 1 1 5 180 700 530 700 840 700 1330 950 1660
+preplace netloc BinToBCD16_0_BCD3 1 5 1 N
+preplace netloc microblaze_0_M_AXI_DC 1 4 1 1320
+preplace netloc microblaze_0_ilmb_1 1 4 1 N
+preplace netloc BinToBCD16_0_BCD4 1 5 1 N
+preplace netloc microblaze_0_axi_dp 1 4 1 1300
+preplace netloc xlconcat_0_dout 1 4 1 1300
+preplace netloc xlconstant_0_dout 1 1 1 NJ
+preplace netloc axi_gpio_0_gpio_io_o 1 4 3 1360 970 1650J 990 1950
+preplace netloc clk_1 1 0 1 NJ
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 NJ 610 NJ 610 1300
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 N 570 NJ 570 1340J
+preplace netloc microblaze_0_M_AXI_IC 1 4 1 1310
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1650
+preplace netloc xlslice_2_Dout 1 5 1 1620J
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 540 630 NJ 630 1290 940 1650J
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 N 550 850J
+preplace netloc BinToBCD16_1_BCD0 1 5 1 1670
+preplace netloc microblaze_0_dlmb_1 1 4 1 N
+preplace netloc BinToBCD16_1_BCD1 1 5 1 1680
+preplace netloc blk_mem_gen_0_doutb 1 2 4 550 1190 830 1190 1350J 540 1640J
+preplace netloc counter_generic_0_led 1 2 4 NJ 960 NJ 960 NJ 960 1630
+preplace netloc microblaze_0_debug 1 3 1 820
+preplace netloc BinToBCD16_1_BCD2 1 5 1 1690
+preplace netloc EightDispControl_0_select_display 1 6 1 NJ
+preplace netloc mdm_1_debug_sys_rst 1 1 3 200 500 520J 540 820
+preplace netloc xlconstant_3_dout 1 3 1 830J
+preplace netloc xlslice_0_Dout 1 5 1 1690J
+levelinfo -pg 1 0 100 360 690 1070 1490 1820 1970 -top 0 -bot 1260
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_board_cnt: "1",
+}

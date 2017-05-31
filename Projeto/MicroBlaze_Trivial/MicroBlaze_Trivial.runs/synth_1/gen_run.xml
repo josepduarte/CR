@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1495450200">
+  <File Type="RDS-PROPCONSTRS" Name="MB_to_display_text_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="MB_to_display_text_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="MB_to_display_text_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="MB_to_display_text_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="MB_to_display_text_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="MB_to_display_text_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="MB_to_display_text_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="MB_to_display_text_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/MB_to_display_text/MB_to_display_text.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/MB_to_display_text/hdl/MB_to_display_text_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MB_to_display_text_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/CR/Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Aula6/ex1/ex1.srcs/constrs_1/imports/CR/Nexys4_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1489751916"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_BinToBCD16_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_counter_generic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xlslice_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xlslice_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xlconstant_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_EightDispControl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xlslice_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xlslice_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_BinToBCD16_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xlconstant_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="MB_to_display_text_xlslice_2_0"/>
+</GenRun>

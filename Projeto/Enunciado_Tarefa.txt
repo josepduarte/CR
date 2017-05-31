@@ -2,3 +2,8 @@ Tarefa 16:
 
 N=8 palavras, M=22
 Tipo de processamento: ordenar dados utilizando uma rede combinatória "even-odd-merge"
+
+
+counter:
+enable = sw(0)
+updown_n = sw(1)
