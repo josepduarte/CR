@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1496264130">
-  <File Type="PA-TCL" Name="Project_design_wrapper.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1496276742">
   <File Type="RDS-PROPCONSTRS" Name="Project_design_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="Project_design_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="Project_design_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="Project_design_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Project_design_wrapper_utilization_synth.pb"/>
@@ -48,12 +48,18 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Project_design_dlmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Project_design_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_dlmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Project_design_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_xlslice_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_xlslice_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_blk_mem_gen_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_BinToBCD16_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_BinToBCD16_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_EightDispControl_0_0"/>
 </GenRun>

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Wed May 31 21:58:35 2017
+| Date             : Thu Jun 01 01:29:05 2017
 | Host             : Inator running 64-bit major release  (build 9200)
 | Command          : report_power -file Project_design_wrapper_power_routed.rpt -pb Project_design_wrapper_power_summary_routed.pb -rpx Project_design_wrapper_power_routed.rpx
 | Design           : Project_design_wrapper
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.269  |
-| Dynamic (W)              | 0.171  |
+| Total On-Chip Power (W)  | 0.281  |
+| Dynamic (W)              | 0.183  |
 | Device Static (W)        | 0.098  |
 | Effective TJA (C/W)      | 4.6    |
-| Max Ambient (C)          | 98.8   |
-| Junction Temperature (C) | 26.2   |
+| Max Ambient (C)          | 98.7   |
+| Junction Temperature (C) | 26.3   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -49,22 +49,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.016 |       10 |       --- |             --- |
-| Slice Logic              |     0.007 |     8119 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     2931 |     63400 |            4.62 |
+| Clocks                   |     0.018 |       10 |       --- |             --- |
+| Slice Logic              |     0.007 |     8452 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     3033 |     63400 |            4.78 |
 |   LUT as Distributed RAM |    <0.001 |       96 |     19000 |            0.51 |
-|   CARRY4                 |    <0.001 |      137 |     15850 |            0.86 |
-|   Register               |    <0.001 |     3220 |    126800 |            2.54 |
-|   F7/F8 Muxes            |    <0.001 |      113 |     63400 |            0.18 |
+|   CARRY4                 |    <0.001 |      150 |     15850 |            0.95 |
+|   Register               |    <0.001 |     3382 |    126800 |            2.67 |
+|   F7/F8 Muxes            |    <0.001 |      117 |     63400 |            0.18 |
 |   LUT as Shift Register  |    <0.001 |      210 |     19000 |            1.11 |
-|   Others                 |    <0.001 |      750 |       --- |             --- |
-| Signals                  |     0.013 |     6034 |       --- |             --- |
-| Block RAM                |     0.042 |       14 |       135 |           10.37 |
+|   Others                 |    <0.001 |      765 |       --- |             --- |
+| Signals                  |     0.013 |     6327 |       --- |             --- |
+| Block RAM                |     0.042 |     14.5 |       135 |           10.74 |
 | MMCM                     |     0.089 |        1 |         6 |           16.67 |
 | DSPs                     |     0.003 |        5 |       240 |            2.08 |
-| I/O                      |    <0.001 |        2 |       210 |            0.95 |
+| I/O                      |     0.010 |       17 |       210 |            8.10 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.269 |          |           |                 |
+| Total                    |     0.281 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.094 |       0.079 |      0.016 |
-| Vccaux    |       1.800 |     0.068 |       0.049 |      0.018 |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
+| Vccint    |       1.000 |     0.097 |       0.081 |      0.016 |
+| Vccaux    |       1.800 |     0.068 |       0.050 |      0.018 |
+| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -150,8 +150,14 @@ Table of Contents
 +---------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                              | Power (W) |
 +---------------------------------------------------------------------------------------------------+-----------+
-| Project_design_wrapper                                                                            |     0.171 |
-|   Project_design_i                                                                                |     0.171 |
+| Project_design_wrapper                                                                            |     0.183 |
+|   Project_design_i                                                                                |     0.173 |
+|     BinToBCD16_0                                                                                  |    <0.001 |
+|       U0                                                                                          |    <0.001 |
+|     BinToBCD16_1                                                                                  |    <0.001 |
+|       U0                                                                                          |    <0.001 |
+|     EightDispControl_0                                                                            |    <0.001 |
+|       U0                                                                                          |    <0.001 |
 |     axi_gpio_0                                                                                    |     0.002 |
 |       U0                                                                                          |     0.002 |
 |         AXI_LITE_IPIF_I                                                                           |    <0.001 |
@@ -159,10 +165,21 @@ Table of Contents
 |             I_DECODER                                                                             |    <0.001 |
 |         gpio_core_1                                                                               |     0.001 |
 |           Dual.INPUT_DOUBLE_REGS5                                                                 |    <0.001 |
+|     blk_mem_gen_1                                                                                 |    <0.001 |
+|       U0                                                                                          |    <0.001 |
+|         inst_blk_mem_gen                                                                          |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                                    |    <0.001 |
+|             valid.cstr                                                                            |    <0.001 |
+|               ramloop[0].ram.r                                                                    |    <0.001 |
+|                 prim_noinit.ram                                                                   |    <0.001 |
 |     clk_wiz_1                                                                                     |     0.090 |
 |       inst                                                                                        |     0.090 |
-|     mdm_1                                                                                         |    <0.001 |
+|     counter_generic_0                                                                             |    <0.001 |
 |       U0                                                                                          |    <0.001 |
+|         clk_dvr1                                                                                  |    <0.001 |
+|         counter                                                                                   |    <0.001 |
+|     mdm_1                                                                                         |     0.001 |
+|       U0                                                                                          |     0.001 |
 |         MDM_Core_I1                                                                               |    <0.001 |
 |           JTAG_CONTROL_I                                                                          |    <0.001 |
 |             FDC_I                                                                                 |    <0.001 |
@@ -212,10 +229,10 @@ Table of Contents
 |               MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I                       |    <0.001 |
 |               MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I                       |    <0.001 |
 |         Use_E2.BSCAN_I                                                                            |    <0.001 |
-|     microblaze_0                                                                                  |     0.069 |
-|       U0                                                                                          |     0.069 |
-|         MicroBlaze_Core_I                                                                         |     0.069 |
-|           Performance.Core                                                                        |     0.069 |
+|     microblaze_0                                                                                  |     0.070 |
+|       U0                                                                                          |     0.070 |
+|         MicroBlaze_Core_I                                                                         |     0.070 |
+|           Performance.Core                                                                        |     0.070 |
 |             Data_Flow_I                                                                           |     0.018 |
 |               ALU_I                                                                               |    <0.001 |
 |                 Using_FPGA.ALL_Bits[0].ALU_Bit_I1                                                 |    <0.001 |
@@ -1113,7 +1130,7 @@ Table of Contents
 |                 Compare[7].SRLC16E_I                                                              |    <0.001 |
 |                 The_First_BreakPoints.MUXCY_Post                                                  |    <0.001 |
 |               sync_trig_out_0                                                                     |    <0.001 |
-|             Using_DCache.Using_WriteThrough.DCache_I1                                             |     0.026 |
+|             Using_DCache.Using_WriteThrough.DCache_I1                                             |     0.025 |
 |               DATA_RAM_Module                                                                     |     0.018 |
 |                 Using_B36_S9.The_BRAMs[0].RAMB36_I1                                               |     0.005 |
 |                 Using_B36_S9.The_BRAMs[1].RAMB36_I1                                               |     0.005 |
@@ -1127,7 +1144,7 @@ Table of Contents
 |                 Using_B36_S36.The_BRAMs[0].RAMB36_I1                                              |     0.005 |
 |               Using_Latch_AS_Logic_1.AND2B1L_I1                                                   |    <0.001 |
 |               Using_Latch_AS_Logic_3.AND2B1L_I1                                                   |    <0.001 |
-|               Using_New_CacheInterface_for_AXI.Cache_Interface_I1                                 |     0.001 |
+|               Using_New_CacheInterface_for_AXI.Cache_Interface_I1                                 |    <0.001 |
 |                 Using_AXI.Use_AXI_Write.Addr_bit[0].Addr_bit_FDSE                                 |    <0.001 |
 |                 Using_AXI.Use_AXI_Write.Addr_bit[0].Addr_bit_LUT                                  |    <0.001 |
 |                 Using_AXI.Use_AXI_Write.Addr_bit[1].Addr_bit_FDSE                                 |    <0.001 |
@@ -1335,7 +1352,7 @@ Table of Contents
 |               MUXCY_I                                                                             |     0.000 |
 |             Using_Debug.Using_ICache.debug_combinded_carry_or_I                                   |     0.000 |
 |               MUXCY_I                                                                             |     0.000 |
-|             Using_ICache.ICache_I1                                                                |     0.020 |
+|             Using_ICache.ICache_I1                                                                |     0.021 |
 |               Cache_Interface_I1                                                                  |    <0.001 |
 |               Data_RAM_Module                                                                     |     0.015 |
 |                 Using_B36_S9.The_BRAMs[0].RAMB36_I1                                               |     0.004 |
@@ -1443,6 +1460,13 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT                                                               |    <0.001 |
 |         SEQ                                                                                       |    <0.001 |
 |           SEQ_COUNTER                                                                             |    <0.001 |
+|     xlconcat_0                                                                                    |     0.000 |
+|     xlconstant_1                                                                                  |     0.000 |
+|     xlslice_0                                                                                     |     0.000 |
+|     xlslice_1                                                                                     |     0.000 |
+|     xlslice_2                                                                                     |     0.000 |
+|     xlslice_3                                                                                     |     0.000 |
+|     xlslice_4                                                                                     |     0.000 |
 +---------------------------------------------------------------------------------------------------+-----------+
 
 

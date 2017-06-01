@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1496264130">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1496276742">
+  <File Type="PWROPT-DRC" Name="Project_design_wrapper_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Project_design_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Project_design_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="Project_design_wrapper_power_routed.rpx"/>
   <File Type="PA-TCL" Name="Project_design_wrapper.tcl"/>
-  <File Type="INIT-TIMING" Name="Project_design_wrapper_timing_summary_init.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Project_design_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="Project_design_wrapper_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Project_design_wrapper.hwdef"/>
   <File Type="RDI-RDI" Name="Project_design_wrapper.vdi"/>
   <File Type="OPT-DCP" Name="Project_design_wrapper_opt.dcp"/>
-  <File Type="OPT-HWDEF" Name="Project_design_wrapper.hwdef"/>
   <File Type="OPT-DRC" Name="Project_design_wrapper_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="Project_design_wrapper_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="Project_design_wrapper_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="Project_design_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Project_design_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Project_design_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Project_design_wrapper_drc_routed.rpx"/>
   <File Type="BG-BIN" Name="Project_design_wrapper.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Project_design_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Project_design_wrapper_drc_routed.rpx"/>
   <File Type="BG-DRC" Name="Project_design_wrapper.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Project_design_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Project_design_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MSK" Name="Project_design_wrapper.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Project_design_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Project_design_wrapper_methodology_drc_routed.rpx"/>
   <File Type="BG-BGN" Name="Project_design_wrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Project_design_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="Project_design_wrapper_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="Project_design_wrapper_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="Project_design_wrapper_route_status.rpt"/>
@@ -108,12 +108,18 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Project_design_dlmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Project_design_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_dlmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Project_design_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_xlslice_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_xlslice_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Project_design_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_blk_mem_gen_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_BinToBCD16_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_BinToBCD16_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Project_design_EightDispControl_0_0"/>
 </GenRun>

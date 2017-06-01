@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Project_design_dlmb_v10_0_synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1496251724">
-  <File Type="RDS-PROPCONSTRS" Name="Project_design_dlmb_v10_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="Project_design_dlmb_v10_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Project_design_dlmb_v10_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="Project_design_dlmb_v10_0.vds"/>
   <File Type="RDS-UTIL" Name="Project_design_dlmb_v10_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Project_design_dlmb_v10_0_utilization_synth.pb"/>

@@ -42,6 +42,51 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_
 # IP: bd/Project_design/ip/Project_design_xbar_0/Project_design_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xbar_0 || ORIG_REF_NAME==Project_design_xbar_0}]
 
+# IP: bd/Project_design/ip/Project_design_xlslice_0_0/Project_design_xlslice_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlslice_0_0 || ORIG_REF_NAME==Project_design_xlslice_0_0}]
+
+# IP: bd/Project_design/ip/Project_design_xlslice_0_1/Project_design_xlslice_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlslice_0_1 || ORIG_REF_NAME==Project_design_xlslice_0_1}]
+
+# IP: bd/Project_design/ip/Project_design_xlslice_1_0/Project_design_xlslice_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlslice_1_0 || ORIG_REF_NAME==Project_design_xlslice_1_0}]
+
+# IP: bd/Project_design/ip/Project_design_blk_mem_gen_1_0/Project_design_blk_mem_gen_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_blk_mem_gen_1_0 || ORIG_REF_NAME==Project_design_blk_mem_gen_1_0}]
+
+# IP: bd/Project_design/ip/Project_design_counter_generic_0_0/Project_design_counter_generic_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_counter_generic_0_0 || ORIG_REF_NAME==Project_design_counter_generic_0_0}]
+
+# IP: bd/Project_design/ip/Project_design_xlconstant_0_0/Project_design_xlconstant_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlconstant_0_0 || ORIG_REF_NAME==Project_design_xlconstant_0_0}]
+
+# IP: bd/Project_design/ip/Project_design_xlconstant_1_0/Project_design_xlconstant_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlconstant_1_0 || ORIG_REF_NAME==Project_design_xlconstant_1_0}]
+
+# IP: bd/Project_design/ip/Project_design_BinToBCD16_0_0/Project_design_BinToBCD16_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_BinToBCD16_0_0 || ORIG_REF_NAME==Project_design_BinToBCD16_0_0}]
+
+# IP: bd/Project_design/ip/Project_design_xlslice_3_0/Project_design_xlslice_3_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlslice_3_0 || ORIG_REF_NAME==Project_design_xlslice_3_0}]
+
+# IP: bd/Project_design/ip/Project_design_xlslice_3_1/Project_design_xlslice_3_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlslice_3_1 || ORIG_REF_NAME==Project_design_xlslice_3_1}]
+
+# IP: bd/Project_design/ip/Project_design_xlconstant_2_0/Project_design_xlconstant_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlconstant_2_0 || ORIG_REF_NAME==Project_design_xlconstant_2_0}]
+
+# IP: bd/Project_design/ip/Project_design_xlconstant_3_0/Project_design_xlconstant_3_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlconstant_3_0 || ORIG_REF_NAME==Project_design_xlconstant_3_0}]
+
+# IP: bd/Project_design/ip/Project_design_xlconcat_0_0/Project_design_xlconcat_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlconcat_0_0 || ORIG_REF_NAME==Project_design_xlconcat_0_0}]
+
+# IP: bd/Project_design/ip/Project_design_BinToBCD16_0_1/Project_design_BinToBCD16_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_BinToBCD16_0_1 || ORIG_REF_NAME==Project_design_BinToBCD16_0_1}]
+
+# IP: bd/Project_design/ip/Project_design_EightDispControl_0_0/Project_design_EightDispControl_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_EightDispControl_0_0 || ORIG_REF_NAME==Project_design_EightDispControl_0_0}]
+
 # IP: bd/Project_design/ip/Project_design_auto_pc_0/Project_design_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_auto_pc_0 || ORIG_REF_NAME==Project_design_auto_pc_0}]
 

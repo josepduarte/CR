@@ -42,6 +42,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -49,25 +50,25 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.cache/wt [current_project]
   set_property parent.project_path C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.xpr [current_project]
+  set_property ip_repo_paths C:/Users/jduarte/Documents/GitHub/CR [current_project]
   set_property ip_output_repo C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/Project_design_wrapper.dcp
-  add_files -quiet C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_microblaze_0_0/Project_design_microblaze_0_0.dcp
-  set_property netlist_only true [get_files C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_microblaze_0_0/Project_design_microblaze_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_microblaze_0_0/Project_design_microblaze_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_microblaze_0_0/Project_design_microblaze_0_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_dlmb_v10_0/Project_design_dlmb_v10_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_dlmb_v10_0/Project_design_dlmb_v10_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_ilmb_v10_0/Project_design_ilmb_v10_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_ilmb_v10_0/Project_design_ilmb_v10_0.dcp]
-  add_files -quiet C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_dlmb_bram_if_cntlr_0/Project_design_dlmb_bram_if_cntlr_0.dcp
-  set_property netlist_only true [get_files C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_dlmb_bram_if_cntlr_0/Project_design_dlmb_bram_if_cntlr_0.dcp]
-  add_files -quiet C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_ilmb_bram_if_cntlr_0/Project_design_ilmb_bram_if_cntlr_0.dcp
-  set_property netlist_only true [get_files C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_ilmb_bram_if_cntlr_0/Project_design_ilmb_bram_if_cntlr_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_dlmb_bram_if_cntlr_0/Project_design_dlmb_bram_if_cntlr_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_dlmb_bram_if_cntlr_0/Project_design_dlmb_bram_if_cntlr_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_ilmb_bram_if_cntlr_0/Project_design_ilmb_bram_if_cntlr_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_ilmb_bram_if_cntlr_0/Project_design_ilmb_bram_if_cntlr_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_lmb_bram_0/Project_design_lmb_bram_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_lmb_bram_0/Project_design_lmb_bram_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_mdm_1_0/Project_design_mdm_1_0.dcp
@@ -80,6 +81,36 @@ set rc [catch {
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_axi_gpio_0_0/Project_design_axi_gpio_0_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xbar_0/Project_design_xbar_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xbar_0/Project_design_xbar_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_0_0/Project_design_xlslice_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_0_0/Project_design_xlslice_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_0_1/Project_design_xlslice_0_1.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_0_1/Project_design_xlslice_0_1.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_1_0/Project_design_xlslice_1_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_1_0/Project_design_xlslice_1_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_blk_mem_gen_1_0/Project_design_blk_mem_gen_1_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_blk_mem_gen_1_0/Project_design_blk_mem_gen_1_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_counter_generic_0_0/Project_design_counter_generic_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_counter_generic_0_0/Project_design_counter_generic_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_0_0/Project_design_xlconstant_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_0_0/Project_design_xlconstant_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_1_0/Project_design_xlconstant_1_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_1_0/Project_design_xlconstant_1_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_BinToBCD16_0_0/Project_design_BinToBCD16_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_BinToBCD16_0_0/Project_design_BinToBCD16_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_3_0/Project_design_xlslice_3_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_3_0/Project_design_xlslice_3_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_3_1/Project_design_xlslice_3_1.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_3_1/Project_design_xlslice_3_1.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_2_0/Project_design_xlconstant_2_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_2_0/Project_design_xlconstant_2_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_3_0/Project_design_xlconstant_3_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_3_0/Project_design_xlconstant_3_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconcat_0_0/Project_design_xlconcat_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconcat_0_0/Project_design_xlconcat_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_BinToBCD16_0_1/Project_design_BinToBCD16_0_1.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_BinToBCD16_0_1/Project_design_BinToBCD16_0_1.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_EightDispControl_0_0/Project_design_EightDispControl_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_EightDispControl_0_0/Project_design_EightDispControl_0_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_auto_pc_0/Project_design_auto_pc_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_auto_pc_0/Project_design_auto_pc_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_auto_pc_1/Project_design_auto_pc_1.dcp
@@ -109,6 +140,8 @@ set rc [catch {
   set_property processing_order EARLY [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_axi_gpio_0_0/Project_design_axi_gpio_0_0_board.xdc]
   read_xdc -ref Project_design_axi_gpio_0_0 -cells U0 c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_axi_gpio_0_0/Project_design_axi_gpio_0_0.xdc
   set_property processing_order EARLY [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_axi_gpio_0_0/Project_design_axi_gpio_0_0.xdc]
+  read_xdc -ref Project_design_counter_generic_0_0 -cells U0 c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_counter_generic_0_0/constrs_1/imports/Desktop/Nexys4_Master.xdc
+  set_property processing_order EARLY [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_counter_generic_0_0/constrs_1/imports/Desktop/Nexys4_Master.xdc]
   read_xdc C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc
   link_design -top Project_design_wrapper -part xc7a100tcsg324-3
   write_hwdef -file Project_design_wrapper.hwdef
