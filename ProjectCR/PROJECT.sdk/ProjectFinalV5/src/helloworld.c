@@ -46,15 +46,59 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "platform.h"
-#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "microblaze_sleep.h"
 
+XGpio GPIO_0;
+XGpio_Config GPIO_0_conf;
 
 int main()
 {
-    init_platform();
+     //GPIO Configuration
+	 GPIO_0_conf.BaseAddress 	= XPAR_AXI_GPIO_0_BASEADDR;
+	 GPIO_0_conf.DeviceId 		= XPAR_GPIO_0_DEVICE_ID;
+	 GPIO_0_conf.IsDual 		= XPAR_GPIO_0_IS_DUAL;
 
-    print("Hello World\n\r");
+        //Initialize GPIO
+     XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
+
+	init_platform();
+
+	int array[]={452,390, 123, 5012,
+				 345, 6544, 24525, 3546};
+	int num_words=8;
+	int word =0x00000000;
+
+	//int i = 3;
+	//xil_printf("addr = %d\n", i<< 22);
+
+	for (int i = 0; i < 8; i++ ){
+		int address = i << 22;
+		//int addressMask = 0x01c00000;
+		int writeEnable = 0b010000000000000000000000000; //0x02000000;
+		int wordToWrite = array[i];
+		xil_printf("addr1 = %d\n", address);
+		XGpio_DiscreteWrite(&GPIO_0, 1, wordToWrite | writeEnable | address );
+
+		xil_printf("addr = %d\ni = %d\n", address, wordToWrite | writeEnable | address);
+
+	}
+
+	/*
+	for (int i =0 ; i<num_words; i++ ){
+
+		word=word|array[i];
+		word=word|0x2000000; //write enable
+		word=0x03FFFFFF;
+		XGpio_DiscreteWrite(&GPIO, 1, word);
+		word=0x00000000;
+	}
+	word =0x00000000;
+	XGpio_DiscreteWrite(&GPIO, 1, word);
+	*/
 
     cleanup_platform();
     return 0;

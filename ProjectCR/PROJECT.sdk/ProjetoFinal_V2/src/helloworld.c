@@ -81,6 +81,7 @@ int main()
 		int writeEnable = 0x02000000;
 		int wordToWrite = array[i];
 		XGpio_DiscreteWrite(&GPIO_0, 1, wordToWrite | writeEnable | address );
+		sleep(300);
 		xil_printf("i = %d\n",wordToWrite | writeEnable | address);
 
 	}
