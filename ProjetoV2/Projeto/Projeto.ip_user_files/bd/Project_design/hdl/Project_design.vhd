@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
---Date        : Wed May 31 23:27:50 2017
+--Date        : Thu Jun 01 10:45:30 2017
 --Host        : Inator running 64-bit major release  (build 9200)
 --Command     : generate_target Project_design.bd
 --Design      : Project_design
@@ -2119,11 +2119,11 @@ entity Project_design is
     an : out STD_LOGIC_VECTOR ( 7 downto 0 );
     btnCpuReset : in STD_LOGIC;
     clk : in STD_LOGIC;
-    gpio_rtl_tri_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    led : out STD_LOGIC_VECTOR ( 15 downto 0 );
     seg : out STD_LOGIC_VECTOR ( 6 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Project_design : entity is "Project_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Project_design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=35,numReposBlks=28,numNonXlnxBlks=3,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=2,da_mb_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of Project_design : entity is "Project_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Project_design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=36,numReposBlks=29,numNonXlnxBlks=3,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=2,da_mb_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Project_design : entity is "Project_design.hwdef";
 end Project_design;
@@ -2457,6 +2457,12 @@ architecture STRUCTURE of Project_design is
     segments : out STD_LOGIC_VECTOR ( 6 downto 0 )
   );
   end component Project_design_EightDispControl_0_0;
+  component Project_design_xlslice_5_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component Project_design_xlslice_5_0;
   signal BinToBCD16_0_BCD0 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal BinToBCD16_0_BCD1 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal BinToBCD16_0_BCD2 : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -2467,7 +2473,7 @@ architecture STRUCTURE of Project_design is
   signal BinToBCD16_1_BCD2 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal EightDispControl_0_segments : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal EightDispControl_0_select_display : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_gpio_0_gpio_io_o : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal blk_mem_gen_1_doutb : STD_LOGIC_VECTOR ( 21 downto 0 );
   signal btnCpuReset_1 : STD_LOGIC;
   signal clk_1 : STD_LOGIC;
@@ -2617,11 +2623,11 @@ architecture STRUCTURE of Project_design is
   signal xlslice_2_Dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlslice_3_Dout : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal xlslice_4_Dout : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal xlslice_5_Dout : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_BinToBCD16_0_ready_UNCONNECTED : STD_LOGIC;
   signal NLW_BinToBCD16_1_ready_UNCONNECTED : STD_LOGIC;
   signal NLW_BinToBCD16_1_BCD3_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_BinToBCD16_1_BCD4_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_axi_gpio_0_gpio2_io_i_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_mdm_1_Interrupt_UNCONNECTED : STD_LOGIC;
   signal NLW_microblaze_0_M_AXI_IC_AWLOCK_UNCONNECTED : STD_LOGIC;
   signal NLW_microblaze_0_M_AXI_IC_AWVALID_UNCONNECTED : STD_LOGIC;
@@ -2643,9 +2649,6 @@ architecture STRUCTURE of Project_design is
   signal NLW_microblaze_0_M_AXI_IC_WDATA_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_microblaze_0_M_AXI_IC_WSTRB_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_rst_clk_wiz_1_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_xlslice_0_Din_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_xlslice_1_Din_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_xlslice_2_Din_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute BMM_INFO_PROCESSOR : string;
   attribute BMM_INFO_PROCESSOR of microblaze_0 : label is "microblaze-le > Project_design microblaze_0_local_memory/dlmb_bram_if_cntlr";
   attribute KEEP_HIERARCHY : string;
@@ -2654,7 +2657,7 @@ begin
   an(7 downto 0) <= EightDispControl_0_select_display(7 downto 0);
   btnCpuReset_1 <= btnCpuReset;
   clk_1 <= clk;
-  gpio_rtl_tri_o(31 downto 0) <= axi_gpio_0_GPIO_TRI_O(31 downto 0);
+  led(15 downto 0) <= xlslice_5_Dout(15 downto 0);
   seg(6 downto 0) <= EightDispControl_0_segments(6 downto 0);
 BinToBCD16_0: component Project_design_BinToBCD16_0_0
      port map (
@@ -2698,8 +2701,8 @@ EightDispControl_0: component Project_design_EightDispControl_0_0
     );
 axi_gpio_0: component Project_design_axi_gpio_0_0
      port map (
-      gpio2_io_i(31 downto 0) => NLW_axi_gpio_0_gpio2_io_i_UNCONNECTED(31 downto 0),
-      gpio_io_o(31 downto 0) => axi_gpio_0_GPIO_TRI_O(31 downto 0),
+      gpio2_io_i(31 downto 0) => axi_gpio_0_gpio_io_o(31 downto 0),
+      gpio_io_o(31 downto 0) => axi_gpio_0_gpio_io_o(31 downto 0),
       s_axi_aclk => microblaze_0_Clk,
       s_axi_araddr(8 downto 0) => microblaze_0_axi_periph_M01_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),
@@ -3081,17 +3084,17 @@ xlconstant_3: component Project_design_xlconstant_3_0
     );
 xlslice_0: component Project_design_xlslice_0_0
      port map (
-      Din(31 downto 0) => NLW_xlslice_0_Din_UNCONNECTED(31 downto 0),
+      Din(31 downto 0) => axi_gpio_0_gpio_io_o(31 downto 0),
       Dout(21 downto 0) => xlslice_0_Dout(21 downto 0)
     );
 xlslice_1: component Project_design_xlslice_0_1
      port map (
-      Din(31 downto 0) => NLW_xlslice_1_Din_UNCONNECTED(31 downto 0),
+      Din(31 downto 0) => axi_gpio_0_gpio_io_o(31 downto 0),
       Dout(2 downto 0) => xlslice_1_Dout(2 downto 0)
     );
 xlslice_2: component Project_design_xlslice_1_0
      port map (
-      Din(31 downto 0) => NLW_xlslice_2_Din_UNCONNECTED(31 downto 0),
+      Din(31 downto 0) => axi_gpio_0_gpio_io_o(31 downto 0),
       Dout(0) => xlslice_2_Dout(0)
     );
 xlslice_3: component Project_design_xlslice_3_0
@@ -3103,5 +3106,10 @@ xlslice_4: component Project_design_xlslice_3_1
      port map (
       Din(21 downto 0) => blk_mem_gen_1_doutb(21 downto 0),
       Dout(5 downto 0) => xlslice_4_Dout(5 downto 0)
+    );
+xlslice_5: component Project_design_xlslice_5_0
+     port map (
+      Din(31 downto 0) => axi_gpio_0_gpio_io_o(31 downto 0),
+      Dout(15 downto 0) => xlslice_5_Dout(15 downto 0)
     );
 end STRUCTURE;

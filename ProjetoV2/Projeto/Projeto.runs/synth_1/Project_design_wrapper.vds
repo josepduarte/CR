@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Jun 01 01:25:43 2017
-# Process ID: 8460
+# Start of session at: Fri Jun 02 21:58:11 2017
+# Process ID: 5752
 # Current directory: C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1
 # Command line: vivado.exe -log Project_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Project_design_wrapper.tcl
 # Log file: C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/Project_design_wrapper.vds
@@ -31,37 +31,37 @@ CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'ua.pt:user:EightDisp
    c:/Users/jduarte/Documents/GitHub/CR/TestePratico1/Nexys4DispCont/Nexys4DispCont.srcs/sources_1/imports/new
    c:/Users/jduarte/Documents/GitHub/CR/TestePratico1/Repositorio/Nexys4DispCont/Nexys4DispCont.srcs/sources_1/imports/new
 CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:sort:1.0'. The one found in IP location 'c:/Users/jduarte/Documents/GitHub/CR/TestePratico1/Repositorio/sort/sort.srcs/sources_1/new' will take precedence over the same IP in location c:/Users/jduarte/Documents/GitHub/CR/TestePratico1/sort/sort.srcs/sources_1/new
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 272.184 ; gain = 61.992
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 272.035 ; gain = 62.523
 Command: synth_design -top Project_design_wrapper -part xc7a100tcsg324-3
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9628 
+INFO: Helper process launched with PID 6808 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 354.223 ; gain = 144.031
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 354.969 ; gain = 145.457
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Project_design_wrapper' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:23]
-INFO: [Synth 8-3491] module 'Project_design' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2117' bound to instance 'Project_design_i' of component 'Project_design' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:33]
-INFO: [Synth 8-638] synthesizing module 'Project_design' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2130]
-INFO: [Synth 8-3491] module 'Project_design_BinToBCD16_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_BinToBCD16_0_0_stub.vhdl:5' bound to instance 'BinToBCD16_0' of component 'Project_design_BinToBCD16_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2653]
-INFO: [Synth 8-638] synthesizing module 'Project_design_BinToBCD16_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_BinToBCD16_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'Project_design_BinToBCD16_0_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_BinToBCD16_0_1_stub.vhdl:5' bound to instance 'BinToBCD16_1' of component 'Project_design_BinToBCD16_0_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2666]
-INFO: [Synth 8-638] synthesizing module 'Project_design_BinToBCD16_0_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_BinToBCD16_0_1_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'Project_design_EightDispControl_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_EightDispControl_0_0_stub.vhdl:5' bound to instance 'EightDispControl_0' of component 'Project_design_EightDispControl_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2679]
-INFO: [Synth 8-638] synthesizing module 'Project_design_EightDispControl_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_EightDispControl_0_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'Project_design_axi_gpio_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'Project_design_axi_gpio_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2693]
-INFO: [Synth 8-638] synthesizing module 'Project_design_axi_gpio_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'Project_design_blk_mem_gen_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_blk_mem_gen_1_0_stub.vhdl:5' bound to instance 'blk_mem_gen_1' of component 'Project_design_blk_mem_gen_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2717]
-INFO: [Synth 8-638] synthesizing module 'Project_design_blk_mem_gen_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_blk_mem_gen_1_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'Project_design_clk_wiz_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'Project_design_clk_wiz_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2727]
-INFO: [Synth 8-638] synthesizing module 'Project_design_clk_wiz_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_clk_wiz_1_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'Project_design_counter_generic_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_counter_generic_0_0_stub.vhdl:5' bound to instance 'counter_generic_0' of component 'Project_design_counter_generic_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2732]
-INFO: [Synth 8-638] synthesizing module 'Project_design_counter_generic_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_counter_generic_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Project_design_mdm_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'Project_design_mdm_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2739]
-INFO: [Synth 8-638] synthesizing module 'Project_design_mdm_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_mdm_1_0_stub.vhdl:41]
-INFO: [Synth 8-3491] module 'Project_design_microblaze_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'Project_design_microblaze_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2772]
-INFO: [Synth 8-638] synthesizing module 'Project_design_microblaze_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_microblaze_0_0_stub.vhdl:137]
+INFO: [Synth 8-638] synthesizing module 'Project_design_wrapper' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'Project_design' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2117' bound to instance 'Project_design_i' of component 'Project_design' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'Project_design' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2131]
+INFO: [Synth 8-3491] module 'Project_design_BinToBCD16_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_BinToBCD16_0_0_stub.vhdl:5' bound to instance 'BinToBCD16_0' of component 'Project_design_BinToBCD16_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2668]
+INFO: [Synth 8-638] synthesizing module 'Project_design_BinToBCD16_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_BinToBCD16_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Project_design_BinToBCD16_0_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_BinToBCD16_0_1_stub.vhdl:5' bound to instance 'BinToBCD16_1' of component 'Project_design_BinToBCD16_0_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2681]
+INFO: [Synth 8-638] synthesizing module 'Project_design_BinToBCD16_0_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_BinToBCD16_0_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Project_design_EightDispControl_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_EightDispControl_0_0_stub.vhdl:5' bound to instance 'EightDispControl_0' of component 'Project_design_EightDispControl_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2694]
+INFO: [Synth 8-638] synthesizing module 'Project_design_EightDispControl_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_EightDispControl_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'Project_design_axi_gpio_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'Project_design_axi_gpio_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2708]
+INFO: [Synth 8-638] synthesizing module 'Project_design_axi_gpio_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'Project_design_blk_mem_gen_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_blk_mem_gen_1_0_stub.vhdl:5' bound to instance 'blk_mem_gen_1' of component 'Project_design_blk_mem_gen_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2732]
+INFO: [Synth 8-638] synthesizing module 'Project_design_blk_mem_gen_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_blk_mem_gen_1_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'Project_design_clk_wiz_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'Project_design_clk_wiz_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2742]
+INFO: [Synth 8-638] synthesizing module 'Project_design_clk_wiz_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_clk_wiz_1_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Project_design_counter_generic_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_counter_generic_0_0_stub.vhdl:5' bound to instance 'counter_generic_0' of component 'Project_design_counter_generic_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2747]
+INFO: [Synth 8-638] synthesizing module 'Project_design_counter_generic_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_counter_generic_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Project_design_mdm_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'Project_design_mdm_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2754]
+INFO: [Synth 8-638] synthesizing module 'Project_design_mdm_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_mdm_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'Project_design_microblaze_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'Project_design_microblaze_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2787]
+INFO: [Synth 8-638] synthesizing module 'Project_design_microblaze_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_microblaze_0_0_stub.vhdl:137]
 INFO: [Synth 8-638] synthesizing module 'Project_design_microblaze_0_axi_periph_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1440]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1OYBMX4' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1OYBMX4' (1#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:57]
@@ -70,52 +70,56 @@ INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_P4FENJ' (2#1) [C:
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7I5GOT' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:815]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7I5GOT' (3#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:815]
 INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_16S3922' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:940]
-INFO: [Synth 8-3491] module 'Project_design_auto_pc_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Project_design_auto_pc_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1110]
-INFO: [Synth 8-638] synthesizing module 'Project_design_auto_pc_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'Project_design_auto_pc_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Project_design_auto_pc_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1110]
+INFO: [Synth 8-638] synthesizing module 'Project_design_auto_pc_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_auto_pc_0_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_16S3922' (4#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:940]
 INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1HVPCC2' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1206]
-INFO: [Synth 8-3491] module 'Project_design_auto_pc_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'Project_design_auto_pc_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1288]
-INFO: [Synth 8-638] synthesizing module 'Project_design_auto_pc_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_auto_pc_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'Project_design_auto_pc_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'Project_design_auto_pc_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1288]
+INFO: [Synth 8-638] synthesizing module 'Project_design_auto_pc_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_auto_pc_1_stub.vhdl:37]
 INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1HVPCC2' (5#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1206]
-INFO: [Synth 8-3491] module 'Project_design_xbar_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Project_design_xbar_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2014]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xbar_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'Project_design_xbar_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Project_design_xbar_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2014]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xbar_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'Project_design_microblaze_0_axi_periph_0' (6#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1440]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1NVATA0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:242]
-INFO: [Synth 8-3491] module 'Project_design_dlmb_bram_if_cntlr_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'Project_design_dlmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:452]
-INFO: [Synth 8-638] synthesizing module 'Project_design_dlmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_dlmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'Project_design_dlmb_v10_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'Project_design_dlmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:506]
-INFO: [Synth 8-638] synthesizing module 'Project_design_dlmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_dlmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'Project_design_ilmb_bram_if_cntlr_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'Project_design_ilmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:534]
-INFO: [Synth 8-638] synthesizing module 'Project_design_ilmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_ilmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'Project_design_ilmb_v10_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'Project_design_ilmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:588]
-INFO: [Synth 8-638] synthesizing module 'Project_design_ilmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_ilmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'Project_design_lmb_bram_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'Project_design_lmb_bram_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:616]
-INFO: [Synth 8-638] synthesizing module 'Project_design_lmb_bram_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_lmb_bram_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'Project_design_dlmb_bram_if_cntlr_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'Project_design_dlmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'Project_design_dlmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'Project_design_dlmb_v10_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'Project_design_dlmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:506]
+INFO: [Synth 8-638] synthesizing module 'Project_design_dlmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'Project_design_ilmb_bram_if_cntlr_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'Project_design_ilmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:534]
+INFO: [Synth 8-638] synthesizing module 'Project_design_ilmb_bram_if_cntlr_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'Project_design_ilmb_v10_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'Project_design_ilmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:588]
+INFO: [Synth 8-638] synthesizing module 'Project_design_ilmb_v10_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'Project_design_lmb_bram_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'Project_design_lmb_bram_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:616]
+INFO: [Synth 8-638] synthesizing module 'Project_design_lmb_bram_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_lmb_bram_0_stub.vhdl:25]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1NVATA0' (7#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:242]
-INFO: [Synth 8-3491] module 'Project_design_rst_clk_wiz_1_100M_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'Project_design_rst_clk_wiz_1_100M_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3041]
-INFO: [Synth 8-638] synthesizing module 'Project_design_rst_clk_wiz_1_100M_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_rst_clk_wiz_1_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'Project_design_xlconcat_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconcat_0_0_stub.vhdl:5' bound to instance 'xlconcat_0' of component 'Project_design_xlconcat_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3054]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlconcat_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconcat_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'Project_design_xlconstant_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconstant_0_0_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'Project_design_xlconstant_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3060]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconstant_0_0_stub.vhdl:12]
-INFO: [Synth 8-3491] module 'Project_design_xlconstant_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconstant_1_0_stub.vhdl:5' bound to instance 'xlconstant_1' of component 'Project_design_xlconstant_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3064]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconstant_1_0_stub.vhdl:12]
-INFO: [Synth 8-3491] module 'Project_design_xlconstant_2_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconstant_2_0_stub.vhdl:5' bound to instance 'xlconstant_2' of component 'Project_design_xlconstant_2_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3068]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_2_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconstant_2_0_stub.vhdl:12]
-INFO: [Synth 8-3491] module 'Project_design_xlconstant_3_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconstant_3_0_stub.vhdl:5' bound to instance 'xlconstant_3' of component 'Project_design_xlconstant_3_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3072]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_3_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlconstant_3_0_stub.vhdl:12]
-INFO: [Synth 8-3491] module 'Project_design_xlslice_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_0_0_stub.vhdl:5' bound to instance 'xlslice_0' of component 'Project_design_xlslice_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3076]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_0_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'Project_design_xlslice_0_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_0_1_stub.vhdl:5' bound to instance 'xlslice_1' of component 'Project_design_xlslice_0_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3081]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_0_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_0_1_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'Project_design_xlslice_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_1_0_stub.vhdl:5' bound to instance 'xlslice_2' of component 'Project_design_xlslice_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3086]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_1_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'Project_design_xlslice_3_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_3_0_stub.vhdl:5' bound to instance 'xlslice_3' of component 'Project_design_xlslice_3_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3091]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_3_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_3_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'Project_design_xlslice_3_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_3_1_stub.vhdl:5' bound to instance 'xlslice_4' of component 'Project_design_xlslice_3_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3096]
-INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_3_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/realtime/Project_design_xlslice_3_1_stub.vhdl:13]
-INFO: [Synth 8-256] done synthesizing module 'Project_design' (8#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2130]
-INFO: [Synth 8-256] done synthesizing module 'Project_design_wrapper' (9#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:23]
+INFO: [Synth 8-3491] module 'Project_design_rst_clk_wiz_1_100M_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'Project_design_rst_clk_wiz_1_100M_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3056]
+INFO: [Synth 8-638] synthesizing module 'Project_design_rst_clk_wiz_1_100M_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Project_design_xlconcat_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconcat_0_0_stub.vhdl:5' bound to instance 'xlconcat_0' of component 'Project_design_xlconcat_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3069]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlconcat_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconcat_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Project_design_xlconstant_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_0_0_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'Project_design_xlconstant_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3075]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_0_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'Project_design_xlconstant_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_1_0_stub.vhdl:5' bound to instance 'xlconstant_1' of component 'Project_design_xlconstant_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3079]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_1_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'Project_design_xlconstant_2_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_2_0_stub.vhdl:5' bound to instance 'xlconstant_2' of component 'Project_design_xlconstant_2_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3083]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_2_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_2_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'Project_design_xlconstant_3_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_3_0_stub.vhdl:5' bound to instance 'xlconstant_3' of component 'Project_design_xlconstant_3_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3087]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_3_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_3_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'Project_design_xlconstant_4_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_4_0_stub.vhdl:5' bound to instance 'xlconstant_4' of component 'Project_design_xlconstant_4_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3091]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlconstant_4_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlconstant_4_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'Project_design_xlslice_0_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_0_0_stub.vhdl:5' bound to instance 'xlslice_0' of component 'Project_design_xlslice_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3095]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_0_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Project_design_xlslice_0_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_0_1_stub.vhdl:5' bound to instance 'xlslice_1' of component 'Project_design_xlslice_0_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3100]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_0_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_0_1_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Project_design_xlslice_1_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_1_0_stub.vhdl:5' bound to instance 'xlslice_2' of component 'Project_design_xlslice_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3105]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_1_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_1_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Project_design_xlslice_3_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_3_0_stub.vhdl:5' bound to instance 'xlslice_3' of component 'Project_design_xlslice_3_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3110]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_3_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_3_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Project_design_xlslice_3_1' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_3_1_stub.vhdl:5' bound to instance 'xlslice_4' of component 'Project_design_xlslice_3_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3115]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_3_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_3_1_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Project_design_xlslice_5_0' declared at 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_5_0_stub.vhdl:5' bound to instance 'xlslice_5' of component 'Project_design_xlslice_5_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3120]
+INFO: [Synth 8-638] synthesizing module 'Project_design_xlslice_5_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/realtime/Project_design_xlslice_5_0_stub.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'Project_design' (8#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2131]
+INFO: [Synth 8-256] done synthesizing module 'Project_design_wrapper' (9#1) [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design_wrapper.vhd:24]
 WARNING: [Synth 8-3331] design s02_couplers_imp_1HVPCC2 has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s02_couplers_imp_1HVPCC2 has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design s01_couplers_imp_16S3922 has unconnected port M_ACLK
@@ -133,7 +137,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_1OYBMX4 has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_1OYBMX4 has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_1OYBMX4 has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 394.578 ; gain = 184.387
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 395.402 ; gain = 185.891
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -143,97 +147,103 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 394.578 ; gain = 184.387
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 395.402 ; gain = 185.891
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_BinToBCD16_0_0' instantiated as 'Project_design_i/BinToBCD16_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2653]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_BinToBCD16_0_1' instantiated as 'Project_design_i/BinToBCD16_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2666]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_EightDispControl_0_0' instantiated as 'Project_design_i/EightDispControl_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2679]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_BinToBCD16_0_0' instantiated as 'Project_design_i/BinToBCD16_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2668]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_BinToBCD16_0_1' instantiated as 'Project_design_i/BinToBCD16_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2681]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_EightDispControl_0_0' instantiated as 'Project_design_i/EightDispControl_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2694]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_auto_pc_0' instantiated as 'Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1110]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_auto_pc_1' instantiated as 'Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:1288]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_axi_gpio_0_0' instantiated as 'Project_design_i/axi_gpio_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2693]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_blk_mem_gen_1_0' instantiated as 'Project_design_i/blk_mem_gen_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2717]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_clk_wiz_1_0' instantiated as 'Project_design_i/clk_wiz_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2727]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_counter_generic_0_0' instantiated as 'Project_design_i/counter_generic_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2732]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_axi_gpio_0_0' instantiated as 'Project_design_i/axi_gpio_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2708]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_blk_mem_gen_1_0' instantiated as 'Project_design_i/blk_mem_gen_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2732]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_clk_wiz_1_0' instantiated as 'Project_design_i/clk_wiz_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2742]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_counter_generic_0_0' instantiated as 'Project_design_i/counter_generic_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2747]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_dlmb_bram_if_cntlr_0' instantiated as 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:452]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_dlmb_v10_0' instantiated as 'Project_design_i/microblaze_0_local_memory/dlmb_v10' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:506]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_ilmb_bram_if_cntlr_0' instantiated as 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:534]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_ilmb_v10_0' instantiated as 'Project_design_i/microblaze_0_local_memory/ilmb_v10' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:588]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_lmb_bram_0' instantiated as 'Project_design_i/microblaze_0_local_memory/lmb_bram' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:616]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_mdm_1_0' instantiated as 'Project_design_i/mdm_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2739]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_microblaze_0_0' instantiated as 'Project_design_i/microblaze_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2772]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_rst_clk_wiz_1_100M_0' instantiated as 'Project_design_i/rst_clk_wiz_1_100M' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3041]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_mdm_1_0' instantiated as 'Project_design_i/mdm_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2754]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_microblaze_0_0' instantiated as 'Project_design_i/microblaze_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2787]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_rst_clk_wiz_1_100M_0' instantiated as 'Project_design_i/rst_clk_wiz_1_100M' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3056]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xbar_0' instantiated as 'Project_design_i/microblaze_0_axi_periph/xbar' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:2014]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconcat_0_0' instantiated as 'Project_design_i/xlconcat_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3054]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_0_0' instantiated as 'Project_design_i/xlconstant_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3060]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_1_0' instantiated as 'Project_design_i/xlconstant_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3064]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_2_0' instantiated as 'Project_design_i/xlconstant_2' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3068]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_3_0' instantiated as 'Project_design_i/xlconstant_3' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3072]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_0_0' instantiated as 'Project_design_i/xlslice_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3076]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_0_1' instantiated as 'Project_design_i/xlslice_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3081]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_1_0' instantiated as 'Project_design_i/xlslice_2' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3086]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_3_0' instantiated as 'Project_design_i/xlslice_3' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3091]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_3_1' instantiated as 'Project_design_i/xlslice_4' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3096]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconcat_0_0' instantiated as 'Project_design_i/xlconcat_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3069]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_0_0' instantiated as 'Project_design_i/xlconstant_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3075]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_1_0' instantiated as 'Project_design_i/xlconstant_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3079]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_2_0' instantiated as 'Project_design_i/xlconstant_2' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3083]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_3_0' instantiated as 'Project_design_i/xlconstant_3' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3087]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlconstant_4_0' instantiated as 'Project_design_i/xlconstant_4' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3091]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_0_0' instantiated as 'Project_design_i/xlslice_0' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3095]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_0_1' instantiated as 'Project_design_i/xlslice_1' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3100]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_1_0' instantiated as 'Project_design_i/xlslice_2' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3105]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_3_0' instantiated as 'Project_design_i/xlslice_3' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3110]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_3_1' instantiated as 'Project_design_i/xlslice_4' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3115]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Project_design_xlslice_5_0' instantiated as 'Project_design_i/xlslice_5' [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/hdl/Project_design.vhd:3120]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp/Project_design_microblaze_0_0_in_context.xdc] for cell 'Project_design_i/microblaze_0'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp/Project_design_microblaze_0_0_in_context.xdc] for cell 'Project_design_i/microblaze_0'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_2/Project_design_dlmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_2/Project_design_dlmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_3/Project_design_ilmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_3/Project_design_ilmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_4/Project_design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_4/Project_design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_5/Project_design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_5/Project_design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_6/Project_design_lmb_bram_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_6/Project_design_lmb_bram_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_7/Project_design_mdm_1_0_in_context.xdc] for cell 'Project_design_i/mdm_1'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_7/Project_design_mdm_1_0_in_context.xdc] for cell 'Project_design_i/mdm_1'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc] for cell 'Project_design_i/clk_wiz_1'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc] for cell 'Project_design_i/clk_wiz_1'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_9/Project_design_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Project_design_i/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_9/Project_design_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Project_design_i/rst_clk_wiz_1_100M'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_10/Project_design_axi_gpio_0_0_in_context.xdc] for cell 'Project_design_i/axi_gpio_0'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_10/Project_design_axi_gpio_0_0_in_context.xdc] for cell 'Project_design_i/axi_gpio_0'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_11/Project_design_xbar_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_11/Project_design_xbar_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_12/MB_to_display_text_xlslice_1_0_in_context.xdc] for cell 'Project_design_i/xlslice_0'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_12/MB_to_display_text_xlslice_1_0_in_context.xdc] for cell 'Project_design_i/xlslice_0'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_13/Project_design_xlslice_0_1_in_context.xdc] for cell 'Project_design_i/xlslice_1'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_13/Project_design_xlslice_0_1_in_context.xdc] for cell 'Project_design_i/xlslice_1'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_14/Project_design_xlslice_1_0_in_context.xdc] for cell 'Project_design_i/xlslice_2'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_14/Project_design_xlslice_1_0_in_context.xdc] for cell 'Project_design_i/xlslice_2'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_15/Project_design_blk_mem_gen_1_0_in_context.xdc] for cell 'Project_design_i/blk_mem_gen_1'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_15/Project_design_blk_mem_gen_1_0_in_context.xdc] for cell 'Project_design_i/blk_mem_gen_1'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_16/MB_to_display_text_counter_generic_0_0_in_context.xdc] for cell 'Project_design_i/counter_generic_0'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_16/MB_to_display_text_counter_generic_0_0_in_context.xdc] for cell 'Project_design_i/counter_generic_0'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_17/ex1_xlconstant_0_0_in_context.xdc] for cell 'Project_design_i/xlconstant_0'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_17/ex1_xlconstant_0_0_in_context.xdc] for cell 'Project_design_i/xlconstant_0'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_18/ex2_xlconstant_0_0_in_context.xdc] for cell 'Project_design_i/xlconstant_1'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_18/ex2_xlconstant_0_0_in_context.xdc] for cell 'Project_design_i/xlconstant_1'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_19/Project_design_BinToBCD16_0_0_in_context.xdc] for cell 'Project_design_i/BinToBCD16_0'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_19/Project_design_BinToBCD16_0_0_in_context.xdc] for cell 'Project_design_i/BinToBCD16_0'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_20/MB_to_display_text_xlslice_3_0_in_context.xdc] for cell 'Project_design_i/xlslice_3'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_20/MB_to_display_text_xlslice_3_0_in_context.xdc] for cell 'Project_design_i/xlslice_3'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_21/MB_to_display_text_xlslice_4_0_in_context.xdc] for cell 'Project_design_i/xlslice_4'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_21/MB_to_display_text_xlslice_4_0_in_context.xdc] for cell 'Project_design_i/xlslice_4'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_22/ex2_xlconstant_1_0_in_context.xdc] for cell 'Project_design_i/xlconstant_2'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_22/ex2_xlconstant_1_0_in_context.xdc] for cell 'Project_design_i/xlconstant_2'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_23/MB_to_display_text_xlconstant_3_0_in_context.xdc] for cell 'Project_design_i/xlconstant_3'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_23/MB_to_display_text_xlconstant_3_0_in_context.xdc] for cell 'Project_design_i/xlconstant_3'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_24/MB_to_display_text_xlconcat_0_0_in_context.xdc] for cell 'Project_design_i/xlconcat_0'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_24/MB_to_display_text_xlconcat_0_0_in_context.xdc] for cell 'Project_design_i/xlconcat_0'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_25/Project_design_BinToBCD16_0_1_in_context.xdc] for cell 'Project_design_i/BinToBCD16_1'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_25/Project_design_BinToBCD16_0_1_in_context.xdc] for cell 'Project_design_i/BinToBCD16_1'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_26/Project_design_EightDispControl_0_0_in_context.xdc] for cell 'Project_design_i/EightDispControl_0'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_26/Project_design_EightDispControl_0_0_in_context.xdc] for cell 'Project_design_i/EightDispControl_0'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_27/MB_to_display_text_auto_pc_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_27/MB_to_display_text_auto_pc_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
-Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_28/MB_to_display_text_auto_pc_1_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
-Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_28/MB_to_display_text_auto_pc_1_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp/Project_design_microblaze_0_0_in_context.xdc] for cell 'Project_design_i/microblaze_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp/Project_design_microblaze_0_0_in_context.xdc] for cell 'Project_design_i/microblaze_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_2/Project_design_dlmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_2/Project_design_dlmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_3/Project_design_ilmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_3/Project_design_ilmb_v10_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_4/Project_design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_4/Project_design_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_5/Project_design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_5/Project_design_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_6/Project_design_lmb_bram_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_6/Project_design_lmb_bram_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_7/Project_design_mdm_1_0_in_context.xdc] for cell 'Project_design_i/mdm_1'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_7/Project_design_mdm_1_0_in_context.xdc] for cell 'Project_design_i/mdm_1'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc] for cell 'Project_design_i/clk_wiz_1'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc] for cell 'Project_design_i/clk_wiz_1'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_9/Project_design_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Project_design_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_9/Project_design_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'Project_design_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_10/Project_design_axi_gpio_0_0_in_context.xdc] for cell 'Project_design_i/axi_gpio_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_10/Project_design_axi_gpio_0_0_in_context.xdc] for cell 'Project_design_i/axi_gpio_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_11/Project_design_xbar_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_11/Project_design_xbar_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_12/MB_to_display_text_xlslice_1_0_in_context.xdc] for cell 'Project_design_i/xlslice_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_12/MB_to_display_text_xlslice_1_0_in_context.xdc] for cell 'Project_design_i/xlslice_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_13/Project_design_xlslice_0_1_in_context.xdc] for cell 'Project_design_i/xlslice_1'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_13/Project_design_xlslice_0_1_in_context.xdc] for cell 'Project_design_i/xlslice_1'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_14/Project_design_xlslice_1_0_in_context.xdc] for cell 'Project_design_i/xlslice_2'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_14/Project_design_xlslice_1_0_in_context.xdc] for cell 'Project_design_i/xlslice_2'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_15/Project_design_blk_mem_gen_1_0_in_context.xdc] for cell 'Project_design_i/blk_mem_gen_1'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_15/Project_design_blk_mem_gen_1_0_in_context.xdc] for cell 'Project_design_i/blk_mem_gen_1'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_16/MB_to_display_text_counter_generic_0_0_in_context.xdc] for cell 'Project_design_i/counter_generic_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_16/MB_to_display_text_counter_generic_0_0_in_context.xdc] for cell 'Project_design_i/counter_generic_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_17/ex1_xlconstant_0_0_in_context.xdc] for cell 'Project_design_i/xlconstant_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_17/ex1_xlconstant_0_0_in_context.xdc] for cell 'Project_design_i/xlconstant_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_18/ex2_xlconstant_0_0_in_context.xdc] for cell 'Project_design_i/xlconstant_1'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_18/ex2_xlconstant_0_0_in_context.xdc] for cell 'Project_design_i/xlconstant_1'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_19/Project_design_BinToBCD16_0_0_in_context.xdc] for cell 'Project_design_i/BinToBCD16_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_19/Project_design_BinToBCD16_0_0_in_context.xdc] for cell 'Project_design_i/BinToBCD16_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_20/MB_to_display_text_xlslice_3_0_in_context.xdc] for cell 'Project_design_i/xlslice_3'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_20/MB_to_display_text_xlslice_3_0_in_context.xdc] for cell 'Project_design_i/xlslice_3'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_21/MB_to_display_text_xlslice_4_0_in_context.xdc] for cell 'Project_design_i/xlslice_4'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_21/MB_to_display_text_xlslice_4_0_in_context.xdc] for cell 'Project_design_i/xlslice_4'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_22/ex2_xlconstant_1_0_in_context.xdc] for cell 'Project_design_i/xlconstant_2'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_22/ex2_xlconstant_1_0_in_context.xdc] for cell 'Project_design_i/xlconstant_2'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_23/MB_to_display_text_xlconstant_3_0_in_context.xdc] for cell 'Project_design_i/xlconstant_3'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_23/MB_to_display_text_xlconstant_3_0_in_context.xdc] for cell 'Project_design_i/xlconstant_3'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_24/MB_to_display_text_xlconcat_0_0_in_context.xdc] for cell 'Project_design_i/xlconcat_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_24/MB_to_display_text_xlconcat_0_0_in_context.xdc] for cell 'Project_design_i/xlconcat_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_25/Project_design_BinToBCD16_0_1_in_context.xdc] for cell 'Project_design_i/BinToBCD16_1'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_25/Project_design_BinToBCD16_0_1_in_context.xdc] for cell 'Project_design_i/BinToBCD16_1'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_26/Project_design_EightDispControl_0_0_in_context.xdc] for cell 'Project_design_i/EightDispControl_0'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_26/Project_design_EightDispControl_0_0_in_context.xdc] for cell 'Project_design_i/EightDispControl_0'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_27/Project_design_xlslice_5_0_in_context.xdc] for cell 'Project_design_i/xlslice_5'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_27/Project_design_xlslice_5_0_in_context.xdc] for cell 'Project_design_i/xlslice_5'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_28/Project_design_xlconstant_4_0_in_context.xdc] for cell 'Project_design_i/xlconstant_4'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_28/Project_design_xlconstant_4_0_in_context.xdc] for cell 'Project_design_i/xlconstant_4'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_29/MB_to_display_text_auto_pc_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_29/MB_to_display_text_auto_pc_0_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_30/MB_to_display_text_auto_pc_1_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
+Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_30/MB_to_display_text_auto_pc_1_in_context.xdc] for cell 'Project_design_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
 Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc]
 WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:14]
 WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:15]
@@ -267,38 +277,6 @@ WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/jduarte/Documents/
 WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:57]
 WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:59]
 WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:60]
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:66]
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:67]
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:69]
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:70]
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:72]
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:73]
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:75]
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:76]
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:78]
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:79]
-WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:81]
-WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:82]
-WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:84]
-WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:85]
-WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:87]
-WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:88]
-WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:90]
-WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:91]
-WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:93]
-WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:94]
-WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:96]
-WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:97]
-WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:99]
-WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:100]
-WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:102]
-WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:103]
-WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:105]
-WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:106]
-WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:108]
-WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:109]
-WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:111]
-WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:112]
 WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:115]
 WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:116]
 WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:118]
@@ -335,7 +313,39 @@ WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [C:/Users/jduarte/Documents/G
 WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:226]
 WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:228]
 WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:229]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:229]
+WARNING: [Vivado 12-584] No ports matched 'JA[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:231]
+WARNING: [Vivado 12-584] No ports matched 'JA[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:232]
+WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:234]
+WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:235]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:241]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:242]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:244]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:245]
+WARNING: [Vivado 12-584] No ports matched 'JB[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:247]
+WARNING: [Vivado 12-584] No ports matched 'JB[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:248]
+WARNING: [Vivado 12-584] No ports matched 'JB[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:250]
+WARNING: [Vivado 12-584] No ports matched 'JB[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'JB[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:253]
+WARNING: [Vivado 12-584] No ports matched 'JB[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:254]
+WARNING: [Vivado 12-584] No ports matched 'JB[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:256]
+WARNING: [Vivado 12-584] No ports matched 'JB[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:257]
+WARNING: [Vivado 12-584] No ports matched 'JB[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:259]
+WARNING: [Vivado 12-584] No ports matched 'JB[6]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:260]
+WARNING: [Vivado 12-584] No ports matched 'JB[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:262]
+WARNING: [Vivado 12-584] No ports matched 'JB[7]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:263]
+WARNING: [Vivado 12-584] No ports matched 'JC[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:269]
+WARNING: [Vivado 12-584] No ports matched 'JC[0]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:270]
+WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:272]
+WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'JC[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:275]
+WARNING: [Vivado 12-584] No ports matched 'JC[2]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:276]
+WARNING: [Vivado 12-584] No ports matched 'JC[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:278]
+WARNING: [Vivado 12-584] No ports matched 'JC[3]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:279]
+WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:281]
+WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:282]
+WARNING: [Vivado 12-584] No ports matched 'JC[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:284]
+WARNING: [Vivado 12-584] No ports matched 'JC[5]'. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:285]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc:285]
 Finished Parsing XDC File [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Project_design_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Project_design_wrapper_propImpl.xdc].
@@ -347,24 +357,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 676.523 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 677.324 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Project_design_i/blk_mem_gen_1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Project_design_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Runs 36-115] Could not delete directory 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp'.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-8460-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/.Xil/Vivado-5752-Inator/dcp_8/Project_design_clk_wiz_1_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for Project_design_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/BinToBCD16_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/BinToBCD16_1. (constraint file  auto generated constraint, line ).
@@ -390,16 +401,18 @@ Applied set_property DONT_TOUCH = true for Project_design_i/xlconstant_0. (const
 Applied set_property DONT_TOUCH = true for Project_design_i/xlconstant_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/xlconstant_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/xlconstant_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/xlconstant_4. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/xlslice_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/xlslice_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/xlslice_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/xlslice_3. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Project_design_i/xlslice_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Project_design_i/xlslice_5. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -440,7 +453,7 @@ WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unco
 WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design Project_design_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -462,10 +475,10 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'Project_design_i/clk_wiz_
 INFO: [Synth 8-5578] Moved timing constraint from pin 'Project_design_i/counter_generic_0/clk' to pin 'Project_design_i/clk_wiz_1/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -477,7 +490,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -501,7 +514,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -514,7 +527,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -526,25 +539,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -572,16 +585,18 @@ Report BlackBoxes:
 |16    |Project_design_xlconstant_1_0       |         1|
 |17    |Project_design_xlconstant_2_0       |         1|
 |18    |Project_design_xlconstant_3_0       |         1|
-|19    |Project_design_xlslice_0_0          |         1|
-|20    |Project_design_xlslice_0_1          |         1|
-|21    |Project_design_xlslice_1_0          |         1|
-|22    |Project_design_xlslice_3_0          |         1|
-|23    |Project_design_xlslice_3_1          |         1|
-|24    |Project_design_dlmb_bram_if_cntlr_0 |         1|
-|25    |Project_design_dlmb_v10_0           |         1|
-|26    |Project_design_ilmb_bram_if_cntlr_0 |         1|
-|27    |Project_design_ilmb_v10_0           |         1|
-|28    |Project_design_lmb_bram_0           |         1|
+|19    |Project_design_xlconstant_4_0       |         1|
+|20    |Project_design_xlslice_0_0          |         1|
+|21    |Project_design_xlslice_0_1          |         1|
+|22    |Project_design_xlslice_1_0          |         1|
+|23    |Project_design_xlslice_3_0          |         1|
+|24    |Project_design_xlslice_3_1          |         1|
+|25    |Project_design_xlslice_5_0          |         1|
+|26    |Project_design_dlmb_bram_if_cntlr_0 |         1|
+|27    |Project_design_dlmb_v10_0           |         1|
+|28    |Project_design_ilmb_bram_if_cntlr_0 |         1|
+|29    |Project_design_ilmb_v10_0           |         1|
+|30    |Project_design_lmb_bram_0           |         1|
 +------+------------------------------------+----------+
 
 Report Cell Usage: 
@@ -611,32 +626,34 @@ Report Cell Usage:
 |21    |Project_design_xlconstant_1_0_bbox       |     1|
 |22    |Project_design_xlconstant_2_0_bbox       |     1|
 |23    |Project_design_xlconstant_3_0_bbox       |     1|
-|24    |Project_design_xlslice_0_0_bbox          |     1|
-|25    |Project_design_xlslice_0_1_bbox          |     1|
-|26    |Project_design_xlslice_1_0_bbox          |     1|
-|27    |Project_design_xlslice_3_0_bbox          |     1|
-|28    |Project_design_xlslice_3_1_bbox          |     1|
-|29    |IBUF                                     |     1|
-|30    |OBUF                                     |    15|
+|24    |Project_design_xlconstant_4_0_bbox       |     1|
+|25    |Project_design_xlslice_0_0_bbox          |     1|
+|26    |Project_design_xlslice_0_1_bbox          |     1|
+|27    |Project_design_xlslice_1_0_bbox          |     1|
+|28    |Project_design_xlslice_3_0_bbox          |     1|
+|29    |Project_design_xlslice_3_1_bbox          |     1|
+|30    |Project_design_xlslice_5_0_bbox          |     1|
+|31    |IBUF                                     |     1|
+|32    |OBUF                                     |    31|
 +------+-----------------------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+-----------------------------------------+------+
 |      |Instance                      |Module                                   |Cells |
 +------+------------------------------+-----------------------------------------+------+
-|1     |top                           |                                         |  1914|
-|2     |  Project_design_i            |Project_design                           |  1898|
+|1     |top                           |                                         |  1978|
+|2     |  Project_design_i            |Project_design                           |  1946|
 |3     |    microblaze_0_axi_periph   |Project_design_microblaze_0_axi_periph_0 |   572|
 |4     |      s01_couplers            |s01_couplers_imp_16S3922                 |   153|
 |5     |      s02_couplers            |s02_couplers_imp_1HVPCC2                 |    74|
 |6     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1NVATA0    |   494|
 +------+------------------------------+-----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 676.523 ; gain = 466.332
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 677.324 ; gain = 467.813
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 676.523 ; gain = 110.332
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 676.523 ; gain = 466.332
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 677.324 ; gain = 110.785
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 677.324 ; gain = 467.813
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -646,9 +663,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-100 Infos, 154 Warnings, 9 Critical Warnings and 0 Errors encountered.
+104 Infos, 157 Warnings, 9 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 676.523 ; gain = 404.340
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 677.324 ; gain = 405.289
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/Project_design_wrapper.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 676.523 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 01 01:26:32 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 677.324 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 02 21:59:02 2017...

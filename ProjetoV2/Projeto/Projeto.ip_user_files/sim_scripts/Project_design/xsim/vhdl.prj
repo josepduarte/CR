@@ -30,5 +30,6 @@ vhdl xil_defaultlib "../../../bd/Project_design/ip/Project_design_BinToBCD16_0_1
 vhdl xil_defaultlib "../../../bd/Project_design/ipshared/1eec/segment_decoder.vhd" 
 vhdl xil_defaultlib "../../../bd/Project_design/ipshared/1eec/disp.vhd" 
 vhdl xil_defaultlib "../../../bd/Project_design/ip/Project_design_EightDispControl_0_0/sim/Project_design_EightDispControl_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/Project_design/ip/Project_design_xlslice_5_0/sim/Project_design_xlslice_5_0.vhd" 
 
 nosort

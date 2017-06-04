@@ -243,6 +243,7 @@ proc create_root_design { parentCell } {
   set an [ create_bd_port -dir O -from 7 -to 0 an ]
   set btnCpuReset [ create_bd_port -dir I btnCpuReset ]
   set clk [ create_bd_port -dir I clk ]
+  set led [ create_bd_port -dir O -from 15 -to 0 led ]
   set seg [ create_bd_port -dir O -from 6 -to 0 seg ]
 
   # Create instance: BinToBCD16_0, and set properties
@@ -383,6 +384,13 @@ CONFIG.CONST_VAL {0} \
 CONFIG.CONST_WIDTH {10} \
  ] $xlconstant_3
 
+  # Create instance: xlconstant_4, and set properties
+  set xlconstant_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_4 ]
+  set_property -dict [ list \
+CONFIG.CONST_VAL {0} \
+CONFIG.CONST_WIDTH {32} \
+ ] $xlconstant_4
+
   # Create instance: xlslice_0, and set properties
   set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
   set_property -dict [ list \
@@ -424,6 +432,13 @@ CONFIG.DIN_WIDTH {22} \
 CONFIG.DOUT_WIDTH {6} \
  ] $xlslice_4
 
+  # Create instance: xlslice_5, and set properties
+  set xlslice_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_5 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {15} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_5
+
   # Create interface connections
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports gpio_rtl] [get_bd_intf_pins axi_gpio_0/GPIO]
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO2 [get_bd_intf_ports gpio_rtl_0] [get_bd_intf_pins axi_gpio_0/GPIO2]
@@ -447,7 +462,7 @@ CONFIG.DOUT_WIDTH {6} \
   connect_bd_net -net BinToBCD16_1_BCD2 [get_bd_pins BinToBCD16_1/BCD2] [get_bd_pins EightDispControl_0/leftL]
   connect_bd_net -net EightDispControl_0_segments [get_bd_ports seg] [get_bd_pins EightDispControl_0/segments]
   connect_bd_net -net EightDispControl_0_select_display [get_bd_ports an] [get_bd_pins EightDispControl_0/select_display]
-  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_pins axi_gpio_0/gpio2_io_i] [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din]
+  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din] [get_bd_pins xlslice_5/Din]
   connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins xlslice_3/Din] [get_bd_pins xlslice_4/Din]
   connect_bd_net -net btnCpuReset_1 [get_bd_ports btnCpuReset] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
   connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins clk_wiz_1/clk_in1]
@@ -463,11 +478,13 @@ CONFIG.DOUT_WIDTH {6} \
   connect_bd_net -net xlconstant_1_dout [get_bd_pins BinToBCD16_0/reset] [get_bd_pins BinToBCD16_1/reset] [get_bd_pins counter_generic_0/btnC] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins BinToBCD16_0/request] [get_bd_pins BinToBCD16_1/request] [get_bd_pins xlconstant_2/dout]
   connect_bd_net -net xlconstant_3_dout [get_bd_pins xlconcat_0/In1] [get_bd_pins xlconstant_3/dout]
+  connect_bd_net -net xlconstant_4_dout [get_bd_pins axi_gpio_0/gpio2_io_i] [get_bd_pins xlconstant_4/dout]
   connect_bd_net -net xlslice_0_Dout [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins xlslice_0/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins xlslice_1/Dout]
   connect_bd_net -net xlslice_2_Dout [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins xlslice_2/Dout]
   connect_bd_net -net xlslice_3_Dout [get_bd_pins BinToBCD16_0/binary] [get_bd_pins xlslice_3/Dout]
   connect_bd_net -net xlslice_4_Dout [get_bd_pins xlconcat_0/In0] [get_bd_pins xlslice_4/Dout]
+  connect_bd_net -net xlslice_5_Dout [get_bd_ports led] [get_bd_pins xlslice_5/Dout]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x40000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] SEG_axi_gpio_0_Reg
@@ -486,71 +503,76 @@ preplace port btnCpuReset -pg 1 -y 150 -defaultsOSRD
 preplace port gpio_rtl_0 -pg 1 -y 70 -defaultsOSRD
 preplace port clk -pg 1 -y 270 -defaultsOSRD
 preplace portBus an -pg 1 -y 310 -defaultsOSRD
+preplace portBus led -pg 1 -y 90 -defaultsOSRD
 preplace portBus seg -pg 1 -y 420 -defaultsOSRD
-preplace inst EightDispControl_0 -pg 1 -lvl 11 -y 360 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 6 -y 560 -defaultsOSRD
+preplace inst EightDispControl_0 -pg 1 -lvl 12 -y 360 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 6 -y 640 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 2 -y 620 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 6 -y 480 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 6 -y 560 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 3 -y 660 -defaultsOSRD
 preplace inst counter_generic_0 -pg 1 -lvl 4 -y 640 -defaultsOSRD
-preplace inst xlslice_2 -pg 1 -lvl 6 -y 360 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 9 -y 500 -defaultsOSRD
-preplace inst xlslice_3 -pg 1 -lvl 8 -y 530 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 6 -y 440 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 10 -y 500 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 9 -y 530 -defaultsOSRD
 preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 380 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 9 -y 320 -defaultsOSRD
-preplace inst xlconstant_3 -pg 1 -lvl 8 -y 300 -defaultsOSRD
-preplace inst xlslice_4 -pg 1 -lvl 8 -y 390 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 100 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 7 -y 430 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 10 -y 320 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 9 -y 300 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 9 -y 390 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 140 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 7 -y 190 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 8 -y 120 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 8 -y 430 -defaultsOSRD
 preplace inst mdm_1 -pg 1 -lvl 2 -y 200 -defaultsOSRD
-preplace inst BinToBCD16_0 -pg 1 -lvl 10 -y 400 -defaultsOSRD
-preplace inst BinToBCD16_1 -pg 1 -lvl 10 -y 190 -defaultsOSRD
+preplace inst BinToBCD16_0 -pg 1 -lvl 11 -y 400 -defaultsOSRD
+preplace inst BinToBCD16_1 -pg 1 -lvl 11 -y 190 -defaultsOSRD
 preplace inst microblaze_0 -pg 1 -lvl 1 -y -40 -defaultsOSRD
 preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 4 -y 200 -defaultsOSRD
 preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 120 -defaultsOSRD
 preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 80 -defaultsOSRD
-preplace netloc xlconstant_1_dout 1 3 7 1180 570 1590J 660 NJ 660 NJ 660 NJ 660 NJ 660 3170J
-preplace netloc microblaze_0_mdm_axi 1 1 5 660 460 NJ 460 NJ 460 1600J 580 1940
-preplace netloc EightDispControl_0_segments 1 11 1 3790
-preplace netloc BinToBCD16_0_BCD0 1 10 1 3410
-preplace netloc xlslice_3_Dout 1 8 2 2960 410 NJ
-preplace netloc xlslice_4_Dout 1 8 1 2950
-preplace netloc xlconstant_2_dout 1 9 1 3180
-preplace netloc xlslice_1_Dout 1 6 1 2240
-preplace netloc BinToBCD16_0_BCD1 1 10 1 3410
-preplace netloc blk_mem_gen_1_doutb 1 6 2 2290 560 2500
-preplace netloc btnCpuReset_1 1 0 4 -10J 170 660J 130 NJ 130 1170J
-preplace netloc BinToBCD16_0_BCD2 1 10 1 3410
-preplace netloc microblaze_0_Clk 1 0 11 10 190 640 120 NJ 120 1190J 110 1610J 620 1970 620 2270 620 NJ 620 NJ 620 3160 620 3400J
-preplace netloc BinToBCD16_0_BCD3 1 10 1 3380
-preplace netloc microblaze_0_M_AXI_DC 1 1 4 NJ -20 NJ -20 NJ -20 1630J
-preplace netloc microblaze_0_ilmb_1 1 1 4 NJ -60 NJ -60 NJ -60 1660J
-preplace netloc BinToBCD16_0_BCD4 1 10 1 3380
-preplace netloc microblaze_0_axi_dp 1 1 4 NJ -40 NJ -40 NJ -40 1650J
-preplace netloc axi_gpio_0_gpio_io_o 1 5 2 1980 180 2240
-preplace netloc xlconcat_0_dout 1 9 1 3150
+preplace netloc xlconstant_1_dout 1 3 8 1170 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 3230J
+preplace netloc microblaze_0_mdm_axi 1 1 5 660 0 NJ 0 NJ 0 1610J -10 1940
+preplace netloc EightDispControl_0_segments 1 12 1 3850
+preplace netloc BinToBCD16_0_BCD0 1 11 1 3460
+preplace netloc xlslice_3_Dout 1 9 2 3020 410 NJ
+preplace netloc xlslice_4_Dout 1 9 1 3010
+preplace netloc xlconstant_2_dout 1 10 1 3240
+preplace netloc xlslice_1_Dout 1 6 2 N 560 2420
+preplace netloc BinToBCD16_0_BCD1 1 11 1 3450
+preplace netloc blk_mem_gen_1_doutb 1 7 2 2450 560 2650
+preplace netloc btnCpuReset_1 1 0 4 -10J 170 650J 130 NJ 130 1170J
+preplace netloc xlslice_5_Dout 1 8 5 2650J 90 NJ 90 NJ 90 NJ 90 NJ
+preplace netloc BinToBCD16_0_BCD2 1 11 1 3460
+preplace netloc microblaze_0_Clk 1 0 12 10 180 640 100 NJ 100 1180J 100 1630J -20 1970 -20 N -20 2410J -20 NJ -20 NJ -20 3220 -20 3470J
+preplace netloc BinToBCD16_0_BCD3 1 11 1 3450
+preplace netloc microblaze_0_M_AXI_DC 1 1 4 NJ -20 NJ -20 NJ -20 1620J
+preplace netloc microblaze_0_ilmb_1 1 1 4 NJ -60 NJ -60 NJ -60 1670J
+preplace netloc BinToBCD16_0_BCD4 1 11 1 3460
+preplace netloc microblaze_0_axi_dp 1 1 4 NJ -40 NJ -40 NJ -40 1660J
+preplace netloc axi_gpio_0_gpio_io_o 1 5 3 1970 220 2240 130 2400
+preplace netloc xlconcat_0_dout 1 10 1 3210
 preplace netloc xlconstant_0_dout 1 2 2 940J 610 1170
 preplace netloc clk_1 1 0 1 0
 preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 4 1 1590
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 4 1 1620J
-preplace netloc axi_gpio_0_GPIO2 1 6 6 2250J 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 4 1 1650J
+preplace netloc axi_gpio_0_GPIO2 1 6 7 2250J 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ
 preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1950
-preplace netloc microblaze_0_M_AXI_IC 1 1 4 NJ 0 NJ 0 NJ 0 1600J
-preplace netloc xlslice_2_Dout 1 6 1 2250
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 5 670 360 NJ 360 NJ 360 1640 180 1960J
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 0 5 20J 180 650J 100 NJ 100 NJ 100 1590
-preplace netloc axi_gpio_0_GPIO 1 6 6 2240J 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ
-preplace netloc BinToBCD16_1_BCD0 1 10 1 3380
-preplace netloc microblaze_0_dlmb_1 1 1 4 NJ -80 NJ -80 NJ -80 1670J
-preplace netloc BinToBCD16_1_BCD1 1 10 1 3390
-preplace netloc counter_generic_0_led 1 4 3 NJ 640 NJ 640 2280
-preplace netloc microblaze_0_debug 1 0 3 20J -130 NJ -130 940J
-preplace netloc EightDispControl_0_select_display 1 11 1 3790
-preplace netloc BinToBCD16_1_BCD2 1 10 1 3410
+preplace netloc microblaze_0_M_AXI_IC 1 1 4 640J -10 NJ -10 NJ -10 1600J
+preplace netloc xlslice_2_Dout 1 6 2 N 440 2430
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 5 660 360 NJ 360 NJ 360 1640 160 NJ
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 0 5 30J 60 NJ 60 NJ 60 NJ 60 1590
+preplace netloc axi_gpio_0_GPIO 1 6 7 2240J 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc xlconstant_4_dout 1 6 2 2260J 140 2400
+preplace netloc BinToBCD16_1_BCD0 1 11 1 3440
+preplace netloc microblaze_0_dlmb_1 1 1 4 NJ -80 NJ -80 NJ -80 1680J
+preplace netloc BinToBCD16_1_BCD1 1 11 1 3450
+preplace netloc counter_generic_0_led 1 4 4 NJ 640 1960J 390 N 390 2400
+preplace netloc microblaze_0_debug 1 0 3 20J 50 NJ 50 940J
+preplace netloc EightDispControl_0_select_display 1 12 1 3850
+preplace netloc BinToBCD16_1_BCD2 1 11 1 3460
 preplace netloc mdm_1_debug_sys_rst 1 2 2 NJ 220 N
-preplace netloc xlconstant_3_dout 1 8 1 2960
-preplace netloc xlslice_0_Dout 1 6 1 2260
-levelinfo -pg 1 -30 420 810 1110 1430 1810 2110 2400 2860 3060 3280 3660 3810 -top -280 -bot 710
+preplace netloc xlconstant_3_dout 1 9 1 3020
+preplace netloc xlslice_0_Dout 1 6 2 N 640 2440
+levelinfo -pg 1 -30 420 810 1110 1430 1810 2110 2330 2550 2920 3120 3340 3720 3870 -top -280 -bot 740
 ",
 }
 

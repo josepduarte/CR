@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -111,6 +110,10 @@ set rc [catch {
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_BinToBCD16_0_1/Project_design_BinToBCD16_0_1.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_EightDispControl_0_0/Project_design_EightDispControl_0_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_EightDispControl_0_0/Project_design_EightDispControl_0_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_5_0/Project_design_xlslice_5_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlslice_5_0/Project_design_xlslice_5_0.dcp]
+  add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_4_0/Project_design_xlconstant_4_0.dcp
+  set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_xlconstant_4_0/Project_design_xlconstant_4_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_auto_pc_0/Project_design_auto_pc_0.dcp
   set_property netlist_only true [get_files c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_auto_pc_0/Project_design_auto_pc_0.dcp]
   add_files -quiet c:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/sources_1/bd/Project_design/ip/Project_design_auto_pc_1/Project_design_auto_pc_1.dcp

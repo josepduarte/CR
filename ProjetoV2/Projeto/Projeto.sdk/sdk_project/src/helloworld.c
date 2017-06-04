@@ -47,45 +47,54 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "platform.h"
 #include "xparameters.h"
-#include "xil_printf.h"
 #include "xgpio.h"
+#include "microblaze_sleep.h"
 
-XGpio GPIO;
-XGpio_Config GPIO_config;
+XGpio GPIO_0;
+XGpio_Config GPIO_0_conf;
 
 int main()
 {
-    init_platform();
-
-        //GPIO Configuration
-        GPIO_config.BaseAddress = XPAR_AXI_GPIO_0_BASEADDR;
-        GPIO_config.DeviceId = XPAR_GPIO_0_DEVICE_ID;
-        GPIO_config.IsDual = XPAR_GPIO_0_IS_DUAL;
+     //GPIO Configuration
+	 GPIO_0_conf.BaseAddress 	= XPAR_AXI_GPIO_0_BASEADDR;
+	 GPIO_0_conf.DeviceId 		= XPAR_GPIO_0_DEVICE_ID;
+	 GPIO_0_conf.IsDual 		= XPAR_GPIO_0_IS_DUAL;
 
         //Initialize GPIO
-        XGpio_CfgInitialize(&GPIO, &GPIO_config, GPIO_config.BaseAddress);
+     XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
 
-        int array[]={0x0002,0x0001,0x0004,0x0063,0x000F,0x0060,0x0043,0x0054,0x0054,0x0043,0x0039,0x0073,0x0034,0x0037,0x0022,0x0010};
-		int num_words=16;
-		int word =0x00000000;
+	init_platform();
 
-		for (int i =0 ; i<num_words; i++ ){
 
-			word=word|array[i];
-			word=word|0x2000000; //write enable
-			word=word|(i<<8);
-			putnum(word);
-			print("\n");
-			word=0x03FFFFFF;
-			XGpio_DiscreteWrite(&GPIO, 1, word);
-			word=0x00000000;
+	int array[]={0x0002,0x0001,0x0004,0x0063,0x000F,0x0060,0x0043,0x0054,0x0054,0x0043,0x0039,0x0073,0x0034,0x0037,0x0022,0x0010};
+	int num_words=8;
+	int word =0x00000000;
+
+	while(1){
+		for (int i = 0; i < 22; i++ ){
+			int address = i << 22;
+			//int addressMask = 0x01c00000;
+			int writeEnable = 0x02000000;
+			int wordToWrite = array[i];
+			XGpio_DiscreteWrite(&GPIO_0, 1, wordToWrite );
+			xil_printf("i = %d\n",wordToWrite | writeEnable | address);
+
 		}
-		word =0x00000000;
-		XGpio_DiscreteWrite(&GPIO, 1, word);
+	}
+	/*
+	for (int i =0 ; i<num_words; i++ ){
 
+		word=word|array[i];
+		word=word|0x2000000; //write enable
+		word=0x03FFFFFF;
+		XGpio_DiscreteWrite(&GPIO, 1, word);
+		word=0x00000000;
+	}
+	word =0x00000000;
+	XGpio_DiscreteWrite(&GPIO, 1, word);
+	*/
 
     cleanup_platform();
     return 0;

@@ -87,6 +87,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_
 # IP: bd/Project_design/ip/Project_design_EightDispControl_0_0/Project_design_EightDispControl_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_EightDispControl_0_0 || ORIG_REF_NAME==Project_design_EightDispControl_0_0}]
 
+# IP: bd/Project_design/ip/Project_design_xlslice_5_0/Project_design_xlslice_5_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlslice_5_0 || ORIG_REF_NAME==Project_design_xlslice_5_0}]
+
+# IP: bd/Project_design/ip/Project_design_xlconstant_4_0/Project_design_xlconstant_4_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_xlconstant_4_0 || ORIG_REF_NAME==Project_design_xlconstant_4_0}]
+
 # IP: bd/Project_design/ip/Project_design_auto_pc_0/Project_design_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Project_design_auto_pc_0 || ORIG_REF_NAME==Project_design_auto_pc_0}]
 

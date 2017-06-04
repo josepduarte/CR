@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Jun 01 01:25:43 2017
-# Process ID: 8460
+# Start of session at: Fri Jun 02 21:58:11 2017
+# Process ID: 5752
 # Current directory: C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1
 # Command line: vivado.exe -log Project_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Project_design_wrapper.tcl
 # Log file: C:/Users/jduarte/Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.runs/synth_1/Project_design_wrapper.vds
