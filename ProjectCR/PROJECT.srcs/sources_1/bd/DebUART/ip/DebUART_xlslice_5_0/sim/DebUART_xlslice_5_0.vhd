@@ -59,7 +59,7 @@ USE work.xlslice;
 ENTITY DebUART_xlslice_5_0 IS
   PORT (
     Din : IN STD_LOGIC_VECTOR(21 DOWNTO 0);
-    Dout : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+    Dout : OUT STD_LOGIC_VECTOR(12 DOWNTO 0)
   );
 END DebUART_xlslice_5_0;
 
@@ -74,14 +74,14 @@ ARCHITECTURE DebUART_xlslice_5_0_arch OF DebUART_xlslice_5_0 IS
     );
     PORT (
       Din : IN STD_LOGIC_VECTOR(21 DOWNTO 0);
-      Dout : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+      Dout : OUT STD_LOGIC_VECTOR(12 DOWNTO 0)
     );
   END COMPONENT xlslice;
 BEGIN
   U0 : xlslice
     GENERIC MAP (
       DIN_WIDTH => 22,
-      DIN_FROM => 15,
+      DIN_FROM => 12,
       DIN_TO => 0
     )
     PORT MAP (

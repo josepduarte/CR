@@ -3,26 +3,26 @@
 	<item value="false" key="Project_wrapper_hw_platform_0-partial_bit"/>
 	<item value="bootloop" key="DebUART_wrapper_hw_platform_2-microblaze_0-initElf"/>
 	<item value="Project_wrapper.bit" key="Project_wrapper_hw_platform_0-bitFile"/>
-	<item value="C:\Users\jduarte\Desktop\ProjectCR\TEMPORARY\impl_1\DebUART_wrapper.bit" key="DebUART_wrapper_hw_platform_0-bitFile"/>
+	<item value="download.bit" key="DebUART_wrapper_hw_platform_0-bitFile"/>
 	<item value="Auto Detect" key="DebUART_wrapper_hw_platform_1-device"/>
 	<item value="bootloop" key="DebUART_wrapper_hw_platform_1-microblaze_0-initElf"/>
 	<item value="Auto Detect" key="DebUART_wrapper_hw_platform_0-device"/>
 	<item value="C:\Users\jduarte\Desktop\Project\PROJECT.runs\impl_1\DebUART_wrapper.bit" key="DebUART_wrapper_hw_platform_2-bitFile"/>
 	<item value="Project_wrapper.mmi" key="Project_wrapper_hw_platform_0-bmmFile"/>
 	<item value="Auto Detect" key="DebUART_wrapper_hw_platform_2-device"/>
-	<item value="DebUART_wrapper.bit" key="DebUART_wrapper_hw_platform_1-bitFile"/>
+	<item value="C:\Users\jduarte\Desktop\ProjectCR\TEMPORARY\impl_1\DebUART_wrapper.bit" key="DebUART_wrapper_hw_platform_1-bitFile"/>
 	<item value="Local" key="DebUART_wrapper_hw_platform_0-target"/>
 	<item value="Local" key="DebUART_wrapper_hw_platform_2-target"/>
 	<item value="Local" key="DebUART_wrapper_hw_platform_1-target"/>
 	<item value="Auto Detect" key="Project_wrapper_hw_platform_0-device"/>
 	<item value="bootloop" key="DebUART_wrapper_hw_platform_0-microblaze_0-initElf"/>
-	<item value="DebUART_wrapper.mmi" key="DebUART_wrapper_hw_platform_1-bmmFile"/>
+	<item value="C:\Users\jduarte\Desktop\ProjectCR\TEMPORARY\impl_1\DebUART_wrapper_bd.bmm" key="DebUART_wrapper_hw_platform_1-bmmFile"/>
 	<item value="false" key="DebUART_wrapper_hw_platform_1-partial_bit"/>
 	<item value="DebUART_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
 	<item value="C:\Users\jduarte\Desktop\Project\PROJECT.runs\impl_1\DebUART_wrapper_bd.bmm" key="DebUART_wrapper_hw_platform_2-bmmFile"/>
 	<item value="false" key="DebUART_wrapper_hw_platform_2-partial_bit"/>
 	<item value="Local" key="Project_wrapper_hw_platform_0-target"/>
 	<item value="bootloop" key="Project_wrapper_hw_platform_0-microblaze_0-initElf"/>
-	<item value="C:\Users\jduarte\Desktop\ProjectCR\TEMPORARY\impl_1\DebUART_wrapper_bd.bmm" key="DebUART_wrapper_hw_platform_0-bmmFile"/>
+	<item value="DebUART_wrapper.mmi" key="DebUART_wrapper_hw_platform_0-bmmFile"/>
 	<item value="false" key="DebUART_wrapper_hw_platform_0-partial_bit"/>
 </section>

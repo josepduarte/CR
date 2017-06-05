@@ -59,7 +59,7 @@ USE work.xlslice;
 ENTITY DebUART_xlslice_5_0 IS
   PORT (
     Din : IN STD_LOGIC_VECTOR(21 DOWNTO 0);
-    Dout : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+    Dout : OUT STD_LOGIC_VECTOR(12 DOWNTO 0)
   );
 END DebUART_xlslice_5_0;
 
@@ -74,7 +74,7 @@ ARCHITECTURE DebUART_xlslice_5_0_arch OF DebUART_xlslice_5_0 IS
     );
     PORT (
       Din : IN STD_LOGIC_VECTOR(21 DOWNTO 0);
-      Dout : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+      Dout : OUT STD_LOGIC_VECTOR(12 DOWNTO 0)
     );
   END COMPONENT xlslice;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -82,12 +82,12 @@ ARCHITECTURE DebUART_xlslice_5_0_arch OF DebUART_xlslice_5_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF DebUART_xlslice_5_0_arch : ARCHITECTURE IS "DebUART_xlslice_5_0,xlslice,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF DebUART_xlslice_5_0_arch: ARCHITECTURE IS "DebUART_xlslice_5_0,xlslice,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=0,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DIN_WIDTH=22,DIN_FROM=15,DIN_TO=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF DebUART_xlslice_5_0_arch: ARCHITECTURE IS "DebUART_xlslice_5_0,xlslice,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=0,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DIN_WIDTH=22,DIN_FROM=12,DIN_TO=0}";
 BEGIN
   U0 : xlslice
     GENERIC MAP (
       DIN_WIDTH => 22,
-      DIN_FROM => 15,
+      DIN_FROM => 12,
       DIN_TO => 0
     )
     PORT MAP (

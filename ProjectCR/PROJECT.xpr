@@ -3,8 +3,8 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/jduarte/Desktop/ProjectCR/PROJECT.xpr">
-  <DefaultLaunch Dir="C:/Users/jduarte/Desktop/ProjectCR/TEMPORARY"/>
+<Project Version="7" Minor="17" Path="C:/Users/jduarte/Documents/GitHub/CR/ProjectCR/PROJECT.xpr">
+  <DefaultLaunch Dir="C:/Users/jduarte/Documents/GitHub/CR/ProjectCR/BRRRRRRRRUUUUM"/>
   <Configuration>
     <Option Name="Id" Val="e9cae51c3c344dd882f60c397d94c93a"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
@@ -20,7 +20,7 @@
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../Documents/GitHub/CR"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../CR"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -37,13 +37,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="11"/>
-    <Option Name="WTModelSimExportSim" Val="11"/>
-    <Option Name="WTQuestaExportSim" Val="11"/>
-    <Option Name="WTIesExportSim" Val="11"/>
-    <Option Name="WTVcsExportSim" Val="11"/>
-    <Option Name="WTRivieraExportSim" Val="11"/>
-    <Option Name="WTActivehdlExportSim" Val="11"/>
+    <Option Name="WTXSimExportSim" Val="16"/>
+    <Option Name="WTModelSimExportSim" Val="16"/>
+    <Option Name="WTQuestaExportSim" Val="16"/>
+    <Option Name="WTIesExportSim" Val="16"/>
+    <Option Name="WTVcsExportSim" Val="16"/>
+    <Option Name="WTRivieraExportSim" Val="16"/>
+    <Option Name="WTActivehdlExportSim" Val="16"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -55,34 +55,21 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/bd/DebUART/DebUART.bd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/MB_Debug_UART/MB_Debug_UART.srcs/sources_1/bd/DebUART/DebUART.bd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/MB_Debug_UART/MB_Debug_UART.srcs/sources_1/bd/DebUART/DebUART.bd"/>
           <Attr Name="ImportTime" Val="1491495679"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xbar_0/DebUART_xbar_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_1_0/DebUART_xlslice_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_0_2/DebUART_xlslice_0_2.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_0_1/DebUART_xlslice_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_0_0/DebUART_xlconstant_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_4_0/DebUART_xlconstant_4_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_counter_generic_0_0/DebUART_counter_generic_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_blk_mem_gen_0_0/DebUART_blk_mem_gen_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_EightDispControl_0_0/DebUART_EightDispControl_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_3_0/DebUART_xlconstant_3_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_2_0/DebUART_xlconstant_2_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconcat_0_0/DebUART_xlconcat_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_3_0/DebUART_xlslice_3_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_BinToBCD16_0_0/DebUART_BinToBCD16_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_5_0/DebUART_xlslice_5_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_1_0/DebUART_xlconstant_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_4_0/DebUART_xlslice_4_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_BinToBCD16_0_1/DebUART_BinToBCD16_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_axi_gpio_0_0/DebUART_axi_gpio_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xbar_0/DebUART_xbar_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_rst_clk_wiz_1_100M_0/DebUART_rst_clk_wiz_1_100M_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_clk_wiz_1_0/DebUART_clk_wiz_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_mdm_1_0/DebUART_mdm_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_axi_gpio_0_0/DebUART_axi_gpio_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_microblaze_0_axi_periph_0/DebUART_microblaze_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_lmb_bram_0/DebUART_lmb_bram_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_ilmb_bram_if_cntlr_0/DebUART_ilmb_bram_if_cntlr_0.xci"/>
@@ -90,16 +77,34 @@
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_ilmb_v10_0/DebUART_ilmb_v10_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_dlmb_v10_0/DebUART_dlmb_v10_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_microblaze_0_0/DebUART_microblaze_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="DebUART_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_counter_generic_0_0/DebUART_counter_generic_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_EightDispControl_0_0/DebUART_EightDispControl_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_2_0/DebUART_xlconstant_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_4_0/DebUART_xlslice_4_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_3_0/DebUART_xlslice_3_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_BinToBCD16_0_1/DebUART_BinToBCD16_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_BinToBCD16_0_0/DebUART_BinToBCD16_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_4_0/DebUART_xlconstant_4_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_blk_mem_gen_0_0/DebUART_blk_mem_gen_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_3_0/DebUART_xlconstant_3_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconcat_0_0/DebUART_xlconcat_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconstant_1_0/DebUART_xlconstant_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_concat_memory_0_0/DebUART_concat_memory_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_FSM_even_odd_0_0/DebUART_FSM_even_odd_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_SliceMemory_0_0/DebUART_SliceMemory_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_blk_mem_gen_1_0/DebUART_blk_mem_gen_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlconcat_1_0/DebUART_xlconcat_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="DebUART.bmm"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="DebUART_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="hdl/DebUART.vhd"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="hdl/DebUART.hwdef"/>
-        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="hw_handoff/DebUART.hwh"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="ip/DebUART_xlslice_5_0/DebUART_xlslice_5_0.xci"/>
         <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="hw_handoff/DebUART_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="hw_handoff/DebUART.hwh"/>
+        <CompFileExtendedInfo CompFileName="DebUART.bd" FileRelPathName="hdl/DebUART.hwdef"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/MB_Debug_UART/MB_Debug_UART.srcs/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/MB_Debug_UART/MB_Debug_UART.srcs/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd"/>
           <Attr Name="ImportTime" Val="1491495680"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -115,7 +120,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/CR/Nexys4_Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/GitHub/CR/ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ProjetoV2/Projeto/Projeto.srcs/constrs_1/imports/CR/Nexys4_Master.xdc"/>
           <Attr Name="ImportTime" Val="1496251659"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -157,15 +162,15 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PPRDIR/TEMPORARY/synth_1" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PPRDIR/BRRRRRRRRUUUUM/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="C:/Users/jduarte/Desktop/ProjectCR/TEMPORARY" File="gen_run.xml"/>
+      <GeneratedRun Dir="C:/Users/jduarte/Documents/GitHub/CR/ProjectCR/BRRRRRRRRUUUUM" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PPRDIR/TEMPORARY/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PPRDIR/BRRRRRRRRUUUUM/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -178,7 +183,7 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="C:/Users/jduarte/Desktop/ProjectCR/TEMPORARY" File="gen_run.xml"/>
+      <GeneratedRun Dir="C:/Users/jduarte/Documents/GitHub/CR/ProjectCR/BRRRRRRRRUUUUM" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
   </Runs>
