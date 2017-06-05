@@ -8,7 +8,7 @@
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7a100t_0" gui_info="">
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="TEMPORARY/impl_1/DebUART_wrapper.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.runs/impl_1/ex7_top_wrapper.bit"/>
     </Object>
   </ObjectList>
   <probeset name="hw project" active="false"/>

@@ -23,6 +23,14 @@
     <Option Name="IPRepoPath" Val="$PPRDIR/../ex7"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../Repository"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../SliceMemory"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../ProjectCR"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../Desktop/CR"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../Downloads/BlockMemoryDisp2017"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../Downloads/FirstBlockDes2017"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../Downloads"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Projeto/sort_even_odd_merge"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Projeto"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../GitHub"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -39,13 +47,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="4"/>
-    <Option Name="WTModelSimExportSim" Val="4"/>
-    <Option Name="WTQuestaExportSim" Val="4"/>
-    <Option Name="WTIesExportSim" Val="4"/>
-    <Option Name="WTVcsExportSim" Val="4"/>
-    <Option Name="WTRivieraExportSim" Val="4"/>
-    <Option Name="WTActivehdlExportSim" Val="4"/>
+    <Option Name="WTXSimExportSim" Val="10"/>
+    <Option Name="WTModelSimExportSim" Val="10"/>
+    <Option Name="WTQuestaExportSim" Val="10"/>
+    <Option Name="WTIesExportSim" Val="10"/>
+    <Option Name="WTVcsExportSim" Val="10"/>
+    <Option Name="WTRivieraExportSim" Val="10"/>
+    <Option Name="WTActivehdlExportSim" Val="10"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -61,50 +69,51 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="hw_handoff/ex7_top.hwh"/>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="hdl/ex7_top.hwdef"/>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="hw_handoff/ex7_top_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="hdl/ex7_top.vhd"/>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconstant_3_0/ex7_top_xlconstant_3_0.xci">
-          <Proxy FileSetName="ex7_top_xlconstant_3_0"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_sort_0_0/ex7_top_sort_0_0.xci">
+          <Proxy FileSetName="ex7_top_sort_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconstant_2_0/ex7_top_xlconstant_2_0.xci">
-          <Proxy FileSetName="ex7_top_xlconstant_2_0"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconstant_4_0/ex7_top_xlconstant_4_0.xci">
+          <Proxy FileSetName="ex7_top_xlconstant_4_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlslice_0_1/ex7_top_xlslice_0_1.xci">
+          <Proxy FileSetName="ex7_top_xlslice_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlslice_0_0/ex7_top_xlslice_0_0.xci">
+          <Proxy FileSetName="ex7_top_xlslice_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_SliceMemory_0_1/ex7_top_SliceMemory_0_1.xci">
+          <Proxy FileSetName="ex7_top_SliceMemory_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconcat_0_1/ex7_top_xlconcat_0_1.xci">
+          <Proxy FileSetName="ex7_top_xlconcat_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconstant_1_1/ex7_top_xlconstant_1_1.xci"/>
         <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_EightDispControl_0_0/ex7_top_EightDispControl_0_0.xci">
           <Proxy FileSetName="ex7_top_EightDispControl_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconcat_0_0/ex7_top_xlconcat_0_0.xci">
-          <Proxy FileSetName="ex7_top_xlconcat_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_BinToBCD16_0_0/ex7_top_BinToBCD16_0_0.xci">
-          <Proxy FileSetName="ex7_top_BinToBCD16_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_BubbleSorter_0_0/ex7_top_BubbleSorter_0_0.xci">
-          <Proxy FileSetName="ex7_top_BubbleSorter_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconstant_1_1/ex7_top_xlconstant_1_1.xci">
-          <Proxy FileSetName="ex7_top_xlconstant_1_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_blk_mem_gen_1_0/ex7_top_blk_mem_gen_1_0.xci">
-          <Proxy FileSetName="ex7_top_blk_mem_gen_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_SliceMemory_0_0/ex7_top_SliceMemory_0_0.xci">
-          <Proxy FileSetName="ex7_top_SliceMemory_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconstant_0_0/ex7_top_xlconstant_0_0.xci">
-          <Proxy FileSetName="ex7_top_xlconstant_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_concat_memory_0_0/ex7_top_concat_memory_0_0.xci">
-          <Proxy FileSetName="ex7_top_concat_memory_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_ClkDividerN_0_0/ex7_top_ClkDividerN_0_0.xci">
-          <Proxy FileSetName="ex7_top_ClkDividerN_0_0"/>
-        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_ClkDividerN_0_0/ex7_top_ClkDividerN_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_blk_mem_gen_0_0/ex7_top_blk_mem_gen_0_0.xci">
           <Proxy FileSetName="ex7_top_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_blk_mem_gen_1_0/ex7_top_blk_mem_gen_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_concat_memory_0_0/ex7_top_concat_memory_0_0.xci">
+          <Proxy FileSetName="ex7_top_concat_memory_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconstant_0_0/ex7_top_xlconstant_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlslice_2_0/ex7_top_xlslice_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="hdl/ex7_top.vhd"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_BinToBCD16_1_1/ex7_top_BinToBCD16_1_1.xci">
+          <Proxy FileSetName="ex7_top_BinToBCD16_1_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_BinToBCD16_1_0/ex7_top_BinToBCD16_1_0.xci">
+          <Proxy FileSetName="ex7_top_BinToBCD16_1_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ex7_top_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_counter_generic_0_0/ex7_top_counter_generic_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="ip/ex7_top_xlconstant_2_0/ex7_top_xlconstant_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="hw_handoff/ex7_top_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="hdl/ex7_top.hwdef"/>
+        <CompFileExtendedInfo CompFileName="ex7_top.bd" FileRelPathName="hw_handoff/ex7_top.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ex7_top/hdl/ex7_top_wrapper.vhd">
         <FileInfo>
@@ -156,51 +165,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ex7_top_ClkDividerN_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_ClkDividerN_0_0">
-      <Config>
-        <Option Name="TopModule" Val="ex7_top_ClkDividerN_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="ex7_top_concat_memory_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_concat_memory_0_0">
       <Config>
         <Option Name="TopModule" Val="ex7_top_concat_memory_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ex7_top_xlconstant_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlconstant_0_0">
-      <Config>
-        <Option Name="TopModule" Val="ex7_top_xlconstant_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ex7_top_blk_mem_gen_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_blk_mem_gen_1_0">
-      <Config>
-        <Option Name="TopModule" Val="ex7_top_blk_mem_gen_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ex7_top_xlconstant_1_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlconstant_1_1">
-      <Config>
-        <Option Name="TopModule" Val="ex7_top_xlconstant_1_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ex7_top_BinToBCD16_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_BinToBCD16_0_0">
-      <Config>
-        <Option Name="TopModule" Val="ex7_top_BinToBCD16_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ex7_top_xlconcat_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlconcat_0_0">
-      <Config>
-        <Option Name="TopModule" Val="ex7_top_xlconcat_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ex7_top_xlconstant_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlconstant_2_0">
-      <Config>
-        <Option Name="TopModule" Val="ex7_top_xlconstant_2_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -210,21 +177,51 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ex7_top_xlconstant_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlconstant_3_0">
+    <FileSet Name="ex7_top_SliceMemory_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_SliceMemory_0_1">
       <Config>
-        <Option Name="TopModule" Val="ex7_top_xlconstant_3_0"/>
+        <Option Name="TopModule" Val="ex7_top_SliceMemory_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ex7_top_SliceMemory_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_SliceMemory_0_0">
+    <FileSet Name="ex7_top_xlslice_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlslice_0_0">
       <Config>
-        <Option Name="TopModule" Val="ex7_top_SliceMemory_0_0"/>
+        <Option Name="TopModule" Val="ex7_top_xlslice_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ex7_top_BubbleSorter_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_BubbleSorter_0_0">
+    <FileSet Name="ex7_top_xlslice_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlslice_0_1">
       <Config>
-        <Option Name="TopModule" Val="ex7_top_BubbleSorter_0_0"/>
+        <Option Name="TopModule" Val="ex7_top_xlslice_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ex7_top_xlconstant_4_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlconstant_4_0">
+      <Config>
+        <Option Name="TopModule" Val="ex7_top_xlconstant_4_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ex7_top_xlconcat_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_xlconcat_0_1">
+      <Config>
+        <Option Name="TopModule" Val="ex7_top_xlconcat_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ex7_top_BinToBCD16_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_BinToBCD16_1_0">
+      <Config>
+        <Option Name="TopModule" Val="ex7_top_BinToBCD16_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ex7_top_BinToBCD16_1_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_BinToBCD16_1_1">
+      <Config>
+        <Option Name="TopModule" Val="ex7_top_BinToBCD16_1_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ex7_top_sort_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_sort_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ex7_top_sort_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -264,63 +261,7 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex7_top_ClkDividerN_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_ClkDividerN_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_ClkDividerN_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_ClkDividerN_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="ex7_top_concat_memory_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_concat_memory_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_concat_memory_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_concat_memory_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_xlconstant_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlconstant_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlconstant_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_blk_mem_gen_1_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_blk_mem_gen_1_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_blk_mem_gen_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_blk_mem_gen_1_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_xlconstant_1_1_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlconstant_1_1" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_1_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlconstant_1_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_BinToBCD16_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_BinToBCD16_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_BinToBCD16_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_BinToBCD16_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_xlconcat_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlconcat_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconcat_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlconcat_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_xlconstant_2_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlconstant_2_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_2_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlconstant_2_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
@@ -336,7 +277,7 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex7_top_xlconstant_3_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlconstant_3_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_3_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlconstant_3_0_synth_1" IncludeInArchive="true">
+    <Run Id="ex7_top_SliceMemory_0_1_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_SliceMemory_0_1" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_SliceMemory_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_SliceMemory_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
@@ -344,17 +285,55 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex7_top_SliceMemory_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_SliceMemory_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_SliceMemory_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_SliceMemory_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="ex7_top_xlslice_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlslice_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlslice_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlslice_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex7_top_BubbleSorter_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_BubbleSorter_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_BubbleSorter_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_BubbleSorter_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="ex7_top_xlslice_0_1_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlslice_0_1" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlslice_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlslice_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_xlconstant_4_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlconstant_4_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_4_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlconstant_4_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_xlconcat_0_1_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_xlconcat_0_1" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconcat_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_xlconcat_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_BinToBCD16_1_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_BinToBCD16_1_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_BinToBCD16_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_BinToBCD16_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_BinToBCD16_1_1_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_BinToBCD16_1_1" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_BinToBCD16_1_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_BinToBCD16_1_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_sort_0_0_synth_1" Type="Ft3:Synth" SrcSet="ex7_top_sort_0_0" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_sort_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ex7_top_sort_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -395,112 +374,7 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex7_top_ClkDividerN_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_ClkDividerN_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_ClkDividerN_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="ex7_top_concat_memory_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_concat_memory_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_concat_memory_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_xlconstant_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_xlconstant_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_blk_mem_gen_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_blk_mem_gen_1_0" Description="Default settings for Implementation." SynthRun="ex7_top_blk_mem_gen_1_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_xlconstant_1_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_1_1" Description="Default settings for Implementation." SynthRun="ex7_top_xlconstant_1_1_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_BinToBCD16_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_BinToBCD16_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_BinToBCD16_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_xlconcat_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconcat_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_xlconcat_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ex7_top_xlconstant_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_2_0" Description="Default settings for Implementation." SynthRun="ex7_top_xlconstant_2_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -530,7 +404,7 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex7_top_xlconstant_3_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_3_0" Description="Default settings for Implementation." SynthRun="ex7_top_xlconstant_3_0_synth_1" IncludeInArchive="false">
+    <Run Id="ex7_top_SliceMemory_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_SliceMemory_0_1" Description="Default settings for Implementation." SynthRun="ex7_top_SliceMemory_0_1_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -545,11 +419,9 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex7_top_SliceMemory_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_SliceMemory_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_SliceMemory_0_0_synth_1" IncludeInArchive="false">
+    <Run Id="ex7_top_xlslice_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlslice_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_xlslice_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -562,7 +434,82 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ex7_top_BubbleSorter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_BubbleSorter_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_BubbleSorter_0_0_synth_1" IncludeInArchive="false">
+    <Run Id="ex7_top_xlslice_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlslice_0_1" Description="Default settings for Implementation." SynthRun="ex7_top_xlslice_0_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_xlconstant_4_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconstant_4_0" Description="Default settings for Implementation." SynthRun="ex7_top_xlconstant_4_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_xlconcat_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_xlconcat_0_1" Description="Default settings for Implementation." SynthRun="ex7_top_xlconcat_0_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_BinToBCD16_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_BinToBCD16_1_0" Description="Default settings for Implementation." SynthRun="ex7_top_BinToBCD16_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_BinToBCD16_1_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_BinToBCD16_1_1" Description="Default settings for Implementation." SynthRun="ex7_top_BinToBCD16_1_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ex7_top_sort_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="ex7_top_sort_0_0" Description="Default settings for Implementation." SynthRun="ex7_top_sort_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>

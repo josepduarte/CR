@@ -157,13 +157,14 @@ proc create_root_design { parentCell } {
   # Create ports
   set an [ create_bd_port -dir O -from 7 -to 0 an ]
   set clk [ create_bd_port -dir I clk ]
+  set led [ create_bd_port -dir O -from 15 -to 0 led ]
   set seg [ create_bd_port -dir O -from 6 -to 0 seg ]
 
-  # Create instance: BinToBCD16_0, and set properties
-  set BinToBCD16_0 [ create_bd_cell -type ip -vlnv ua.pt:user:BinToBCD16:1.0 BinToBCD16_0 ]
+  # Create instance: BinToBCD16_1, and set properties
+  set BinToBCD16_1 [ create_bd_cell -type ip -vlnv ua.pt:user:BinToBCD16:1.0 BinToBCD16_1 ]
 
-  # Create instance: BubbleSorter_0, and set properties
-  set BubbleSorter_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:BubbleSorter:1.0 BubbleSorter_0 ]
+  # Create instance: BinToBCD16_2, and set properties
+  set BinToBCD16_2 [ create_bd_cell -type ip -vlnv ua.pt:user:BinToBCD16:1.0 BinToBCD16_2 ]
 
   # Create instance: ClkDividerN_0, and set properties
   set ClkDividerN_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:ClkDividerN:1.0 ClkDividerN_0 ]
@@ -176,6 +177,11 @@ CONFIG.divFactor {100000000} \
 
   # Create instance: SliceMemory_0, and set properties
   set SliceMemory_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:SliceMemory:1.0 SliceMemory_0 ]
+  set_property -dict [ list \
+CONFIG.bits {22} \
+CONFIG.log_words {3} \
+CONFIG.words {8} \
+ ] $SliceMemory_0
 
   # Create instance: blk_mem_gen_0, and set properties
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0 ]
@@ -187,13 +193,13 @@ CONFIG.Enable_A {Always_Enabled} \
 CONFIG.Load_Init_File {true} \
 CONFIG.Memory_Type {Single_Port_ROM} \
 CONFIG.Port_A_Write_Rate {0} \
-CONFIG.Read_Width_A {8} \
-CONFIG.Read_Width_B {8} \
+CONFIG.Read_Width_A {22} \
+CONFIG.Read_Width_B {22} \
 CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
 CONFIG.Use_Byte_Write_Enable {false} \
 CONFIG.Use_RSTA_Pin {false} \
-CONFIG.Write_Width_A {8} \
-CONFIG.Write_Width_B {8} \
+CONFIG.Write_Width_A {22} \
+CONFIG.Write_Width_B {22} \
 CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_0
 
@@ -203,29 +209,45 @@ CONFIG.use_bram_block {Stand_Alone} \
 CONFIG.Byte_Size {9} \
 CONFIG.Enable_32bit_Address {false} \
 CONFIG.Enable_A {Always_Enabled} \
-CONFIG.Read_Width_A {8} \
-CONFIG.Read_Width_B {8} \
-CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
+CONFIG.Enable_B {Always_Enabled} \
+CONFIG.Memory_Type {Simple_Dual_Port_RAM} \
+CONFIG.Operating_Mode_A {NO_CHANGE} \
+CONFIG.Port_B_Clock {100} \
+CONFIG.Port_B_Enable_Rate {100} \
+CONFIG.Read_Width_A {22} \
+CONFIG.Read_Width_B {22} \
+CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
 CONFIG.Use_Byte_Write_Enable {false} \
 CONFIG.Use_RSTA_Pin {false} \
-CONFIG.Write_Width_A {8} \
-CONFIG.Write_Width_B {8} \
+CONFIG.Write_Width_A {22} \
+CONFIG.Write_Width_B {22} \
 CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_1
 
   # Create instance: concat_memory_0, and set properties
   set concat_memory_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:concat_memory:1.0 concat_memory_0 ]
   set_property -dict [ list \
-CONFIG.bits {8} \
-CONFIG.log_words {4} \
-CONFIG.words {16} \
+CONFIG.bits {22} \
+CONFIG.log_words {3} \
+CONFIG.words {8} \
  ] $concat_memory_0
+
+  # Create instance: counter_generic_0, and set properties
+  set counter_generic_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:counter_generic:1.0 counter_generic_0 ]
+  set_property -dict [ list \
+CONFIG.nr_bits {3} \
+ ] $counter_generic_0
+
+  # Create instance: sort_0, and set properties
+  set sort_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:sort:1.0 sort_0 ]
 
   # Create instance: xlconcat_0, and set properties
   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
   set_property -dict [ list \
-CONFIG.IN0_WIDTH {8} \
-CONFIG.IN1_WIDTH {8} \
+CONFIG.IN0_WIDTH {6} \
+CONFIG.IN1_WIDTH {10} \
+CONFIG.NUM_PORTS {2} \
  ] $xlconcat_0
 
   # Create instance: xlconstant_0, and set properties
@@ -240,38 +262,71 @@ CONFIG.CONST_VAL {0} \
   # Create instance: xlconstant_2, and set properties
   set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
   set_property -dict [ list \
-CONFIG.CONST_VAL {0} \
-CONFIG.CONST_WIDTH {8} \
+CONFIG.CONST_WIDTH {2} \
  ] $xlconstant_2
 
-  # Create instance: xlconstant_3, and set properties
-  set xlconstant_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_3 ]
+  # Create instance: xlconstant_4, and set properties
+  set xlconstant_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_4 ]
   set_property -dict [ list \
 CONFIG.CONST_VAL {0} \
-CONFIG.CONST_WIDTH {4} \
- ] $xlconstant_3
+CONFIG.CONST_WIDTH {10} \
+ ] $xlconstant_4
+
+  # Create instance: xlslice_0, and set properties
+  set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {15} \
+CONFIG.DIN_TO {0} \
+CONFIG.DIN_WIDTH {22} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_0
+
+  # Create instance: xlslice_1, and set properties
+  set xlslice_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {21} \
+CONFIG.DIN_TO {16} \
+CONFIG.DIN_WIDTH {22} \
+CONFIG.DOUT_WIDTH {6} \
+ ] $xlslice_1
+
+  # Create instance: xlslice_2, and set properties
+  set xlslice_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2 ]
+  set_property -dict [ list \
+CONFIG.DIN_FROM {15} \
+CONFIG.DIN_TO {0} \
+CONFIG.DIN_WIDTH {22} \
+CONFIG.DOUT_WIDTH {16} \
+ ] $xlslice_2
 
   # Create port connections
-  connect_bd_net -net BinToBCD16_0_BCD0 [get_bd_pins BinToBCD16_0/BCD0] [get_bd_pins EightDispControl_0/rightR]
-  connect_bd_net -net BinToBCD16_0_BCD1 [get_bd_pins BinToBCD16_0/BCD1] [get_bd_pins EightDispControl_0/near_rightR]
-  connect_bd_net -net BinToBCD16_0_BCD2 [get_bd_pins BinToBCD16_0/BCD2] [get_bd_pins EightDispControl_0/near_leftR]
-  connect_bd_net -net BinToBCD16_0_BCD3 [get_bd_pins BinToBCD16_0/BCD3] [get_bd_pins EightDispControl_0/leftR]
-  connect_bd_net -net BinToBCD16_0_BCD4 [get_bd_pins BinToBCD16_0/BCD4] [get_bd_pins EightDispControl_0/rightL]
-  connect_bd_net -net BubbleSorter_0_dataOut [get_bd_pins BubbleSorter_0/dataOut] [get_bd_pins SliceMemory_0/dataIn]
-  connect_bd_net -net ClkDividerN_0_clkOut [get_bd_pins ClkDividerN_0/clkOut] [get_bd_pins SliceMemory_0/clock] [get_bd_pins blk_mem_gen_1/clka]
+  connect_bd_net -net BinToBCD16_1_BCD0 [get_bd_pins BinToBCD16_1/BCD0] [get_bd_pins EightDispControl_0/rightR]
+  connect_bd_net -net BinToBCD16_1_BCD1 [get_bd_pins BinToBCD16_1/BCD1] [get_bd_pins EightDispControl_0/near_rightR]
+  connect_bd_net -net BinToBCD16_1_BCD2 [get_bd_pins BinToBCD16_1/BCD2] [get_bd_pins EightDispControl_0/near_leftR]
+  connect_bd_net -net BinToBCD16_1_BCD3 [get_bd_pins BinToBCD16_1/BCD3] [get_bd_pins EightDispControl_0/leftR]
+  connect_bd_net -net BinToBCD16_1_BCD4 [get_bd_pins BinToBCD16_1/BCD4] [get_bd_pins EightDispControl_0/rightL]
+  connect_bd_net -net BinToBCD16_2_BCD0 [get_bd_pins BinToBCD16_2/BCD0] [get_bd_pins EightDispControl_0/near_rightL]
+  connect_bd_net -net BinToBCD16_2_BCD1 [get_bd_pins BinToBCD16_2/BCD1] [get_bd_pins EightDispControl_0/near_leftL]
+  connect_bd_net -net BinToBCD16_2_BCD2 [get_bd_pins BinToBCD16_2/BCD2] [get_bd_pins EightDispControl_0/leftL]
   connect_bd_net -net EightDispControl_0_segments [get_bd_ports seg] [get_bd_pins EightDispControl_0/segments]
   connect_bd_net -net EightDispControl_0_select_display [get_bd_ports an] [get_bd_pins EightDispControl_0/select_display]
   connect_bd_net -net SliceMemory_0_address [get_bd_pins SliceMemory_0/address] [get_bd_pins blk_mem_gen_1/addra]
-  connect_bd_net -net SliceMemory_0_dataOut [get_bd_pins SliceMemory_0/dataOut] [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins xlconcat_0/In0]
-  connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins concat_memory_0/data_in]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins BinToBCD16_0/clk] [get_bd_pins BubbleSorter_0/clock] [get_bd_pins ClkDividerN_0/clkIn] [get_bd_pins EightDispControl_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins concat_memory_0/clk]
+  connect_bd_net -net SliceMemory_0_dataOut [get_bd_pins SliceMemory_0/dataOut] [get_bd_pins blk_mem_gen_1/dina]
+  connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins concat_memory_0/data_in] [get_bd_pins xlslice_2/Din]
+  connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins BinToBCD16_1/clk] [get_bd_pins BinToBCD16_2/clk] [get_bd_pins ClkDividerN_0/clkIn] [get_bd_pins EightDispControl_0/clk] [get_bd_pins SliceMemory_0/clock] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins concat_memory_0/clk] [get_bd_pins counter_generic_0/clk]
   connect_bd_net -net concat_memory_0_address [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins concat_memory_0/address]
-  connect_bd_net -net concat_memory_0_data_out [get_bd_pins BubbleSorter_0/dataIn] [get_bd_pins concat_memory_0/data_out]
-  connect_bd_net -net xlconcat_0_dout [get_bd_pins BinToBCD16_0/binary] [get_bd_pins xlconcat_0/dout]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins BinToBCD16_0/reset] [get_bd_pins ClkDividerN_0/reset] [get_bd_pins xlconstant_0/dout]
-  connect_bd_net -net xlconstant_1_dout [get_bd_pins BinToBCD16_0/request] [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins xlconstant_1/dout]
-  connect_bd_net -net xlconstant_2_dout [get_bd_pins xlconcat_0/In1] [get_bd_pins xlconstant_2/dout]
-  connect_bd_net -net xlconstant_3_dout [get_bd_pins EightDispControl_0/leftL] [get_bd_pins EightDispControl_0/near_leftL] [get_bd_pins EightDispControl_0/near_rightL] [get_bd_pins xlconstant_3/dout]
+  connect_bd_net -net concat_memory_0_data_out [get_bd_pins concat_memory_0/data_out] [get_bd_pins sort_0/dataIn]
+  connect_bd_net -net counter_generic_0_led [get_bd_pins blk_mem_gen_1/addrb] [get_bd_pins counter_generic_0/led]
+  connect_bd_net -net sort_0_dataOut [get_bd_pins SliceMemory_0/dataIn] [get_bd_pins sort_0/dataOut]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins BinToBCD16_2/binary] [get_bd_pins xlconcat_0/dout]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins BinToBCD16_1/reset] [get_bd_pins BinToBCD16_2/reset] [get_bd_pins ClkDividerN_0/reset] [get_bd_pins counter_generic_0/btnC] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_pins BinToBCD16_1/request] [get_bd_pins BinToBCD16_2/request] [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins xlconstant_1/dout]
+  connect_bd_net -net xlconstant_2_dout [get_bd_pins counter_generic_0/sw] [get_bd_pins xlconstant_2/dout]
+  connect_bd_net -net xlconstant_4_dout [get_bd_pins xlconcat_0/In1] [get_bd_pins xlconstant_4/dout]
+  connect_bd_net -net xlslice_0_Dout [get_bd_pins BinToBCD16_1/binary] [get_bd_pins xlslice_0/Dout]
+  connect_bd_net -net xlslice_1_Dout [get_bd_pins xlconcat_0/In0] [get_bd_pins xlslice_1/Dout]
+  connect_bd_net -net xlslice_2_Dout [get_bd_ports led] [get_bd_pins xlslice_2/Dout]
 
   # Create address segments
 
@@ -280,42 +335,55 @@ CONFIG.CONST_WIDTH {4} \
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
 preplace port clk -pg 1 -y 160 -defaultsOSRD
-preplace portBus an -pg 1 -y 330 -defaultsOSRD
-preplace portBus seg -pg 1 -y 350 -defaultsOSRD
-preplace inst EightDispControl_0 -pg 1 -lvl 6 -y 340 -defaultsOSRD
+preplace portBus an -pg 1 -y 540 -defaultsOSRD
+preplace portBus led -pg 1 -y -140 -defaultsOSRD
+preplace portBus seg -pg 1 -y 560 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -y 720 -defaultsOSRD
+preplace inst EightDispControl_0 -pg 1 -lvl 10 -y 550 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 5 -y 640 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 1 -y 410 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 4 -y 360 -defaultsOSRD
+preplace inst counter_generic_0 -pg 1 -lvl 3 -y 610 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 4 -y -110 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 6 -y 360 -defaultsOSRD
 preplace inst concat_memory_0 -pg 1 -lvl 1 -y 270 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 3 -y 280 -defaultsOSRD
-preplace inst SliceMemory_0 -pg 1 -lvl 3 -y 170 -defaultsOSRD
-preplace inst xlconstant_3 -pg 1 -lvl 5 -y 240 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 4 -y 270 -defaultsOSRD
-preplace inst BubbleSorter_0 -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -y 630 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 7 -y 670 -defaultsOSRD
+preplace inst SliceMemory_0 -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 6 -y 590 -defaultsOSRD
 preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -y 320 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -y 90 -defaultsOSRD
-preplace inst BinToBCD16_0 -pg 1 -lvl 5 -y 370 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 8 -y 160 -defaultsOSRD
+preplace inst sort_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
+preplace inst BinToBCD16_1 -pg 1 -lvl 9 -y 630 -defaultsOSRD
 preplace inst ClkDividerN_0 -pg 1 -lvl 2 -y 470 -defaultsOSRD
-preplace netloc xlconstant_1_dout 1 4 1 990
-preplace netloc concat_memory_0_data_out 1 1 1 290
-preplace netloc EightDispControl_0_segments 1 6 1 NJ
-preplace netloc BinToBCD16_0_BCD0 1 5 1 N
-preplace netloc xlconstant_2_dout 1 3 1 NJ
-preplace netloc BinToBCD16_0_BCD1 1 5 1 N
-preplace netloc BubbleSorter_0_dataOut 1 2 1 530
-preplace netloc BinToBCD16_0_BCD2 1 5 1 N
-preplace netloc ClkDividerN_0_clkOut 1 2 3 540 470 NJ 470 980
-preplace netloc BinToBCD16_0_BCD3 1 5 1 N
-preplace netloc SliceMemory_0_address 1 3 2 N 160 960J
-preplace netloc BinToBCD16_0_BCD4 1 5 1 N
-preplace netloc xlconcat_0_dout 1 4 1 960
-preplace netloc clk_1 1 0 6 20 160 280 230 NJ 230 770J 210 1000 190 1210J
-preplace netloc xlconstant_0_dout 1 1 4 270 410 NJ 410 NJ 410 1000
-preplace netloc blk_mem_gen_0_douta 1 0 2 20 340 NJ
-preplace netloc EightDispControl_0_select_display 1 6 1 NJ
-preplace netloc xlconstant_3_dout 1 5 1 1200
-preplace netloc SliceMemory_0_dataOut 1 3 2 760 180 970J
-preplace netloc concat_memory_0_address 1 1 1 270
-levelinfo -pg 1 0 150 410 650 870 1100 1350 1510 -top 0 -bot 530
+preplace inst BinToBCD16_2 -pg 1 -lvl 9 -y 310 -defaultsOSRD
+preplace netloc concat_memory_0_data_out 1 0 2 40 150 380
+preplace netloc BinToBCD16_2_BCD1 1 9 1 2000
+preplace netloc BinToBCD16_1_BCD4 1 9 1 1990
+preplace netloc xlconstant_1_dout 1 6 3 NJ 360 1530 360 1790J
+preplace netloc xlconstant_2_dout 1 2 1 630
+preplace netloc BinToBCD16_2_BCD2 1 9 1 2010
+preplace netloc xlslice_1_Dout 1 5 2 NJ 640 1310J
+preplace netloc EightDispControl_0_segments 1 10 1 NJ
+preplace netloc blk_mem_gen_1_doutb 1 4 4 990 240 NJ 240 NJ 240 NJ
+preplace netloc SliceMemory_0_address 1 2 6 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 1510
+preplace netloc sort_0_dataOut 1 1 1 N
+preplace netloc xlconcat_0_dout 1 7 2 NJ 670 1760J
+preplace netloc clk_1 1 0 10 20 160 400 160 650J 160 NJ 160 NJ 160 NJ 160 NJ 160 1520J 290 1770J 470 NJ
+preplace netloc xlconstant_0_dout 1 1 8 380 410 640J 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 1780J
+preplace netloc xlslice_2_Dout 1 4 7 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 NJ -110 2290
+preplace netloc BinToBCD16_1_BCD0 1 9 1 2030
+preplace netloc xlconstant_4_dout 1 6 1 1320
+preplace netloc blk_mem_gen_0_douta 1 0 4 30J -110 410J -110 NJ -110 NJ
+preplace netloc counter_generic_0_led 1 3 5 810 200 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc BinToBCD16_1_BCD1 1 9 1 2020
+preplace netloc BinToBCD16_1_BCD2 1 9 1 2010
+preplace netloc EightDispControl_0_select_display 1 10 1 NJ
+preplace netloc SliceMemory_0_dataOut 1 2 6 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 1510
+preplace netloc BinToBCD16_2_BCD0 1 9 1 1990
+preplace netloc BinToBCD16_1_BCD3 1 9 1 2000
+preplace netloc xlslice_0_Dout 1 5 4 N 720 1330J 610 NJ 610 1750J
+preplace netloc concat_memory_0_address 1 1 1 390
+levelinfo -pg 1 0 260 520 730 900 1090 1250 1420 1650 1890 2160 2310 -top -190 -bot 940
 ",
 }
 

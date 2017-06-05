@@ -20,6 +20,14 @@ set_property ip_repo_paths {
   c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7
   c:/Users/jduarte/Documents/GitHub/CR/Repository
   c:/Users/jduarte/Documents/GitHub/CR/Aula6/SliceMemory
+  c:/Users/jduarte/Documents/GitHub/CR/ProjectCR
+  c:/Users/jduarte/Desktop/CR
+  c:/Users/jduarte/Downloads/BlockMemoryDisp2017
+  c:/Users/jduarte/Downloads/FirstBlockDes2017
+  c:/Users/jduarte/Downloads
+  c:/Users/jduarte/Documents/GitHub/CR/Projeto/sort_even_odd_merge
+  c:/Users/jduarte/Documents/GitHub/CR/Projeto
+  c:/Users/jduarte/Documents/GitHub
 } [current_project]
 set_property ip_output_repo c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -28,6 +36,7 @@ read_vhdl -library xil_defaultlib C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7
 add_files C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ex7_top.bd
 set_property used_in_implementation false [get_files -all c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ip/ex7_top_blk_mem_gen_0_0/ex7_top_blk_mem_gen_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ip/ex7_top_blk_mem_gen_1_0/ex7_top_blk_mem_gen_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ip/ex7_top_counter_generic_0_0/constrs_1/imports/Desktop/Nexys4_Master.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ex7_top_ooc.xdc]
 set_property is_locked true [get_files C:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ex7_top.bd]
 

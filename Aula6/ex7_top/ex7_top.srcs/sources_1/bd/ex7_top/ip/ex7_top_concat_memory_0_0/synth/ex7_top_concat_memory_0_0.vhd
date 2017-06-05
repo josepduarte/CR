@@ -59,9 +59,9 @@ USE work.concat_memory;
 ENTITY ex7_top_concat_memory_0_0 IS
   PORT (
     clk : IN STD_LOGIC;
-    data_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    address : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    data_out : OUT STD_LOGIC_VECTOR(127 DOWNTO 0)
+    data_in : IN STD_LOGIC_VECTOR(21 DOWNTO 0);
+    address : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    data_out : OUT STD_LOGIC_VECTOR(175 DOWNTO 0)
   );
 END ex7_top_concat_memory_0_0;
 
@@ -76,9 +76,9 @@ ARCHITECTURE ex7_top_concat_memory_0_0_arch OF ex7_top_concat_memory_0_0 IS
     );
     PORT (
       clk : IN STD_LOGIC;
-      data_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-      address : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      data_out : OUT STD_LOGIC_VECTOR(127 DOWNTO 0)
+      data_in : IN STD_LOGIC_VECTOR(21 DOWNTO 0);
+      address : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      data_out : OUT STD_LOGIC_VECTOR(175 DOWNTO 0)
     );
   END COMPONENT concat_memory;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -86,15 +86,15 @@ ARCHITECTURE ex7_top_concat_memory_0_0_arch OF ex7_top_concat_memory_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF ex7_top_concat_memory_0_0_arch : ARCHITECTURE IS "ex7_top_concat_memory_0_0,concat_memory,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF ex7_top_concat_memory_0_0_arch: ARCHITECTURE IS "ex7_top_concat_memory_0_0,concat_memory,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=concat_memory,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,bits=8,words=16,log_words=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF ex7_top_concat_memory_0_0_arch: ARCHITECTURE IS "ex7_top_concat_memory_0_0,concat_memory,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=concat_memory,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,bits=22,words=8,log_words=3}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : concat_memory
     GENERIC MAP (
-      bits => 8,
-      words => 16,
-      log_words => 4
+      bits => 22,
+      words => 8,
+      log_words => 3
     )
     PORT MAP (
       clk => clk,

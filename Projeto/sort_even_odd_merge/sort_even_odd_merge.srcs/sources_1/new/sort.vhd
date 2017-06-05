@@ -20,11 +20,12 @@
 
 
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+ use IEEE.STD_LOGIC_1164.ALL;
+
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -32,18 +33,22 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity sort is
-    Port ( dataIn : in STD_LOGIC_VECTOR (175 downto 0);
-           dataOut : out STD_LOGIC_VECTOR (175 downto 0));
+    Generic (
+            N :integer   := 8;
+            M :integer   := 22
+            );
+    Port ( dataIn : in STD_LOGIC_VECTOR (N*M-1 downto 0);
+           dataOut : out STD_LOGIC_VECTOR (N*M-1 downto 0));
 end sort;
 
 architecture Behavioral of sort is
     type wordList is array (0 to 7) of std_logic_vector(21 downto 0);
-    signal toSort   : std_logic_vector(175 downto 0);
-    signal sorted   : std_logic_vector(175 downto 0);
+    signal toSort   : std_logic_vector(N*M-1 downto 0);
+    signal sorted   : std_logic_vector(N*M-1 downto 0);
 begin
     process(toSort)
         variable onSort : wordList;
-        variable temp   : std_logic_vector(7 downto 0); 
+        variable temp   : std_logic_vector(21 downto 0); 
     begin
         -- preencher array
         for i in 0 to 7 loop

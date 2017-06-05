@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jun 05 12:16:27 2017
+# Process ID: 12112
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/Projeto/sort_even_odd_merge/sort_even_odd_merge.runs/impl_1
+# Command line: vivado.exe -log sort.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sort.tcl -notrace
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/Projeto/sort_even_odd_merge/sort_even_odd_merge.runs/impl_1/sort.vdi
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/Projeto/sort_even_odd_merge/sort_even_odd_merge.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sort.tcl -notrace

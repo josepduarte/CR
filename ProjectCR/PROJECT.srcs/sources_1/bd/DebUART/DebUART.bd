@@ -339,17 +339,17 @@
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">DebUART_xlslice_5_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">16</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">12</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">22</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">15</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">176</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>FSM_even_odd_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="FSM_even_odd" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:instanceName>sort_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="sort" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">DebUART_FSM_even_odd_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">DebUART_sort_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -408,7 +408,6 @@
         <spirit:internalPortReference spirit:componentRef="SliceMemory_0" spirit:portRef="clock"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clka"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clkb"/>
-        <spirit:internalPortReference spirit:componentRef="FSM_even_odd_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_1_locked</spirit:name>
@@ -499,7 +498,6 @@
         <spirit:internalPortReference spirit:componentRef="BinToBCD16_1" spirit:portRef="reset"/>
         <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="reset"/>
         <spirit:internalPortReference spirit:componentRef="counter_generic_0" spirit:portRef="btnC"/>
-        <spirit:internalPortReference spirit:componentRef="FSM_even_odd_0" spirit:portRef="reset"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>BinToBCD16_0_BCD0</spirit:name>
@@ -582,26 +580,10 @@
         <spirit:internalPortReference spirit:componentRef="concat_memory_0" spirit:portRef="data_in"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>concat_memory_0_data_out</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="concat_memory_0" spirit:portRef="data_out"/>
-        <spirit:internalPortReference spirit:componentRef="FSM_even_odd_0" spirit:portRef="data_in"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>FSM_even_odd_0_data_out</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="FSM_even_odd_0" spirit:portRef="data_out"/>
-        <spirit:internalPortReference spirit:componentRef="SliceMemory_0" spirit:portRef="dataIn"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>SliceMemory_0_address</spirit:name>
         <spirit:internalPortReference spirit:componentRef="SliceMemory_0" spirit:portRef="address"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="addra"/>
         <spirit:internalPortReference spirit:componentRef="xlconcat_1" spirit:portRef="In0"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>SliceMemory_0_dataOut</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="SliceMemory_0" spirit:portRef="dataOut"/>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="dina"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Din"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>counter_generic_0_led</spirit:name>
@@ -615,14 +597,25 @@
         <spirit:internalPortReference spirit:componentRef="xlslice_3" spirit:portRef="Din"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlslice_5_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Dout"/>
-        <spirit:internalPortReference spirit:componentRef="xlconcat_1" spirit:portRef="In1"/>
+        <spirit:name>SliceMemory_0_dataOut</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SliceMemory_0" spirit:portRef="dataOut"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="dina"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlconcat_1_dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlconcat_1" spirit:portRef="dout"/>
+        <spirit:name>xlslice_5_Dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Dout"/>
         <spirit:externalPortReference spirit:portRef="led"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sort_0_dataOut</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sort_0" spirit:portRef="dataOut"/>
+        <spirit:internalPortReference spirit:componentRef="SliceMemory_0" spirit:portRef="dataIn"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>concat_memory_0_data_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="concat_memory_0" spirit:portRef="data_out"/>
+        <spirit:internalPortReference spirit:componentRef="sort_0" spirit:portRef="dataIn"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

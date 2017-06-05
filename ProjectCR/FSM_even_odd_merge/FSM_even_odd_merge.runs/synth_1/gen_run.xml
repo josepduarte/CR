@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1496625777">
-  <File Type="RDS-PROPCONSTRS" Name="FSM_even_odd_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="FSM_even_odd.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="FSM_even_odd_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="FSM_even_odd.vds"/>
   <File Type="RDS-UTIL" Name="FSM_even_odd_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="FSM_even_odd_utilization_synth.pb"/>

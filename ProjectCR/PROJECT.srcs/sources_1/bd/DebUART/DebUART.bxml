@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="DebUART" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1496628314"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1496628314"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1496628314"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1496670517"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1496670517"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1496670517"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\DebUART_microblaze_0_0\DebUART_microblaze_0_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0"/>
@@ -238,14 +238,6 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\DebUART_FSM_even_odd_0_0\DebUART_FSM_even_odd_0_0.xci" Type="IP">
-        <Instance HierarchyPath="FSM_even_odd_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\DebUART_SliceMemory_0_0\DebUART_SliceMemory_0_0.xci" Type="IP">
         <Instance HierarchyPath="SliceMemory_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -272,6 +264,14 @@
       </File>
       <File Name="ip\DebUART_xlslice_5_0\DebUART_xlslice_5_0.xci" Type="IP">
         <Instance HierarchyPath="xlslice_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\DebUART_sort_0_1\DebUART_sort_0_1.xci" Type="IP">
+        <Instance HierarchyPath="sort_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

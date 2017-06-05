@@ -1,11 +1,11 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-// Date        : Tue Apr 04 23:17:53 2017
+// Date        : Mon Mar 27 11:30:14 2017
 // Host        : Inator running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ip/ex7_top_xlconstant_2_0/ex7_top_xlconstant_2_0_sim_netlist.v
-// Design      : ex7_top_xlconstant_2_0
+// Command     : write_verilog -force -mode funcsim -rename_top ex7_top_xlconstant_2_0 -prefix
+//               ex7_top_xlconstant_2_0_ ex1_xlconstant_0_0_sim_netlist.v
+// Design      : ex1_xlconstant_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7a100tcsg324-3
@@ -16,20 +16,17 @@
 (* NotValidForBitStream *)
 module ex7_top_xlconstant_2_0
    (dout);
-  output [7:0]dout;
+  output [1:0]dout;
 
   wire \<const0> ;
+  wire \<const1> ;
 
-  assign dout[7] = \<const0> ;
-  assign dout[6] = \<const0> ;
-  assign dout[5] = \<const0> ;
-  assign dout[4] = \<const0> ;
-  assign dout[3] = \<const0> ;
-  assign dout[2] = \<const0> ;
   assign dout[1] = \<const0> ;
-  assign dout[0] = \<const0> ;
+  assign dout[0] = \<const1> ;
   GND GND
        (.G(\<const0> ));
+  VCC VCC
+       (.P(\<const1> ));
 endmodule
 `ifndef GLBL
 `define GLBL

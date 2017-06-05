@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jun 05 14:53:39 2017
+# Process ID: 8052
+# Current directory: C:/Users/jduarte/Documents/GitHub/CR/ProjectCR/brum2/impl_1
+# Command line: vivado.exe -log DebUART_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DebUART_wrapper.tcl -notrace
+# Log file: C:/Users/jduarte/Documents/GitHub/CR/ProjectCR/brum2/impl_1/DebUART_wrapper.vdi
+# Journal file: C:/Users/jduarte/Documents/GitHub/CR/ProjectCR/brum2/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DebUART_wrapper.tcl -notrace

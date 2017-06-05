@@ -253,9 +253,6 @@ proc create_root_design { parentCell } {
   # Create instance: EightDispControl_0, and set properties
   set EightDispControl_0 [ create_bd_cell -type ip -vlnv ua.pt:user:EightDispControl:1.0 EightDispControl_0 ]
 
-  # Create instance: FSM_even_odd_0, and set properties
-  set FSM_even_odd_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:FSM_even_odd:1.0 FSM_even_odd_0 ]
-
   # Create instance: SliceMemory_0, and set properties
   set SliceMemory_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:SliceMemory:1.0 SliceMemory_0 ]
   set_property -dict [ list \
@@ -383,6 +380,9 @@ CONFIG.NUM_MI {2} \
   # Create instance: rst_clk_wiz_1_100M, and set properties
   set rst_clk_wiz_1_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_clk_wiz_1_100M ]
 
+  # Create instance: sort_0, and set properties
+  set sort_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:sort:1.0 sort_0 ]
+
   # Create instance: xlconcat_0, and set properties
   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
 
@@ -470,10 +470,10 @@ CONFIG.DOUT_WIDTH {6} \
   # Create instance: xlslice_5, and set properties
   set xlslice_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_5 ]
   set_property -dict [ list \
-CONFIG.DIN_FROM {12} \
+CONFIG.DIN_FROM {15} \
 CONFIG.DIN_TO {0} \
-CONFIG.DIN_WIDTH {22} \
-CONFIG.DOUT_WIDTH {13} \
+CONFIG.DIN_WIDTH {176} \
+CONFIG.DOUT_WIDTH {16} \
  ] $xlslice_5
 
   # Create interface connections
@@ -495,9 +495,8 @@ CONFIG.DOUT_WIDTH {13} \
   connect_bd_net -net BinToBCD16_1_BCD2 [get_bd_pins BinToBCD16_1/BCD2] [get_bd_pins EightDispControl_0/leftL]
   connect_bd_net -net EightDispControl_0_segments [get_bd_ports seg] [get_bd_pins EightDispControl_0/segments]
   connect_bd_net -net EightDispControl_0_select_display [get_bd_ports an] [get_bd_pins EightDispControl_0/select_display]
-  connect_bd_net -net FSM_even_odd_0_data_out [get_bd_pins FSM_even_odd_0/data_out] [get_bd_pins SliceMemory_0/dataIn]
   connect_bd_net -net SliceMemory_0_address [get_bd_pins SliceMemory_0/address] [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins xlconcat_1/In0]
-  connect_bd_net -net SliceMemory_0_dataOut [get_bd_pins SliceMemory_0/dataOut] [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins xlslice_5/Din]
+  connect_bd_net -net SliceMemory_0_dataOut [get_bd_pins SliceMemory_0/dataOut] [get_bd_pins blk_mem_gen_1/dina]
   connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din]
   connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins concat_memory_0/data_in]
   connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins xlslice_3/Din] [get_bd_pins xlslice_4/Din]
@@ -505,27 +504,27 @@ CONFIG.DOUT_WIDTH {13} \
   connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins clk_wiz_1/clk_in1]
   connect_bd_net -net clk_wiz_1_locked [get_bd_pins clk_wiz_1/locked] [get_bd_pins rst_clk_wiz_1_100M/dcm_locked]
   connect_bd_net -net concat_memory_0_address [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins concat_memory_0/address]
-  connect_bd_net -net concat_memory_0_data_out [get_bd_pins FSM_even_odd_0/data_in] [get_bd_pins concat_memory_0/data_out]
+  connect_bd_net -net concat_memory_0_data_out [get_bd_pins concat_memory_0/data_out] [get_bd_pins sort_0/dataIn]
   connect_bd_net -net counter_generic_0_led [get_bd_pins blk_mem_gen_1/addrb] [get_bd_pins counter_generic_0/led]
   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/mb_debug_sys_rst]
-  connect_bd_net -net microblaze_0_Clk [get_bd_pins BinToBCD16_0/clk] [get_bd_pins BinToBCD16_1/clk] [get_bd_pins EightDispControl_0/clk] [get_bd_pins FSM_even_odd_0/clk] [get_bd_pins SliceMemory_0/clock] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins concat_memory_0/clk] [get_bd_pins counter_generic_0/clk] [get_bd_pins mdm_1/S_AXI_ACLK] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk]
+  connect_bd_net -net microblaze_0_Clk [get_bd_pins BinToBCD16_0/clk] [get_bd_pins BinToBCD16_1/clk] [get_bd_pins EightDispControl_0/clk] [get_bd_pins SliceMemory_0/clock] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins concat_memory_0/clk] [get_bd_pins counter_generic_0/clk] [get_bd_pins mdm_1/S_AXI_ACLK] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk]
   connect_bd_net -net rst_clk_wiz_1_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/bus_struct_reset]
   connect_bd_net -net rst_clk_wiz_1_100M_interconnect_aresetn [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins rst_clk_wiz_1_100M/interconnect_aresetn]
   connect_bd_net -net rst_clk_wiz_1_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins rst_clk_wiz_1_100M/mb_reset]
   connect_bd_net -net rst_clk_wiz_1_100M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins mdm_1/S_AXI_ARESETN] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn]
+  connect_bd_net -net sort_0_dataOut [get_bd_pins SliceMemory_0/dataIn] [get_bd_pins sort_0/dataOut] [get_bd_pins xlslice_5/Din]
   connect_bd_net -net xlconcat_0_dout [get_bd_pins BinToBCD16_1/binary] [get_bd_pins xlconcat_0/dout]
-  connect_bd_net -net xlconcat_1_dout [get_bd_ports led] [get_bd_pins xlconcat_1/dout]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins axi_gpio_0/gpio2_io_i] [get_bd_pins xlconstant_0/dout]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins xlconcat_0/In1] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins BinToBCD16_0/request] [get_bd_pins BinToBCD16_1/request] [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins xlconstant_2/dout]
-  connect_bd_net -net xlconstant_3_dout [get_bd_pins BinToBCD16_0/reset] [get_bd_pins BinToBCD16_1/reset] [get_bd_pins FSM_even_odd_0/reset] [get_bd_pins counter_generic_0/btnC] [get_bd_pins xlconstant_3/dout]
+  connect_bd_net -net xlconstant_3_dout [get_bd_pins BinToBCD16_0/reset] [get_bd_pins BinToBCD16_1/reset] [get_bd_pins counter_generic_0/btnC] [get_bd_pins xlconstant_3/dout]
   connect_bd_net -net xlconstant_4_dout [get_bd_pins counter_generic_0/sw] [get_bd_pins xlconstant_4/dout]
   connect_bd_net -net xlslice_0_Dout [get_bd_pins blk_mem_gen_0/dina] [get_bd_pins xlslice_0/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins xlslice_1/Dout]
   connect_bd_net -net xlslice_2_Dout [get_bd_pins blk_mem_gen_0/wea] [get_bd_pins xlslice_2/Dout]
   connect_bd_net -net xlslice_3_Dout [get_bd_pins BinToBCD16_0/binary] [get_bd_pins xlslice_3/Dout]
   connect_bd_net -net xlslice_4_Dout [get_bd_pins xlconcat_0/In0] [get_bd_pins xlslice_4/Dout]
-  connect_bd_net -net xlslice_5_Dout [get_bd_pins xlconcat_1/In1] [get_bd_pins xlslice_5/Dout]
+  connect_bd_net -net xlslice_5_Dout [get_bd_ports led] [get_bd_pins xlslice_5/Dout]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x40000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_gpio_0/S_AXI/Reg] SEG_axi_gpio_0_Reg
@@ -550,75 +549,74 @@ preplace inst concat_memory_0 -pg 1 -lvl 4 -y 910 -defaultsOSRD
 preplace inst counter_generic_0 -pg 1 -lvl 7 -y 840 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 9 -y 170 -defaultsOSRD
 preplace inst xlslice_2 -pg 1 -lvl 4 -y 510 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 5 -y 50 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 6 -y 50 -defaultsOSRD
 preplace inst xlslice_3 -pg 1 -lvl 10 -y 360 -defaultsOSRD
 preplace inst microblaze_0_axi_periph -pg 1 -lvl 3 -y 240 -defaultsOSRD
-preplace inst SliceMemory_0 -pg 1 -lvl 7 -y 970 -defaultsOSRD
+preplace inst SliceMemory_0 -pg 1 -lvl 7 -y 990 -defaultsOSRD
 preplace inst xlconstant_3 -pg 1 -lvl 8 -y 120 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 10 -y 210 -defaultsOSRD
 preplace inst xlslice_4 -pg 1 -lvl 9 -y 250 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 710 -defaultsOSRD
 preplace inst xlslice_5 -pg 1 -lvl 10 -y 880 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 10 -y 790 -defaultsOSRD
-preplace inst xlconstant_4 -pg 1 -lvl 5 -y 810 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 520 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 9 -y 1020 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 6 -y 810 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 6 -y 520 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 9 -y 1030 -defaultsOSRD
 preplace inst mdm_1 -pg 1 -lvl 1 -y 190 -defaultsOSRD
 preplace inst BinToBCD16_0 -pg 1 -lvl 11 -y 360 -defaultsOSRD
+preplace inst sort_0 -pg 1 -lvl 5 -y 1030 -defaultsOSRD
 preplace inst BinToBCD16_1 -pg 1 -lvl 11 -y 160 -defaultsOSRD
 preplace inst microblaze_0 -pg 1 -lvl 2 -y 200 -defaultsOSRD
-preplace inst FSM_even_odd_0 -pg 1 -lvl 6 -y 970 -defaultsOSRD
 preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 1 -y -10 -defaultsOSRD
 preplace inst clk_wiz_1 -pg 1 -lvl 1 -y -170 -defaultsOSRD
 preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -y 10 -defaultsOSRD
-preplace netloc concat_memory_0_data_out 1 4 2 NJ 920 1390J
-preplace netloc xlconstant_1_dout 1 9 1 2390
-preplace netloc microblaze_0_mdm_axi 1 0 4 -270J 380 NJ 380 NJ 380 870
-preplace netloc xlslice_1_Dout 1 4 1 1140
-preplace netloc EightDispControl_0_segments 1 12 1 3140
-preplace netloc BinToBCD16_0_BCD0 1 11 1 2880
-preplace netloc xlconstant_2_dout 1 5 6 NJ 50 NJ 50 NJ 50 2110J 50 NJ 50 2610
-preplace netloc xlslice_4_Dout 1 9 1 2410
-preplace netloc xlslice_3_Dout 1 10 1 2600
-preplace netloc blk_mem_gen_1_doutb 1 8 2 2140 360 NJ
-preplace netloc FSM_even_odd_0_data_out 1 6 1 1660
-preplace netloc BinToBCD16_0_BCD1 1 11 1 2870
+preplace netloc concat_memory_0_data_out 1 4 1 1280
+preplace netloc xlconstant_1_dout 1 9 1 2450
+preplace netloc microblaze_0_mdm_axi 1 0 4 -130J 380 NJ 380 NJ 380 1010
+preplace netloc xlslice_1_Dout 1 4 2 N 590 1560J
+preplace netloc EightDispControl_0_segments 1 12 1 3220
+preplace netloc BinToBCD16_0_BCD0 1 11 1 2960
+preplace netloc xlconstant_2_dout 1 6 5 NJ 50 NJ 50 2220J 50 NJ 50 2690
+preplace netloc xlslice_4_Dout 1 9 1 2460
+preplace netloc xlslice_3_Dout 1 10 1 2680
+preplace netloc blk_mem_gen_1_doutb 1 8 2 2230 360 NJ
+preplace netloc BinToBCD16_0_BCD1 1 11 1 2950
 preplace netloc btnCpuReset_1 1 0 1 NJ
-preplace netloc xlslice_5_Dout 1 9 2 2400 930 2620
-preplace netloc BinToBCD16_0_BCD2 1 11 1 2860
-preplace netloc microblaze_0_Clk 1 0 12 -280 -230 100 -230 580 -230 880J -230 1170J -230 1400J -230 1670J -230 NJ -230 2100J -230 NJ -230 2640 -230 2840
-preplace netloc xlconcat_1_dout 1 10 3 NJ 790 NJ 790 3140
-preplace netloc SliceMemory_0_address 1 7 3 NJ 950 2120J 780 NJ
-preplace netloc BinToBCD16_0_BCD3 1 11 1 2850
-preplace netloc microblaze_0_ilmb_1 1 2 1 560
-preplace netloc BinToBCD16_0_BCD4 1 11 1 2840
-preplace netloc microblaze_0_axi_dp 1 2 1 550
-preplace netloc xlconcat_0_dout 1 10 1 2630
-preplace netloc axi_gpio_0_gpio_io_o 1 3 1 890
-preplace netloc xlconstant_0_dout 1 2 2 NJ 600 860
+preplace netloc xlslice_5_Dout 1 10 3 NJ 880 NJ 880 3220J
+preplace netloc BinToBCD16_0_BCD2 1 11 1 2940
+preplace netloc microblaze_0_Clk 1 0 12 -140 -230 240 -230 720 -230 1020J -230 NJ -230 1590J -230 1810J -230 NJ -230 2190J -230 NJ -230 2720 -230 2920
+preplace netloc SliceMemory_0_address 1 7 3 NJ 970 2200J 780 NJ
+preplace netloc BinToBCD16_0_BCD3 1 11 1 2930
+preplace netloc microblaze_0_ilmb_1 1 2 1 700
+preplace netloc sort_0_dataOut 1 5 5 NJ 1030 1820J 910 NJ 910 2210J 880 NJ
+preplace netloc BinToBCD16_0_BCD4 1 11 1 2920
+preplace netloc microblaze_0_axi_dp 1 2 1 690
+preplace netloc xlconcat_0_dout 1 10 1 2710
+preplace netloc axi_gpio_0_gpio_io_o 1 3 1 1030
+preplace netloc xlconstant_0_dout 1 2 2 NJ 600 1000
 preplace netloc clk_1 1 0 1 NJ
-preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 1 2 NJ 10 570J
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 2 NJ -30 590J
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 2 600 390 860
-preplace netloc xlslice_2_Dout 1 4 1 1160
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 3 -260J 280 70J 280 590
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 1 1 90J
-preplace netloc clk_wiz_1_locked 1 0 2 -270 -110 60
-preplace netloc xlconstant_4_dout 1 5 2 NJ 810 1650
-preplace netloc BinToBCD16_1_BCD0 1 11 1 2840
-preplace netloc microblaze_0_dlmb_1 1 2 1 540
-preplace netloc counter_generic_0_led 1 7 2 NJ 840 2090J
-preplace netloc blk_mem_gen_0_doutb 1 3 2 890 730 1190J
-preplace netloc BinToBCD16_1_BCD1 1 11 1 2840
-preplace netloc microblaze_0_debug 1 1 1 80
-preplace netloc EightDispControl_0_select_display 1 12 1 3140
-preplace netloc BinToBCD16_1_BCD2 1 11 1 2840
-preplace netloc mdm_1_debug_sys_rst 1 0 2 -260 -100 60
-preplace netloc SliceMemory_0_dataOut 1 7 3 NJ 990 2130J 880 N
-preplace netloc concat_memory_0_address 1 4 1 1180
-preplace netloc xlslice_0_Dout 1 4 1 1150
-preplace netloc xlconstant_3_dout 1 5 6 1410 350 1660J 350 NJ 350 2090J 350 2400J 120 2620
-levelinfo -pg 1 -300 -100 320 730 1020 1290 1530 1780 2030 2290 2510 2740 3010 3160 -top -360 -bot 1160
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 1 2 NJ 10 710J
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 2 NJ -30 740J
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 2 740 390 1000
+preplace netloc xlslice_2_Dout 1 4 2 N 510 1570J
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 3 -120J 730 210J 730 730
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 1 1 230J
+preplace netloc clk_wiz_1_locked 1 0 2 -130 -110 200
+preplace netloc xlconstant_4_dout 1 6 1 1800J
+preplace netloc BinToBCD16_1_BCD0 1 11 1 2920
+preplace netloc microblaze_0_dlmb_1 1 2 1 680
+preplace netloc counter_generic_0_led 1 7 2 NJ 840 2180J
+preplace netloc blk_mem_gen_0_doutb 1 3 3 1040 460 NJ 460 1550J
+preplace netloc BinToBCD16_1_BCD1 1 11 1 2920
+preplace netloc microblaze_0_debug 1 1 1 220
+preplace netloc EightDispControl_0_select_display 1 12 1 3220
+preplace netloc BinToBCD16_1_BCD2 1 11 1 2920
+preplace netloc mdm_1_debug_sys_rst 1 0 2 -120 -100 200
+preplace netloc SliceMemory_0_dataOut 1 7 2 NJ 1010 N
+preplace netloc concat_memory_0_address 1 4 2 N 900 1600J
+preplace netloc xlslice_0_Dout 1 4 2 N 670 1580J
+preplace netloc xlconstant_3_dout 1 6 5 1820J 170 NJ 170 2180J 120 NJ 120 2700
+levelinfo -pg 1 -160 40 460 870 1160 1430 1700 1940 2120 2350 2580 2820 3090 3520 -top -360 -bot 1190
 ",
 }
 

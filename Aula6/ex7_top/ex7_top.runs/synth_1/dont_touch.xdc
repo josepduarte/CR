@@ -6,9 +6,6 @@
 # Block Designs: bd/ex7_top/ex7_top.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top || ORIG_REF_NAME==ex7_top}]
 
-# IP: bd/ex7_top/ip/ex7_top_BubbleSorter_0_0/ex7_top_BubbleSorter_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_BubbleSorter_0_0 || ORIG_REF_NAME==ex7_top_BubbleSorter_0_0}]
-
 # IP: bd/ex7_top/ip/ex7_top_blk_mem_gen_0_0/ex7_top_blk_mem_gen_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_blk_mem_gen_0_0 || ORIG_REF_NAME==ex7_top_blk_mem_gen_0_0}]
 
@@ -21,28 +18,46 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_concat_
 # IP: bd/ex7_top/ip/ex7_top_xlconstant_0_0/ex7_top_xlconstant_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlconstant_0_0 || ORIG_REF_NAME==ex7_top_xlconstant_0_0}]
 
-# IP: bd/ex7_top/ip/ex7_top_SliceMemory_0_0/ex7_top_SliceMemory_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_SliceMemory_0_0 || ORIG_REF_NAME==ex7_top_SliceMemory_0_0}]
-
 # IP: bd/ex7_top/ip/ex7_top_blk_mem_gen_1_0/ex7_top_blk_mem_gen_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_blk_mem_gen_1_0 || ORIG_REF_NAME==ex7_top_blk_mem_gen_1_0}]
 
 # IP: bd/ex7_top/ip/ex7_top_xlconstant_1_1/ex7_top_xlconstant_1_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlconstant_1_1 || ORIG_REF_NAME==ex7_top_xlconstant_1_1}]
 
-# IP: bd/ex7_top/ip/ex7_top_BinToBCD16_0_0/ex7_top_BinToBCD16_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_BinToBCD16_0_0 || ORIG_REF_NAME==ex7_top_BinToBCD16_0_0}]
-
-# IP: bd/ex7_top/ip/ex7_top_xlconcat_0_0/ex7_top_xlconcat_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlconcat_0_0 || ORIG_REF_NAME==ex7_top_xlconcat_0_0}]
-
-# IP: bd/ex7_top/ip/ex7_top_xlconstant_2_0/ex7_top_xlconstant_2_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlconstant_2_0 || ORIG_REF_NAME==ex7_top_xlconstant_2_0}]
-
 # IP: bd/ex7_top/ip/ex7_top_EightDispControl_0_0/ex7_top_EightDispControl_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_EightDispControl_0_0 || ORIG_REF_NAME==ex7_top_EightDispControl_0_0}]
 
-# IP: bd/ex7_top/ip/ex7_top_xlconstant_3_0/ex7_top_xlconstant_3_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlconstant_3_0 || ORIG_REF_NAME==ex7_top_xlconstant_3_0}]
+# IP: bd/ex7_top/ip/ex7_top_SliceMemory_0_1/ex7_top_SliceMemory_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_SliceMemory_0_1 || ORIG_REF_NAME==ex7_top_SliceMemory_0_1}]
+
+# IP: bd/ex7_top/ip/ex7_top_xlslice_0_0/ex7_top_xlslice_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlslice_0_0 || ORIG_REF_NAME==ex7_top_xlslice_0_0}]
+
+# IP: bd/ex7_top/ip/ex7_top_xlslice_0_1/ex7_top_xlslice_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlslice_0_1 || ORIG_REF_NAME==ex7_top_xlslice_0_1}]
+
+# IP: bd/ex7_top/ip/ex7_top_xlconstant_4_0/ex7_top_xlconstant_4_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlconstant_4_0 || ORIG_REF_NAME==ex7_top_xlconstant_4_0}]
+
+# IP: bd/ex7_top/ip/ex7_top_xlconcat_0_1/ex7_top_xlconcat_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlconcat_0_1 || ORIG_REF_NAME==ex7_top_xlconcat_0_1}]
+
+# IP: bd/ex7_top/ip/ex7_top_BinToBCD16_1_0/ex7_top_BinToBCD16_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_BinToBCD16_1_0 || ORIG_REF_NAME==ex7_top_BinToBCD16_1_0}]
+
+# IP: bd/ex7_top/ip/ex7_top_BinToBCD16_1_1/ex7_top_BinToBCD16_1_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_BinToBCD16_1_1 || ORIG_REF_NAME==ex7_top_BinToBCD16_1_1}]
+
+# IP: bd/ex7_top/ip/ex7_top_xlslice_2_0/ex7_top_xlslice_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlslice_2_0 || ORIG_REF_NAME==ex7_top_xlslice_2_0}]
+
+# IP: bd/ex7_top/ip/ex7_top_sort_0_0/ex7_top_sort_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_sort_0_0 || ORIG_REF_NAME==ex7_top_sort_0_0}]
+
+# IP: bd/ex7_top/ip/ex7_top_counter_generic_0_0/ex7_top_counter_generic_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_counter_generic_0_0 || ORIG_REF_NAME==ex7_top_counter_generic_0_0}]
+
+# IP: bd/ex7_top/ip/ex7_top_xlconstant_2_0/ex7_top_xlconstant_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ex7_top_xlconstant_2_0 || ORIG_REF_NAME==ex7_top_xlconstant_2_0}]
 
 # XDC: bd/ex7_top/ex7_top_ooc.xdc

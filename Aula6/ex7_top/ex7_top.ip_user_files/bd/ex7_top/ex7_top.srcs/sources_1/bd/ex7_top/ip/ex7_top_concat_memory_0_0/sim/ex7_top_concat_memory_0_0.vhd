@@ -59,9 +59,9 @@ USE work.concat_memory;
 ENTITY ex7_top_concat_memory_0_0 IS
   PORT (
     clk : IN STD_LOGIC;
-    data_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    address : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    data_out : OUT STD_LOGIC_VECTOR(127 DOWNTO 0)
+    data_in : IN STD_LOGIC_VECTOR(21 DOWNTO 0);
+    address : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    data_out : OUT STD_LOGIC_VECTOR(175 DOWNTO 0)
   );
 END ex7_top_concat_memory_0_0;
 
@@ -76,9 +76,9 @@ ARCHITECTURE ex7_top_concat_memory_0_0_arch OF ex7_top_concat_memory_0_0 IS
     );
     PORT (
       clk : IN STD_LOGIC;
-      data_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-      address : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      data_out : OUT STD_LOGIC_VECTOR(127 DOWNTO 0)
+      data_in : IN STD_LOGIC_VECTOR(21 DOWNTO 0);
+      address : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      data_out : OUT STD_LOGIC_VECTOR(175 DOWNTO 0)
     );
   END COMPONENT concat_memory;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -86,9 +86,9 @@ ARCHITECTURE ex7_top_concat_memory_0_0_arch OF ex7_top_concat_memory_0_0 IS
 BEGIN
   U0 : concat_memory
     GENERIC MAP (
-      bits => 8,
-      words => 16,
-      log_words => 4
+      bits => 22,
+      words => 8,
+      log_words => 3
     )
     PORT MAP (
       clk => clk,

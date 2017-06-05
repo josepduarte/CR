@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ex7_top_concat_memory_0_0_synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1491344234">
+<GenRun Id="ex7_top_concat_memory_0_0_synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1496659479">
   <File Type="PA-TCL" Name="ex7_top_concat_memory_0_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ex7_top_concat_memory_0_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="ex7_top_concat_memory_0_0.vds"/>
@@ -11,9 +11,11 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_concat_memory_0_0">
     <File Path="$PSRCDIR/sources_1/bd/ex7_top/ip/ex7_top_concat_memory_0_0/ex7_top_concat_memory_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -24,9 +26,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ex7_top_concat_memory_0_0">
     <File Path="$PSRCDIR/sources_1/bd/ex7_top/ip/ex7_top_concat_memory_0_0/ex7_top_concat_memory_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>

@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
 // Date        : Tue Apr 04 23:18:32 2017
 // Host        : Inator running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/jduarte/Documents/GitHub/CR/Aula6/ex7_top/ex7_top.srcs/sources_1/bd/ex7_top/ip/ex7_top_ClkDividerN_0_0/ex7_top_ClkDividerN_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top ex7_top_ClkDividerN_0_0 -prefix
+//               ex7_top_ClkDividerN_0_0_ ex7_top_ClkDividerN_0_0_sim_netlist.v
 // Design      : ex7_top_ClkDividerN_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,27 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "ex7_top_ClkDividerN_0_0,ClkDividerN,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "ClkDividerN,Vivado 2016.4" *) 
-(* NotValidForBitStream *)
-module ex7_top_ClkDividerN_0_0
-   (reset,
-    clkIn,
-    clkOut);
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) input reset;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clkIn CLK" *) input clkIn;
-  output clkOut;
-
-  wire clkIn;
-  wire clkOut;
-  wire reset;
-
-  ex7_top_ClkDividerN_0_0_ClkDividerN U0
-       (.clkIn(clkIn),
-        .clkOut(clkOut),
-        .reset(reset));
-endmodule
-
-(* ORIG_REF_NAME = "ClkDividerN" *) 
 module ex7_top_ClkDividerN_0_0_ClkDividerN
    (clkOut,
     clkIn,
@@ -858,6 +837,26 @@ module ex7_top_ClkDividerN_0_0_ClkDividerN
         .CLR(reset),
         .D(s_divCounter_0[9]),
         .Q(s_divCounter[9]));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "ex7_top_ClkDividerN_0_0,ClkDividerN,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "ClkDividerN,Vivado 2016.4" *) 
+(* NotValidForBitStream *)
+module ex7_top_ClkDividerN_0_0
+   (reset,
+    clkIn,
+    clkOut);
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) input reset;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clkIn CLK" *) input clkIn;
+  output clkOut;
+
+  wire clkIn;
+  wire clkOut;
+  wire reset;
+
+  ex7_top_ClkDividerN_0_0_ClkDividerN U0
+       (.clkIn(clkIn),
+        .clkOut(clkOut),
+        .reset(reset));
 endmodule
 `ifndef GLBL
 `define GLBL
