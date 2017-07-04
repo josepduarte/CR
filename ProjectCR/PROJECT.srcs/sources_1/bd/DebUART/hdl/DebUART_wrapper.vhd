@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
---Date        : Tue Jun 06 01:52:41 2017
+--Date        : Wed Jun 07 13:34:24 2017
 --Host        : Inator running 64-bit major release  (build 9200)
 --Command     : generate_target DebUART_wrapper.bd
 --Design      : DebUART_wrapper

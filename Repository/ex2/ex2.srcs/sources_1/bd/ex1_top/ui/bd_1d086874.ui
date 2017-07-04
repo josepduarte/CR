@@ -1,0 +1,36 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port clk -pg 1 -y 10 -defaultsOSRD
+preplace portBus an -pg 1 -y 150 -defaultsOSRD
+preplace portBus led -pg 1 -y 460 -defaultsOSRD
+preplace portBus seg -pg 1 -y 170 -defaultsOSRD
+preplace inst EightDispControl_0 -pg 1 -lvl 4 -y 160 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 180 -defaultsOSRD
+preplace inst dist_mem_gen_0 -pg 1 -lvl 1 -y 510 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -y 590 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -y 260 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 3 -y 60 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -y 520 -defaultsOSRD
+preplace inst BinToBCD16_0 -pg 1 -lvl 3 -y 190 -defaultsOSRD
+preplace inst ClkDividerN_0 -pg 1 -lvl 3 -y 350 -defaultsOSRD
+preplace inst CounterGenericNoClk_0 -pg 1 -lvl 4 -y 380 -defaultsOSRD
+preplace netloc xlconstant_1_dout 1 1 1 200J
+preplace netloc EightDispControl_0_segments 1 4 1 NJ
+preplace netloc BinToBCD16_0_BCD0 1 3 1 N
+preplace netloc xlconstant_2_dout 1 2 2 410 290 610J
+preplace netloc BinToBCD16_0_BCD1 1 3 1 N
+preplace netloc ClkDividerN_0_clkOut 1 3 1 N
+preplace netloc BinToBCD16_0_BCD2 1 3 1 N
+preplace netloc BinToBCD16_0_BCD3 1 3 1 N
+preplace netloc BinToBCD16_0_BCD4 1 3 1 N
+preplace netloc dist_mem_gen_0_spo 1 1 1 NJ
+preplace netloc xlconcat_0_dout 1 2 1 390
+preplace netloc clk_1 1 0 4 NJ 10 NJ 10 400 10 620J
+preplace netloc xlconstant_0_dout 1 2 2 380 410 620
+preplace netloc CounterGenericNoClk_0_count 1 0 5 20 460 NJ 460 NJ 460 NJ 460 880
+preplace netloc EightDispControl_0_select_display 1 4 1 NJ
+preplace netloc xlconstant_3_dout 1 3 1 610
+levelinfo -pg 1 0 110 290 510 750 900 -top 0 -bot 640
+",
+}

@@ -1,0 +1,5 @@
+verilog xil_defaultlib "../../../bd/ex1_top/ip/ex1_top_dist_mem_gen_0_0/sim/ex1_top_dist_mem_gen_0_0.v" 
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,77 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Mon Jun 05 14:42:08 2017
+| Host         : Inator running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ex7_top_wrapper_control_sets_placed.rpt
+| Design       : ex7_top_wrapper
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    34 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              95 |           48 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              31 |            9 |
+| Yes          | No                    | No                     |             240 |           87 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------+------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|                         Clock Signal                         |                     Enable Signal                    |                         Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++--------------------------------------------------------------+------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|  ex7_top_i/counter_generic_0/U0/clk_dvr1/s_countValue_reg[2] |                                                      |                                                                  |                1 |              3 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/BinToBCD16_2/U0/get_outputs                |                                                                  |                6 |             12 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/BinToBCD16_1/U0/int_rg_c[15]_i_1_n_0       |                                                                  |                4 |             16 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/BinToBCD16_2/U0/int_rg_c[15]_i_1_n_0       |                                                                  |                3 |             16 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/BinToBCD16_1/U0/get_outputs                |                                                                  |                7 |             20 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/concat_memory_0/U0/vector_s_reg[6]__0_n_0  |                                                                  |               11 |             22 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/concat_memory_0/U0/vector_s_reg[7]__0_n_0  |                                                                  |               10 |             22 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/concat_memory_0/U0/vector_s_reg[2]__0_n_0  |                                                                  |                6 |             22 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/concat_memory_0/U0/vector_s[5][21]_i_1_n_0 |                                                                  |                9 |             22 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/concat_memory_0/U0/vector_s[3][21]_i_1_n_0 |                                                                  |                8 |             22 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/concat_memory_0/U0/vector_s_reg[4]__0_n_0  |                                                                  |                9 |             22 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/concat_memory_0/U0/vector_s_reg[1]__0_n_0  |                                                                  |                7 |             22 |
+|  clk_IBUF_BUFG                                               | ex7_top_i/concat_memory_0/U0/vector_s[0][21]_i_1_n_0 |                                                                  |                7 |             22 |
+|  clk_IBUF_BUFG                                               |                                                      | ex7_top_i/counter_generic_0/U0/clk_dvr1/s_divCounter[30]_i_1_n_0 |                9 |             31 |
+|  clk_IBUF_BUFG                                               |                                                      |                                                                  |               47 |             92 |
++--------------------------------------------------------------+------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 3      |                     1 |
+| 12     |                     1 |
+| 16+    |                    13 |
++--------+-----------------------+
+
+

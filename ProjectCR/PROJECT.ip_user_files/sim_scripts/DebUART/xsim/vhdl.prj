@@ -36,8 +36,8 @@ vhdl xil_defaultlib "../../../bd/DebUART/ip/DebUART_SliceMemory_0_0/sim/DebUART_
 vhdl xil_defaultlib "../../../bd/DebUART/ip/DebUART_xlslice_5_0/sim/DebUART_xlslice_5_0.vhd" 
 vhdl xil_defaultlib "../../../bd/DebUART/ipshared/e52a/sort.vhd" 
 vhdl xil_defaultlib "../../../bd/DebUART/ip/DebUART_sort_0_1/sim/DebUART_sort_0_1.vhd" 
-vhdl xil_defaultlib "../../../bd/DebUART/hdl/DebUART.vhd" 
 vhdl xil_defaultlib "../../../bd/DebUART/ip/DebUART_xlconcat_2_0/sim/DebUART_xlconcat_2_0.vhd" 
 vhdl xil_defaultlib "../../../bd/DebUART/ip/DebUART_xlconstant_0_1/sim/DebUART_xlconstant_0_1.vhd" 
+vhdl xil_defaultlib "../../../bd/DebUART/hdl/DebUART.vhd" 
 
 nosort
